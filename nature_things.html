@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ayaan's nature stuff</title>
+
+        <style>
+            .broider 
+            {
+                border-image:  url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAACRElEQVR4AdTXUYobQQxF0clsLovKdxaV1U36dHSNqabBMP5IBS5SvaeqloQDyefH3Z/fP78+cOenq0HnNfLwql6dO5jzfaNT8L+Ez3NrT50/zr/+/PgAD3cdq4EaVCcHD+lFGtQgXQ4eRt9oo7qGKSDHTHJu1ZmH9CINapAuBw/pRRrUIF0OHkbfaKPT8WNznddoSpjyGRrW+s48PN+R01DdGnlQe7DhRo+uz7/x62Sd8035THp1a8x/viNPX+s756s92GijS+fnVmk3kyU/4jHt+ft2Bxly5KcX09UgXY780Tfa6NL5uR2aqSDHTHYb1MAdyHF7YQw1cAdyjF3YaKO1/K5oG3jXe/PORhv1u8B0/vhbbyvgIf/d0dvwLcjRd+QHG23UFDi6PrcpRxPJkZ/+3dh73kbvybH4G210naTzGk2JJl39V8/d9xbu7vEw/oYbbdKZ4BLyTYlLwYuCu+i9u2uLv9FG69yU6Nyk/85fj38DpH83+hZ6v/c68zDnjTaqazSRHDPJ2zfZd4q+hbvv8Q422miTvSu2mXe9N+9svNE2cvwuzt9n55nsNlT37nvz7oYbnc7PLdpKq5MjP72YrgbpcuSnF9PVIF2Oxd9oo0vnDXaJpkT1RRouF0bgofoiDVN2CTyMsdFGdY0mnQkuIV/tM+mXCyPkP9+Rp0/ZJSz+RhttFFNimeT8fxSNh+qLNKhBuhw8pBdpUIN0OXiQH2y40aPrc3umQBPKkZ9eTFeDdDny09eoBtXJUZ38YJuN/gUAAP//RQfo9wAAAAZJREFUAwBP3Uxhlj3UoQAAAABJRU5ErkJggg==") 14 /  14px / 0 round;
+                border-width:  10px;
+                border-style:  solid;
+                background-color:rgba(10, 58, 10, 0.91);
+                padding: 18px 36px;
+            }
+            header
+            {
+                padding: 15px;
+                text-align: center;
+                font-size: 35px;
+                font-family: natureFont;
+                color:aliceblue;
+            }
+            article
+            {
+                padding: 10px;
+                text-align: center;
+                font-size: 25px;
+                font-family: natureFont;
+                color: floralwhite;
+            }
+            @font-face
+            {
+                font-family: natureFont;
+                src: url(Pine\ Forest\ Personal\ Use\ Only.otf)
+            }
+
+            .book
+            {
+                width: 400px;
+                height: 585px;
+                position: relative;
+                transform: translateX(600px);
+                transform-style: preserve-3d;
+            }
+            .cover 
+            {
+                background-image: url(Nature_Journal_-_Front_Cover-removebg-preview.png);
+                width: 100%;
+                height: 100%;
+                border-radius: 0 15px 15px 0;
+                box-shadow: 0 0 5px rgb(41, 41, 41);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                z-index: 11;
+                transform-origin: center left;
+                transition: transform 1s;
+            }
+            .cover label
+            {
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+            .page label 
+            {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                cursor: pointer;
+            }
+            input
+            {
+                display: none;
+            }
+            .backcover
+            {
+                background-image: url(Nature_Journal_-___Backcover-removebg-preview.png);
+                width: 100%;
+                height: 100%;
+                border-radius: 0 15px 15px 0;
+                box-shadow: 0 0 5px rgb(41, 41, 41);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                z-index: 0;
+            }
+            .page
+            {
+                position: absolute;
+                background-color: white;
+                width: 350px;
+                height: 555px;
+                border-radius: 0 15px 15px 0;
+                margin-top: 10px;
+                transform-origin: left;
+	            transform-style: preserve-3d;
+                 transform: rotateY(0deg);
+                transform: translateX(30px);
+            } 
+            .page img 
+            {
+	            width: 100%;
+	            height: 100%;
+	            border-radius: 15px 0 0 15px;
+            }
+            .front-page 
+            {
+	            position: absolute;
+	            width: 100%;
+	            height: 100%;
+	            backface-visibility: hidden;
+	            box-sizing: border-box;
+	            padding: 1rem;
+            }
+            .back-page 
+            {
+	            position: absolute;
+	            width: 100%;
+	            height: 100%;
+                transform: rotateY(180deg);
+	            backface-visibility: hidden;
+	            z-index: 99;
+            }
+            .next, .prev 
+            {
+	            position: absolute;
+	            bottom: 1em;
+	            cursor: pointer;
+            }
+            .next 
+            {
+	            right: 1em;
+            }
+            .prev 
+            {
+	            left: 1em;
+            }
+            #page1
+            {
+                z-index: 10; 
+            }
+            #page2
+            {
+                z-index: 9; 
+            }
+            #page3
+            {
+                z-index: 8; 
+            } 
+            #page4
+            {
+                z-index: 7; 
+            }
+            #page5
+            {
+                z-index: 6; 
+            }
+            #page6
+            {
+                z-index: 5; 
+            } 
+             #page7
+            {
+                z-index: 4; 
+            }
+            #page8
+            {
+                z-index: 3; 
+            }
+            #page9
+            {
+                z-index: 2; 
+            }
+            #page10
+            {
+                z-index: 1; 
+            }
+            #checkbox-cover:checked ~ .book
+            {
+                transform: translateX(500px);
+            }
+            #checkbox-cover:checked ~ .book .cover
+            {
+                transform: rotateY(-180deg);
+                z-index: 1;
+
+            }
+            #checkbox-cover:checked ~ .book .page 
+            {
+	            box-shadow: 0 0 3px rgb(99, 98, 98);
+            }
+            #checkbox-page1:checked ~ .book #page1 
+            {
+	            transform: rotateY(-180deg);
+                z-index: 2;
+            }
+            #checkbox-page2:checked ~ .book #page2 
+            {
+                transform: rotateY(-180deg);
+	            z-index: 3;
+            }
+            #checkbox-page3:checked ~ .book #page3 
+            {
+                transform: rotateY(-180deg);
+	            z-index: 4;
+            }
+            #checkbox-page4:checked ~ .book #page4 
+            {
+	            transform: rotateY(-180deg);
+                z-index: 5;
+            }
+            #checkbox-page5:checked ~ .book #page5 
+            {
+                transform: rotateY(-180deg);
+	            z-index: 6;
+            }
+            #checkbox-page6:checked ~ .book #page6 
+            {
+                transform: rotateY(-180deg);
+	            z-index: 7;
+            }
+            #checkbox-page7:checked ~ .book #page7 
+            {
+	            transform: rotateY(-180deg);
+                z-index: 8;
+            }
+            #checkbox-page8:checked ~ .book #page8 
+            {
+                transform: rotateY(-180deg);
+	            z-index: 9;
+            }
+            #checkbox-page9:checked ~ .book #page9 
+            {
+                transform: rotateY(-180deg);
+	            z-index: 10;
+            }
+            #checkbox-page10:checked ~ .book #page10 
+            {
+                transform: rotateY(-180deg);
+	            z-index: 11;
+            }
+        </style>
+
+        <body style="background-image:url(hoh-river-valley.jpg);">
+            <header>
+                <div class="broider">
+                <h1>Come on in! Welcome to the Nature Zone</h1>
+                <p>I've always loved nature and some of my best memories come from being out in the woods, by the river, or even in my own backyard. So, with this in mind, it only made sense to put a whole page dedicated to nature.</p>
+            </header>
+
+            <article>
+                <div class="broider" style="max-width: 600px; float: right;">
+                <h2> Some Stories</h2>
+                <p>There's no better way to start out a page about nature other than some good ol' stories. So, pretend that you're around a campfire, grab a snack, and learn about my misadventures in the wilderness.</p>
+                <h3>Lost in the Woods</h3>
+                <p>This is probably a story that almost everybody can relate to, so I'll keep it short and sweet. A few years ago, being the pea-brained preteen I was, I went to the forest by myself to look for salamanders. 3 hours and 20 salamanders later, it was time to head back . . . and I was completely lost. The next hour was filled with google maps tweaking out, sending voice messages to my friends like a captain lost at sea, and seeing the same tree 4 different times. Luckily, after the 10th loop up the hill, I found a paved pathway which I followed all the way out of the forest and got home by nightfall.</p>
+                <h3>A Muddy Hell</h3>
+                <p>This story takes place from my first time going dipnetting in a new part of the river. If you don't know what dipnetting is, it's where you wade around in the water with a net to catch fish. In the part of the river where I usually dipnetted, it was pretty rocky, and that's what I expected with this part of the river. I was very wrong. 20 minutes in and I was over ankle-deep in river mud, contemplating what choices I made to get here. Using the sheer power of the indomitable human spirit, I freed myself and didn't even lose my sandals.</p>
+                <h3>My Hand and the Water Serpent</h3>
+                <p>You see, in my city there are 5 species of snake: The Eastern Garter Snake, The Dekay's Brownsnake, The Eastern Milksnake, The Red-bellied Snake, and lastly, the subject of this story: The Common Water Snake. I was a pretty dumb pre-teen as you could probably imagine and I tended to pick up most snakes I found: most of those snakes being Eastern Garter Snakes. So, when I went to the river and saw a snake swimming down the river, I immediately grabbed it and just as quickly had judgement delivered. Completely unrelated, I learned that Common Water Snakes have an anti-coagulant in their saliva, which prevents the blood from clotting and causes you to bleed for longer.</p>
+            </article>
+
+            <img src="salamander-removebg-preview.png" style="transform: translate(150px, 0px);"> 
+            <img src="credit_meadows_park-removebg-preview.png" style="transform: translate(150px, 25px);">
+            <img src="snake-removebg-preview.png" style="transform: translate(150px, 50px);">
+
+            <article>
+                <div class="broider" style="max-width: 400px; float: left; transform: translate(0px, 50px);">
+                <h2>INaturalist</h2>
+                <p>INaturalist is a platform I found 1-2 years back and ever since then, I've been absolutely hooked. INaturalist in a nutshell is like irl pokemon, you take pictures of animals, plants, fungi, etc and then it's stored for you so that you can see how many species and how many individuals you've observed. Now, obviously, it's a great tool for collecting data about various species but the main reason I use it is because of the leaderboard. For each species there's a leaderboard to see who has observed it the most, there's a global leaderboard and there's also leaderboards for cities, countries, etc. With all this said, all the animals on the right are the ones I'm ranked number one for in my city.</p>
+                <h2>Finding a very Special Turtle</h2>
+                <p>If you look to the right, you'll see one species stands out from the others, that being the only turtle on there, The Blanding's Turtle. The reason why it gets a whole section dedicated to it is because . . . drumroll please . . . in the entirity of my city, I am the ONLY one to have an observaton of the Blanding's Turtle. So ya, I think that's pretty neat.</p>
+            </article> 
+
+            <img src="big_water_crayfish-removebg-preview.png" style="transform: translate(0px, 75px);">
+            <img src="blanding_s_turtle-removebg-preview.png" style="transform: translate(0px, 75px);">
+            <img src="brook_stickleback-removebg-preview.png" style="transform: translate(0px, 75px);">
+            <img src="fantail_darter-removebg-preview.png" style="transform: translate(0px, 75px);">
+            <img src="johnny_darter-removebg-preview.png" style="transform: translate(0px, 150px);">
+            <img src="longnose_dace-removebg-preview.png" style="transform: translate(0px, 150px);">
+            <img src="northern_clearwater_crayfish-removebg-preview.png" style="transform: translate(0px, 150px);">
+            <img src="rainbow_darter-removebg-preview.png" style="transform: translate(0px, 150px);">
+            <img src="stonecat-removebg-preview.png" style="transform: translate(50px, 225px);">
+            <img src="virile_crayfish-removebg-preview.png" style="transform: translate(100px, 225px);"> 
+            <img src="white_sucker-removebg-preview.png" style="transform: translate(150px, 225px);">
+
+            <div class="image-container">
+                <a href="https://www.inaturalist.org/people/ayaanjilani">
+                    <img src="inat.png" style="transform: translate(150px, 275px);">
+                </a>
+            </div>
+            <img src="Wildlife_Conservation_Issue_8c_1971_U.S._stamps-removebg-preview.png" style="transform: translate(350px, 225px);">
+            <img src="softshell_turtle-removebg-preview.png" style="transform: translate(450px, 225px);">
+
+            <article>
+                <div class="broider" style="transform: translate(0px, 150px); float: right;">
+                <h2>My Nature Journal</h2>
+                <p>Earlier this summer, I, as many others do, had checked out a ton of books from the libraries. One of these books was "The Naturalist at Home" by Brenner Kelly. This book covered a variety of projects you could do to further explore the natural world and the very first activity was: Making a Nature Journal. So, after dusting off a random old journal in my shelf, I began to document all my outings in this little green journal. Now, the journal is here for all of you to see.</p>
+
+                <input type="checkbox" id="checkbox-cover">
+                <input type="checkbox" id="checkbox-page1">
+                <input type="checkbox" id="checkbox-page2">
+                <input type="checkbox" id="checkbox-page3">
+                <input type="checkbox" id="checkbox-page4">
+                <input type="checkbox" id="checkbox-page5">
+                <input type="checkbox" id="checkbox-page6">
+                <input type="checkbox" id="checkbox-page7">
+                <input type="checkbox" id="checkbox-page8">
+                <input type="checkbox" id="checkbox-page9">
+                <input type="checkbox" id="checkbox-page10">
+
+                <div class="book">
+                    <div class="cover">
+                        <label for="checkbox-cover"></label>
+                    </div>
+                    <div class="page" id="page1">
+                        <div class="front-page">
+                            <img src="Nature_Journal_-__Crayfish_Claw_Page-removebg-preview.png">
+                            <label for="checkbox-page1"></label>
+                        </div>
+                        <div class="back-page">
+                            <label for="checkbox-page1"></label>
+                        </div>
+                    </div>
+                    <div class="page" id="page2">
+                        <div class="front-page">
+                            <img src="Nature_Journal_-__Page_1-removebg-preview.png">
+                            <label for="checkbox-page2"></label>
+                        </div>
+                        <div class="back-page">
+                            <img src="Nature_Journal_-__Page_2-removebg-preview.png">
+                            <label for="checkbox-page2"></label>
+                        </div>
+                    </div>
+                    <div class="page" id="page3">
+                        <div class="front-page">
+                            <img src="Nature_Journal_-__Page_3-removebg-preview.png">
+                            <label for="checkbox-page3"></label>
+                        </div>
+                        <div class="back-page">
+                            <img src="Nature_Journal_-__Page_4-removebg-preview.png">
+                            <label for="checkbox-page3"></label>
+                        </div>
+                    </div>
+                    <div class="page" id="page4">
+                        <div class="front-page">
+                            <img src="Nature_Journal_-__Page_5-removebg-preview.png">
+                            <label for="checkbox-page4"></label>
+                        </div>
+                        <div class="back-page">
+                            <img src="Nature_Journal_-__Page_6-removebg-preview.png">
+                            <label for="checkbox-page4"></label>
+                        </div>
+                    </div>
+                    <div class="page" id="page5">
+                        <div class="front-page">
+                            <img src="Nature_Journal_-__Page_7-removebg-preview.png">
+                            <label for="checkbox-page5"></label>
+                        </div>
+                        <div class="back-page">
+                            <img src="Nature_Journal_-__Page_8-removebg-preview.png">
+                            <label for="checkbox-page5"></label>
+                        </div>
+                    </div>
+                    <div class="page" id="page6">
+                        <div class="front-page">
+                            <img src="Nature_Journal_-__Page_9-removebg-preview.png">
+                            <label for="checkbox-page6"></label>
+                        </div>
+                        <div class="back-page">
+                            <img src="Nature_Journal_-__Page_10-removebg-preview.png">
+                            <label for="checkbox-page6"></label>
+                        </div>
+                    </div>
+                    <div class="page" id="page7">
+                        <div class="front-page">
+                            <img src="Nature_Journal_-__Page_11-removebg-preview.png">
+                            <label for="checkbox-page7"></label>
+                        </div>
+                        <div class="back-page">
+                            <img src="Nature_Journal_-__Page_12-removebg-preview.png">
+                            <label for="checkbox-page7"></label>
+                        </div>
+                    </div>
+                    <div class="page" id="page8">
+                        <div class="front-page">
+                            <img src="Nature_Journal_-__Page_13-removebg-preview.png">
+                            <label for="checkbox-page8"></label>
+                        </div>
+                        <div class="back-page">
+                            <img src="Nature_Journal_-__Page_14-removebg-preview.png">
+                            <label for="checkbox-page8"></label>
+                        </div>
+                    </div>
+                    <div class="page" id="page9">
+                        <div class="front-page">
+                            <img src="Nature_Journal_-__Page_15-removebg-preview.png">
+                            <label for="checkbox-page9"></label>
+                        </div>
+                        <div class="back-page">
+                            <img src="Nature_Journal_-__Page_16-removebg-preview.png">
+                            <label for="checkbox-page9"></label>
+                        </div>
+                    </div>
+                    <div class="page" id="page10">
+                        <div class="front-page">
+                            <img src="Nature_Journal_-__Page_17-removebg-preview.png">
+                            <label for="checkbox-page10"></label>
+                        </div>
+                        <div class="back-page">
+                            <img src="Nature_Journal_-__Page_18-removebg-preview.png">
+                            <label for="checkbox-page10"></label>
+                        </div>
+                    </div>
+                    <div class="backcover"></div>
+                </div>
+            </article>
+
+            <article>
+                <div class="broider" style="transform: translate(0px, 250px); float: left;">
+                <h2>My Trip to Costa Rica</h2>
+                <p>Nearly 2 years ago, I visted Costa Rica along with my family and to say it was amazing is a gross understatement. It was so biodiverse that everywhere I looked there was a new species. In fact, Costa Rica was so biodiverse that in 2 weeks, I went from 100 species to OVER 300 SPECIES. So, making a section of the Nature section dedicated to Costa Rica was a no brainer.</p>
+                <h3>Tortuguero: The Boat Ride and the Night Walk</h3>
+                <p>Tortegero is a small village that borders right on the Tortuguero national park. We had to take a boat ride to get there due to how remote it was and on the way there, I spotted a species I was really hoping to spot: The American Crocodile. After a very strong start to this trip, we went to the hotel, rested, and then left by nightfall for the nightwalk. The trail was completely flooded, so we had to wear boots as the guide showed us the hundreds of different species of frogs, insects, and spiders. At one point, we even saw a turtle swimming about in the flooded trail. It's impossible to describe how amazing it was seeing new species, after new species, after new species. The species I have below are, from left to right, Black River Turtle, Helmeted Iguana(which is related to chameleaons), Brazillian Wandering Spider, and the American Crocodile.</p>
+                <video width="240px" height="320px" controls style="float: left;"><source src="nightwalk.mp4"></video>
+                <img width="240px" height="320px" src="turtleInTheTrail.jpg">
+                <img width="240px" height="320px" src="bananaSpider.jpg">
+                <img width="240px" height="320px" src="helmetedIgauna.jpg">
+                <img width="240px" height="320px" src="croc on a log.jpg">
+                <h3>Tortuguero: The Canoe Ride and The Day Walk</h3>
+                <p>The next morning, we were out on the lagoon in a canoe. It was so calm, there was absolutely no other noise other than the water and the occasional bird. Speaking of birds, the diversity of birds on this lagoon and it's creek was extrodinary. We saw many different species of herons and other fish eating birds. Other than birds, we also saw some Spectacled Caimans. After the canoe ride, we took a trail into the forest for a day walk. Which, while not as diverse as the nightwalk, still allowed us to spot many interesting species, such as land crabs, lizards, poison dart frogs, and monkeys. The species listed below are: Northern Jacana, Little Blue Heron, Spectacled Caiman, and The Strawberry Poison Dart Frog.</p>
+                <video width="240px" height="320px" controls style="float: left;"><source src="canoe trip.mp4"></video>
+                <img width="240px" height="320px" src="NorthernJacana.jpg">
+                <img width="240px" height="320px" src="blueHeron.jpg">
+                <img width="240px" height="320px" src="SpectacledCaiman.jpg">
+                <img width="240px" height="320px" src="StrawberryPoisonDartFrog.jpg">
+                <h3>La Fortuna and Tamerindo</h3>
+                <p>The next two places we went to in Costa Rica was La Fortuna and then Tamerindo. We didn't see many animals in La Fortuna, there most of the species I photographed were birds I saw at the resort we stayed at. The main attraction of La Fortuna was the amazing views on the hikes. After that, we were off the sandy shores of Tamerindo. There, we stayed at a resort where we saw some very chill iguanas. Then we went to do some snorkling, where I spotted a big pufferfish just chilling out in the open. Another amazing thing about Tamerindo was how clearly you could see the stars at night on the beach.</p>
+                <img width="240px" height="320px" src="LaFortunaBird.jpg">
+                <img width="240px" height="320px" src="LaFortunaView.jpg">
+                <img width="240px" height="320px" src="LaFortunaWaterfall.jpg">
+                <img width="240px" height="320px" src="tamerindoIguana.jpg">
+                <img width="240px" height="320px" src="TamerindoStars.jpg">
+                <video width="240px" height="320px" controls style="float: left;"><source src="hermitCrabs.mp4"></video>
+                <video width="240px" height="320px" controls><source src="iguanaClimbing.mp4"></video>
+                <img width="240px" height="320px" src="crabIntheWater.JPG">
+                <video width="240px" height="320px" controls style="float: right;"><source src="pufferFish.MOV"></video>
+                <video width="240px" height="320px" controls><source src="chasingAFish.MOV"></video>
+                <h2>Monte Verde</h2>
+                <p>So far all of the places I went to in Costa Rica were hot and humid, like you'd expect from a rainforest. Monte Verde however, was completely different. While it was just as wet as the other places, it was cold, which was due to it being up in the clouds. Here, we stayed in a cabin in the woods, which allowed me to see some cool animals such as a hummingbird and a coati, which is a creature that sorta resembles a racoon. We also did a nightwalk here, which not as amazing as the Tortuguero nightwalk was still amazing.</p>
+                <img width="240px" height="320px" src="monteVerdeView.jpg">
+                <img width="240px" height="320px" src="tarantula.jpg">
+                <img width="240px" height="320px" src="CamoStickbug.jpg">
+                <img width="240px" height="320px" src="hummingbird.jpg">
+                <img width="240px" height="320px" src="monteVerdeMountain.jpg">
+                <h2>Crocodile Bridge and Manuel Antonio National Park</h2>
+                <p>The last two places of notes we went to were Crocodile bridge, which, just as the name suggests, is a bridge where you are able to spot tons of crocodiles from. Manuel Antonio National Park was also amazing, we spotted a bunch of sloths, monkeys, and some very unique birds. The animals below are: American Crocodiles, Central American White-faced Capuchin, Terciopelo, Common Potoo, and the Brown-throated Three-toed Sloth</p>
+                <img width="240px" height="320px" src="crocBridge.jpg">
+                <img width="240px" height="320px" src="monkey.jpg">
+                <img width="240px" height="320px" src="Terciopelo.jpg">
+                <img width="240px" height="320px" src="potoo.jpg">
+                <img width="240px" height="320px" src="sloth.jpg">
+            </article>
+
+            <article>
+                <div class="broider" style="transform: translate(0px, 300px); float: left; max-width: 400px;">
+                <h2>The Pets(Sorta)</h2>
+                <p>As a kid, I've had some pets, mainly fish, but I did also have two African Dwarf Frogs, respectfully named Lightning and Thunder. Now that was about 10 years ago, now I have over 10, beautiful koi fish. Other than that, we dont keep any animals but we do have some animals that I consider to kinda be pets. Firstly, we have 3 squrriels that come to our backyard who we feed. They first started coming 2 years ago and have been coming ever since. Recently, other than just the squrriels, a cat has begun visiting our backyard frequently. We, as anyone would, gave the cat food and now it spends hours in the backyard, sleeping and chasing the birds.</p>
+            </article>
+            <img width="240px" height="280px" style="transform: translate(30px, 300px);"src="koiFish.jpg">
+            <img width="240px" height="280px" style="transform: translate(60px, 300px);"src="squrriel.jpg">
+            <img width="240px" height="280px" style="transform: translate(90px, 300px);"src="cat.jpg">
+            <video width="240px" height="280px" style="transform: translate(300px, 305px);" controls><source src="feedingSqurriel.mp4"></video>
+
+            <article>
+                <div class="broider" style="transform: translate(0px, 350px);">
+                <h2>Holding Critters</h2>
+                <p>For some reason animals look pretty funny while holding them. So, here's various critters in my gangly ass hands.</p>
+            </article>
+            <img src="holdingAmericanToad.png" style="transform: translate(15px, 350px);">
+            <img src="holdingBlacknoseDace.png" style="transform: translate(25px, 350px);">
+            <img src="holdingBluegill.png" style="transform: translate(35px, 350px);">
+            <img src="holdingCommonSnappingTurtle.png" style="transform: translate(45px, 350px);">
+            <img src="holdingCrayfish.png" style="transform: translate(55px, 350px);">
+            <img src="holdingEasternGarterSnake.png" style="transform: translate(15px, 400px);">
+            <img src="holdingNorthernClearwaterCrayfish.png" style="transform: translate(25px, 400px);">
+            <img src="holdingPumpkinseed.png" style="transform: translate(35px, 400px);">
+            <img src="holdingRiverChub.png" style="transform: translate(45px, 400px);">
+            <img src="holdingRiverChub(1).png" style="transform: translate(55px, 400px);">
+            <img src="holdingStonecat.png" style="transform: translate(100px, 450px);">
+            <img src="holdingYellowPerch(1).png" style="transform: translate(150px, 450px);">
+            <img src="holdingYellowPerch.png" style="transform: translate(200px, 450px);">
+            <img src="holdingPaintedTurtle.png"style="transform: translate(250px, 450px);"> 
+        </body>
+</html>

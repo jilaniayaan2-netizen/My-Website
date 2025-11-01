@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ayaan's books stuff</title>
+    <style>
+        .border {
+            border-image:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAVKADAAQAAAABAAAAVAAAAAC3aM1AAAACnUlEQVR4Ae2Xy27DMAwEk6L//8ttfNRCILPSxnHTKdCDzPeIXjj32+328/i/8t893NxL5/0KN/vv0wE0vAIADQP9DudbSddpZFrztF40Pxu6sgJFDEALOCsmgK5QK2IOPYlqyKSWatbE5dRHOq/2p3arOTbUwtU7A7RnZHkA1MLVOye+Q1WD+qq1h6thbn3Xv+5WrGyoANk9AnSXoMQDVIDsHg896TQrrTldvd2Zunh3HqtfNrTDb9oBagLr3AHaETLts+9Q1RjVELVrSfVX+7vP2l83j9UvG2rh6p0B2jOyPABq4eqdZ/rhaoz691Wv5TFjUHVYzsuGVugWbABdgFaFALSis2CbfYcupLFCXM2ykk+cS817+Kt9qz82dHIDO48AukNvEgvQCZSdR+/Q0J1+rxCrGjtoMBsaviKAAjRMIJxuRUMHzQj3c4V0Op9qZtkjr3yJxzcC1GdWRgC0xOMbVzTUr/JZEaXGsqHhywYoQMMEwukODS01IVzv49PxyoevGKAADRMIp1v5DtXftqrB4RZPT6fzWQ3wylu4emeA9owsD4BauHrnmYaqJm5pSt/CZ3mwoeH7BChAwwTC6WYa6pZQjVUN1nydXf3/1JlXPnxdAAVomEA43TMaqpqnmhlu6fR03Tzd/IOdVz58fwAFaJhAON2hH4MGPJG/0xxN4ebX+N2z229Xr5yHV77DZ9oBagLr3AHaETLtKxqqJU7VKC3+OL+7/tASGzrg2D8AdJ/hkAGgA479wzO/5d0q+p3mapzrv9ufG1/6s6ElHt8IUJ9ZGQHQEo9vPPRKNc/PMkaoBr46/1g9P4/mL89saInHNwLUZ1ZGALTE4xtfoaHahWqq2t1zWpPd+qU/G1ri8Y0A9ZmVEQAt8fjGX+DmLLQv0EHVAAAAAElFTkSuQmCC') 28 /  28px / 0 round;
+            border-width:  28px;
+            border-style:  solid; 
+            background-color: rgba(100, 90, 79, 0.431);
+        }
+  
+        header {
+            padding: 15px;
+            text-align: center;
+            font-size: 30px;
+            font-family: books;
+            color:blanchedalmond;
+        }
+
+        article {
+            padding: 10px;
+            text-align: center;
+            font-size: 25px;
+            font-family: books;
+            color:wheat;
+        }
+
+        @font-face {
+            font-family: books;
+            src: url(SpecialElite.ttf)
+        }
+
+        .books-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .books {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 10px;
+            align-items: start;
+        }
+        .book img {
+            max-width: 100%;
+            border-radius: 8px;
+            transform: translateX(100px);
+        }
+        .wishlistGrid{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+    </style>
+    <body style="background-image: url(bookBackground.jpeg);">
+        <header>
+            <div class="border">
+                <h1>Welcome to the Library</h1>
+                <p>Before grade 5, I only read non-fiction(mainly books about dinosaurs and animals). In fact, I didn't read any fiction books because I though they were boring and silly(since they were made up). This all changed when a certain book caught my eye in the paper for the book fair: Percy Jackson. Ever since then, I've been reading a lot, whether that be manga or novels. So, now I want to share some of my favorite books here.</p>
+            </div>
+        </header>
+        <article>
+            <div class="border">
+                <h2>My Favorite Childhood Books</h2>
+                <div class="books-grid">
+                    <div class="books">
+                        <div class="book img"><img src="percyJackson.jpg"></div>
+                        <div class="book text">
+                            <h2>The Percy Jackson Series</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">Percy Jackson was THE book series that got me into reading in the first place. I saw it in the bookfair paper and after begging my mom to pay 30 bucks, I got all 5 books. I was hooked and finished all 5 books within a month and I was then on the hunt for the next book to read. In fact, for a long time, I was only reading Rick Riodan because of how much I liked Percy Jackson.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="heroesOfOlympus.jpg"></div>
+                        <div>
+                            <h2>Heroes of Olympus</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">This is a continuation of Percy Jackson as we see the goat once more but we also get to see some roman gods, which are just ripoffs of the greek ones but I digress. This book series was also amazing because we got to see more world building like with the introduction of the roman camp and it was also interesting to see Percy loose his memory, leading to essentially a repeat of what happened in book one.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="kaneChronicals.jpg"></div>
+                        <div>
+                            <h2>Kane Chronicals</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">Kane Chronicals was also very nice, I didn't really know it existed and only found it by my cousin giving me all three books. I liked that the way the powers work in this one was different, like instead of being demi-gods its a whole thing with magic. There's also a slight mystery element at the beginning which is nice. And of course THE GOAT Percy shows up again which is always a nice surprise.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="magnusChase.jpg"></div>
+                        <div>
+                            <h2>Magnus Chase</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">Magnus Chase is the norse mythology entry for Rick Riodan's catalogue and I enjoyed this series throughly as well, which of course I did because it's by Rick Riodan. It introduced more world building aspects and Magnus was a fun protaganist, he reminded me a good lot of Percy, who also shows up in this book series.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="diaryOfAWimpyKid.png"></div>
+                        <div>
+                            <h2>The Diary of a Wimpy Kid Series</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">If you haven't read Diary of a Wimpy Kid as a child, you're either a fetus or an ancient relic of a human, me being gen z, I obviously read Diary of a Wimpy Kid when I was younger. The first few books were incredibly relatable, with my favorite being rodrick rules(since I am the older brother). I also remember that whenever I went to Costco and saw the new Diary of the Wimpy Kid book and getting my mom to buy it, this continued into middle school and stopped by grade 8 since I A. grew up and B. Costco removed the book section.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="bloomSeries.jpg"></div>
+                        <div>
+                            <h2>The Overthrow Trilogy</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">The overthrow trilogy(from what I remember) was about dangerous plants suddenly popping up across the world, our 3 main charecter meet up and then they learn they each have an attribute of a different animal, those being a kangaroo, lizard, and bird. In book two, giant bugs begin showing up and they also get captured by the government where they meet others like them. Book 3 is the full scale alien invasion, with the plants and bugs being used to terraform the earth. I remember wishing as a middle schooler that this series was longer because the politics between the alien species paired with dynamics between the charecters was really enjoyable.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="wingsOfFIre.jpg"></div>
+                        <div>
+                            <h2>The Wings of Fire</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">Oh ho ho, Wings of Fire was THE GOAT. My favorite aspect of these books(other than the dragon politics) was how each one was from the perspective of a different dragonette. My favorite dragon was always Clay because he had that big bro energy, which reminded me of myself. I also like how instead of 15 books following one group, we get a new story every 5 books. Personally, I liked the most recent series the most, the lost continent because not only do we get to see new dragons with unique abilities but it builds up the lore of the entire world, like how darkstalker's girlfriend bassically founded an entire species on another continent, and also finally seeing humans get involved.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="keeperOfTheLostCities.jpg"></div>
+                        <div>
+                            <h2>Keeper Of The Lost Cities</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">Keeper of the Lost Cities was one of my childhood favorites because for a kid's series, it has pretty complex worldbuilding. That and the villain group in this series feels like an actual threat, with them beating sophie and the others a bunch. That and there's a big mystery element throughout which made this a fun read when I was in middle school.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="lastKidsOnEarth.jpg"></div>
+                        <div>
+                            <h2>The Last Kids on Earth</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">The main draw to this series was its humor, the charecter interactions were the funniest out of the books I read(yes, even more than Diary of a Wimpy kid). That and I liked the twist of the series, I went in expecting it to just be a normal survival apocalypse story with a tinge of romance but it soon became a bunch of kids having to fight interdimensional cultists who want to bring a planet destroyer to earth. Did I also mention that there's magic? That while a surprsing turn of events, was a welcome one and made the series memorable.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="httydBook.jpg"></div>
+                        <div>
+                            <h2>How to Train your Dragon</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">I was very surprised to find out that How to Train your Dragon was based off a book, so, when I saw the book in my school's library, I immeditly picked it up. The books are way different than the movies in every single way possible but not in a bad way. Similar to the movies though, the books are a coming of age story of Hiccup. The books also had a lot more death in them. Now, the most memorable thing was the opening lines. "There were dragons when I was boy." was the first line in the entire book which feels melancholic but also makes me curious about what happened to the dragons.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="border">
+                <h2>Books I'm Currently Reading/Recently Read</h2>
+                <p>I haven't been able to properly committ to books in recent years, which is a bit sad considering how much I used to read. This year, I've been working on trying to read more(other than manga).</p>
+                <div class="books-grid">
+                    <div class="books">
+                        <div class="book img"><img src="animalFarm.jpg"></div>
+                        <div>
+                            <h2>Animal Farm</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">I recently finished George Orwell's "Animal Farm" and I did enjoy it, though it isn't some incredibly deep commentary on communism as many people think, its quite simple and easy to follow. That and it is very obviously a commentary on communism, I mean the animals even call eachother commrade. It's a short read too, so if you're curious on the opinion of how communism wouldn't work, it is a pretty good read.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="1984.jpg"></div>
+                        <div>
+                            <h2>1984</h2>
+                            <p style="max-width: 850px; max-height: 600px; transform: translateX(75px);">Another book by Orwell, that is way more famous than Animal Farm, is 1984. This is the book that I'm currently reading and I'm about two thirds through. So far, similarly to Animal Farm, it seems to hint at this being a communist distopia(The charecters call eachother comrade and they talk about the capatalists in the same vain we talk about monarchs today). That isn't what I'm interested in though, I'm more interested in how it connects to today, which is the whole reason I started reading it. Some connections I have are with the whole epstein situation, where you have the current administration constantly changing the story to match the current public opnion and trying to bury the previous statements, just like the department of truth in 1984, the only difference being that the current administration is pretty bad at it. Another thing, which you probably saw coming, is the telescreen and palantir. Just like how Palantir's software can be implemented by companies to see which workers are more risky than others and fire them, the telescreens that are in the party member's homes do a very similar thing. Another thing is that The Party owns all of the homes of the outer party memembers just like how private equity owns a lot of people's homes. That's most of the connections I've made so far, 1984 is deffinitly an interesting book, a slightly confusing one, but I do like Orwell's writing style and how he isn't afraid to make the main charecter have horrible thoughts. Overall, I'd say I'd rate the book a 8.5/10.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="mhaCover.jpg"></div>
+                        <div>
+                            <h2>My Hero Acadaimia</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">Now, listen, I'm aware of the reputation of My hero fans and I was one of those people, who thought My hero sucked because of the fans. I only tried it because I kept seeing edits of All Might and I'm so glad I did cause ITS SO HYPE. Obviously, All Might is such a good charecter, he reminds me of Superman but slightly more grounded as we also see him struggle with having to deal with losing his powers. Losing his powers didn't stop him from running that fade though, watching him pull up on AFO was incredibly hype. Another thing is that, the anime ruined Deku's rep cause after reading the manga, he really doesn't cry all that much. Another thing I like is the villians because it has a unique cast of villians that shows all the different consequences of the quirk society, my favorite villian is obviously Shigaraki. Not only is he well written but his power makes him such a threat, this is esspecially seen during his awakening in Jaku. Also Horokoshi's art is so good, esspecially in the later volumes.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="jjkCover.jpg"></div>
+                        <div>
+                            <h2>Jujitsu Kaisen</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">I have an intense love hate relationship with JJK because the shibuya incident is one of the best arcs in all of new gen manga, it does such a good job of showing how much stronger the villians are and how hopeless the situation is. Then, the Gojo versus Sukuna fight was so good, like acctually it was one of the best fights in modern shounen. Now one small issue I have with it is Gojo getting off-screened, I wish they showed him dying so they could build on the charecter more before death. Now, the rest of the Shinjiku showdown from there on out was not the best and mostly dissapointing, they practically forgot about all the charecters like Hakari, Todo, Nobara, and Potential Man. It was really just a brawl with hype moments, it's like they didn't have any plan at all for going up against THE KING OF CURSES. Anyways, besides all that, I wish the Shinjuku showdown wasn't rushed because it started off so strong with Sukuna vs Gojo.</p>
+                        </div>
+                    </div>
+                    <div class="books">
+                        <div class="book img"><img src="kaijuNo8.jpg"></div>
+                        <div>
+                            <h2>Kaiju No.8</h2>
+                            <p style="max-width: 600px; max-height: 600px; transform: translateX(175px);">I really liked Kaiju No.8 because I love kaijus and also the charecter interactions are great. Esspecially having an older protagonist makes the interactions unique and fresh. I also find Kafka relatable, like I've had thoughts of giving up on my dreams as they didn't seem possible(doomscrolling isn't great for morale as one could imagine). Another thing, the designs for the villian kaiju are so good, esspeciall Kaiju No.9, I just really like it's mushroomy apperenace.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="border">
+                <h1>My Reading List</h1>
+                <div class="wishlistGrid">
+                    <div class="books">
+                        <div class="book img"><img src="goodNightPunPun.jpg" style="width: 200px; height: 300px;"></div>
+                        <div class="book img">
+                            <img src="bloodMeridian.jpg" style="width: 200px; height: 300px;">
+                            <img src="theRoad.jpg" style="width: 200px; height: 300px; transform: translateX(250px);">
+                        </div>
+                        <div class="book img"><img src="20thCenturyBoys.jpg" style="width: 200px; height: 300px;"></div>
+                        <div class="book img">
+                            <img src="chainsawMan.jpg" style="width: 200px; height: 300px; transform: translateX(100px);">
+                            <img src="handMaid'sTale.jpg" style="width: 200px; height: 300px; transform: translateX(250px);">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <header>
+            <div class="border">
+                <h1>Hey, what're you doing here without a library card?! Here's one for your next visit, don't forget next time.</h1>
+                <img src="libraryCard.png">
+            </div>
+        </header>
+    </body>
+</head>
+
+</html>
