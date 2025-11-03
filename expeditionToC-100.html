@@ -18,7 +18,7 @@
         article {
             padding: 10px;
             text-align: left;
-            font-size: 25px;
+            font-size: 20px;
             color: white;
             white-space: pre;
             word-break: break-word;
@@ -28,7 +28,7 @@
             border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACNklEQVR4AezawW7DIBBFUSf//8/pzhJXKmjKMyb1zaojYBgOdNpF3kf488EnnP72dDjehwXFQbnB02JBwzcu6G6g7CkvfDgerv/ydKwfx3tx3BcavhJBBQ0LhNOVXyh7BuvhOHsO5+8Ws37Wx3GerwzKDYxbAUFbj+lI0GnCNsEQlD3jOI42AyL2FAxvF6bPNwTdTmDzggQNX5CgV4OmewrzrY7pxf05zrj6N8EXSsHJWNBJQC4XlCKTcRm02lM4f3Vc9WF91fVl0OoGT5svaPjGBU2D8v8y9hDGf9z/tmWrz+cLDV+1oIKGBcLp3tUeyZ4UrieebvX5/JUPX6GggoYFwul8oYKGBcLpfKGChgXC6XZ+oeGjrkknaNhZUEHDAuF0vlBBwwLhdL5QQcMC4XS+UEHDAuF0vlBBwwLhdP/thYZ56ukErZt1Vwja5akPClo3664QtMtTHxS0btZdIWiXpz4oaN2su6IMOvqu0Ld994k6s+crg7IA41ZA0NZjOhJ0mrBNMA3KnskexPF2+y2ibhGsf3S+adBuNQ8cFDR86YLeDcqewno4zp7D+bvFrJ/1cZzn84VSbDIWdBKQywWlyGQ8BGXPGO3HnjKaf/d4+nxD0LsP/G37Cxq+MUGvBk33FOZbHdOL+3Oc8S9/EzjtjH2hJ0XmB0EzjmcWQU+KzA9l0GpP4fzVcZWJ9VXXl0GrGzxtvqDhGxc0Dcr/y9hDGIf3vzzd6vP5QsNXKqigYYFwuh8AAAD//xNdsv4AAAAGSURBVAMAtOkgtjXHa5cAAAAASUVORK5CYII=") 28 / 28px / 0 round;
             border-width: 28px;
             border-style: solid;
-            background-color: rgba(0, 0, 0, 0.688);
+            background-color: rgba(0, 0, 0, 0.811);
         }
 
         .chapter-content {
@@ -40,9 +40,10 @@
         }
     </style>
     <script>
-        function show(shown, hidden, hidden, hidden) {
+        function show(shown, hidden) {
             document.getElementById(shown).style.display = 'block';
             document.getElementById(hidden).style.display = 'none';
+            window.scrollTo(0, 0);
             return false;
         }
     </script>
@@ -391,7 +392,7 @@
                 say anything, it takes off, leaving our crew stranded on C-100.
             </article>
         </div>
-        <header><a href="#" onclick="return show('Page2','Page1', 'Page3', 'Page4');">Chapter 2</a></header>
+        <header><a href="#" onclick="return show('Page2','Page1');">Chapter 2</a></header>
     </div>
 
     <div id="Page2" style="display:none">
@@ -827,8 +828,8 @@
                 In front of the group was the single best thing that a tired and thirsty astronaut could see, the river.
             </article>
         </div>
-        <header><a href="#" onclick="return show('Page1','Page2','Page3','Page4');">Chapter 1</a></header>
-        <header><a href="#" onclick="return show('Page3','Page1', 'Page2', 'Page4');">Chapter 3</a></header>
+        <header><a href="#" onclick="return show('Page1','Page2');">Chapter 1</a></header>
+        <header><a href="#" onclick="return show('Page3','Page2');">Chapter 3</a></header>
     </div>
     <div id="Page3" style="display:none">
         <div class="broider">
@@ -1380,8 +1381,8 @@
                 Everyone laughs as the sun sets, bringing the end of their second day here on C-100.
             </article>
         </div>
-        <header><a href="#" onclick="return show('Page1','Page2');">Chapter 2</a></header>
-        <header><a href="#" onclick="return show('Page4','Page1');">Chapter 4</a></header>
+        <header><a href="#" onclick="return show('Page2','Page3');">Chapter 2</a></header>
+        <header><a href="#" onclick="return show('Page4','Page3');">Chapter 4</a></header>
     </div>
     <div id="Page4" style="display:none">
         <div class="broider">
@@ -1910,7 +1911,7 @@
                 coming out of it.
             </article>
         </div>
-        <header><a href="#" onclick="return show('Page1','Page3');">Chapter 3</a></header>
+        <header><a href="#" onclick="return show('Page3','Page4');">Chapter 3</a></header>
     </div>
 </body>
 
