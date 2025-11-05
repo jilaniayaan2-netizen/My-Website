@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Games</title>
+    <style>
+        html,
+        body {
+            overflow: hidden;
+            background-image: url(gameBackground.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .phrog {
+            border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACV0lEQVR4Aezay27CMBCFYVqx5JFZ9pG7rNQqWQA+lj2d+Djc/kogjO3J+MtolEp8HvizCgBq5TwcAAXULGAOF1bo8Xz6zbzM+U0PlznbsjZKKASNAjBfCgBaegyPAB0mLANUoEufuH39fH1/ZF63e5/hc+Zsy1o9U8nJY5N6DI+rCh2O+OYBADUXQBr0eD4Vz6VRPkvfeaRXlG/UI6P9adAo4LvPA2quAEDvDar90JzP3cONno8KNd9CQAE1C5jDVRWqPUSfy6Kx7jfnOxxO84vOo/O6XxOqQHUB45wAoDmvcDWgIVFuQRpUe4iOG5e/fK09afb4cuHGB81fx41tza/ToM1ITKwCgK4MvjdAfZZrpOmg2iO1R80e6/XXU098mw46MfeHDA2o+bYACqhZwByOCgXULGAOR4W+Eaj5qPuEo0LNzoACahYwh6NCATULmMNRoYCaBczhqFBAzQLmcFQooGYBc7hXq1AzTz4coHmz7g5Auzz5SUDzZt0dgHZ58pOA5s26OwDt8uQnAc2bdXdMB9XfLulvjWaP9fpdDcPkdFBDjk8VAlDz7QL03qDa87L5aE+bPf5HfsWS0fNRoQXn+ADQccMiAqAFx/igAtUeEvU4XT+e0r4RNP/R81ag+x7n9a4GqPmeAvpooNpzzPlND+fOnwo13zJAATULmMNRodtAm7sAbdJsmwB0m1tzF6BNmm0Tn9H/stvCXndp/OvMPp/c19fnVo1PhZrvK6CAmgXM4aoK1Z4wOtZ8R+Nl98++vsavQHUB45wAoDmvcDWgIVFuwR8AAAD//8dKdCcAAAAGSURBVAMA9XOScqwRo3oAAAAASUVORK5CYII=') 28 / 28px / 0 round;
+            border-width: 28px;
+            border-style: solid;
+            background-color: rgba(10, 46, 1, 0.785);
+        }
+
+        .humantooth {
+            border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAAAAXNSR0IArs4c6QAABMZJREFUeF7tnFl2wyAMRe39L7o9CakNWKCnCbDT/iXR8HQRgx2n+7ZtP1v+t1/e2baNfLNws72Ijm9TJ/F+TiWSqkW2MkQya5EQmzEiDLGxqZB7r6hJXkXLo7N8uRROBLm+tW97tar6FSiO5FI2mdUxcrEHUXH3VjJHEWK0CzvwQKXibwE6TiQDdMqU963WNxrbXmiHDpbF6u4b5GrxJettWZ7D06E7/xN9Tq6hxtru5i4C9rnKIYG/YIYCTcF1na7zUo2lG9BX9lCgqvLGO9FATzIi4OOBDms9fCW9rpmFb72m1kNOb0pZCC7A+B4am5HryCZQwRoa1FbI1iyFaZGafNVA9WuoRbQUEGhvkVRtnhOAgkXazdTroCQ1B1D0edymZGmZHIc6Tsex/EgErHcO1U95yfivbzsWqK5BEC/ExvLtSxW/vXrU21B9yrkAr0Lx1/Jk7tV25Jw1ODZBk4UHqksMbiBzi++UphYWBRQZBjt0ddmIPN1m6Ak0ujwkPmIjpdmyJ3OxQLns3KLt4s8cesjbZ+DzA1b93fo0w2sVxPizkoLzc/3Q/5xVT7hPKuiQWuXff+qHXxgkry95cpf6WJTcmSlCO4FzpBI4CeihopMfOtth+iug6SXff5RFkXC/fulSC4LmCC8FChNrRIsUXUmxQIlHxzCgUwjqkjJeiwAVnTzAxtPxAoM3zdYBGlp/aPAC7jpAra0R5s8ORmEgBXo5dnC74MJraMgQ1A8knw/TJe7slZIPUGNtbBNVR0XEXimp26H1KShul1eqj3cTo5dO+eu3fFVKLmA8g7kZsvrfZLoz+Es6VNyV+dUn11DEGlrmg9bQw0WnVddzI3OdChVAy/IgoOwdBB0y0GsoWQzoR9L0KZ8EDAUEDtqfmexYiQM9LdvnUBGXq7HIXYjFYI516CcBVVX9KxAuIKFVikZqT9xQbN2gNJD8uHL1ex7sjSDsxdoj8CV4AeUz2at5RAS+Q92PRM8eGx4o3jfPJtXncNTuCTRP+bVwaaAZDsHBHu9llwuBzpgFDqfXpnTA6gQMLAMeK8dLA7qckUDhqu9s+OVA/SfNSKD+6vP7Zou0dQTQAtx70wpCOYUhU0sD6L5t6b6J+NjEjdAJwUjZ6B41GFz9UUAXxWHHbAR6/QcEXEDx9L8Zeq7+qA7ttMLNCFaVtNfQtHzWQGV3pIkfPhX5h7Ebloj97Wdgh4JFUne1mw/NgjHtS2UzQtCUPwurr/WbN/8Di4RDO4xHENDycDRnmsMYXQ3HA3WVLwgm7T7RUnPqUAAtMwXevhPQUpkiiBGbInkXKPOw2DvZjYGqRoFzUnRoGfJRQI9+FDfmAaUNNMUMPDZxY33Pz9fvUH2zGEZEn/QNNHPvzuB+Gr0IQ+X3dhUtMThf3JLEZ3SfOSSVdLAS0GxmYcNzf5hMRDMxtYI2qpaya1yrX89W9fan0LmQC4rsIll8bFqo6BlSWNAJaGfKQx2al3ZNyYqYQYbOaZf636HOoxkIVD3aasfERuresZeGIr4CYW/xOw8oFU5RxgBVYIrADgUVPMlM81vPYfXftE+PDn3pv2kNvmMsgpAbE454LNzSt9qIaEG1PLZDg3ixQ0sAbUk5njRjg440mAWuV+MvQ8jlFbBwANkAAAAASUVORK5CYII=') 28 / 28px / 0 round;
+            border-width: 28px;
+            border-style: solid;
+            background-color: white;
+        }
+
+        .appIcons {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 10px;
+            align-items: start;
+            transform: translateY(-500px);
+        }
+
+        .appGrid {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 15px;
+        }
+
+        header {
+            padding: 15px;
+            text-align: center;
+            font-size: 40px;
+            color: white;
+        }
+
+        article {
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+        }
+
+        .chapter-content {
+            display: none;
+        }
+
+        .chapter-content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function show(shown, hidden) {
+            document.getElementById(shown).style.display = 'block';
+            document.getElementById(hidden).style.display = 'none';
+            window.scrollTo(0, 0);
+            return false;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="Page1">
+        <div class="humantooth" style="max-width: 100px; max-height: 200px; transform: translate(500px, 450px);">
+            <img src="wallMazeThingy.webp" style="max-width: 100px; max-height: 200px;">
+        </div>
+        <div class="humantooth" style="max-width: 100px; max-height: 200px; transform: translate(700px, 200px);">
+            <img src="binary thingy.webp" style="max-width: 100px; max-height: 200px;">
+        </div>
+        <div class="humantooth" style="max-width: 100px; max-height: 200px; transform: translate(1000px, 100px);">
+            <img src="weirdcorePopup.webp" style="max-width: 100px; max-height: 200px;">
+        </div>
+        <div class="humantooth" style="max-width: 100px; max-height: 200px; transform: translate(900px, -300px);">
+            <img src="100thVistorPopUp.gif" style="max-width: 100px; max-height: 200px;">
+        </div>
+        <div class="appGrid">
+            <div class="appIcons">
+                <a href="#" onclick="return show('Page2','Page1');"><img src="JWAicon.png"
+                        style="width: 75px; height: 75px;"></a>
+                <a href="#" onclick="return show('Page3','Page1');"><img src="kabutoParkIcon.png"
+                        style="width: 75px; height: 75px;"></a>
+                <a href="#" onclick="return show('Page4','Page1');"><img src="littleNightmaresIcon.png"
+                        style="width: 75px; height: 75px;"></a>
+                <a href="#" onclick="return show('Page5','Page1');"><img src="vlnIcon.png"
+                        style="width: 75px; height: 75px;"></a>
+                <a href="#" onclick="return show('Page6','Page1');"><img src="MCicon.png"
+                        style="width: 75px; height: 75px;"></a>
+                <a href="#" onclick="return show('Page7','Page1');"><img src="rainWorldIcon.png"
+                        style="width: 75px; height: 75px;"></a>
+                <a href="#" onclick="return show('Page8','Page1');"><img src="sdsIcon.png"
+                        style="width: 75px; height: 75px;"></a>
+                <a href="#" onclick="return show('Page9','Page1');"><img src="crIcon.png"
+                        style="width: 75px; height: 75px;"></a>
+                <a href="#" onclick="return show('Page10','Page1');"><img src="myGamesFolder.png"
+                        style="width: 75px; height: 75px;"></a>
+                <a href="#" onclick="return show('Page11','Page1');"><img src="welcomeFolder.png"
+                        style="width: 75px; height: 75px;"></a>
+            </div>
+        </div>
+    </div>
+    <div id="Page2" style="display: none;">
+        <div class="phrog">
+            <header>Jurrasic World Alive</header>
+            <article>JWA(I am not gonna type out JWA out every single time) is a mobile game and one of those that I have a love hate relationship with, just like 90% of mobile games out there. On one hand, it has really good models and designs(for the most part) but then on the other hand, it is so hard to progress while being free to play(I refuse to give ludia my money). Though, they have been better at making it better for free to play players with the number of events, esspecially all the stuff because of jurrasic world dominion.</article>
+            <header>My Deck</header>
+            
+        </div>
+        <header><a href="#" onclick="return show('Page1','Page2');">BACK</a></header>
+    </div>
+    <div id="Page3" style="display: none;">
+        <div class="phrog">
+            <header>Kabuto Park</header>
+        </div>
+        <header><a href="#" onclick="return show('Page1','Page3');">BACK</a></header>
+    </div>
+    <div id="Page4" style="display: none;">
+        <div class="phrog">
+            <header>Little Nightmares</header>
+        </div>
+        <header><a href="#" onclick="return show('Page1','Page4');">BACK</a></header>
+    </div>
+    <div id="Page5" style="display: none;">
+        <div class="phrog">
+            <header>Very Little Nightmares</header>
+        </div>
+        <header><a href="#" onclick="return show('Page1','Page5');">BACK</a></header>
+    </div> 
+    <div id="Page6" style="display: none;">
+        <div class="phrog">
+            <header>Minecraft</header>
+        </div>
+        <header><a href="#" onclick="return show('Page1','Page6');">BACK</a></header>
+    </div>
+    <div id="Page7" style="display: none;">
+        <div class="phrog">
+            <header>Rain World</header>
+        </div>
+        <header><a href="#" onclick="return show('Page1','Page7');">BACK</a></header>
+    </div>
+    <div id="Page8" style="display: none;">
+        <div class="phrog">
+            <header>Super Doomspire</header>
+        </div>
+        <header><a href="#" onclick="return show('Page1','Page8');">BACK</a></header>
+    </div>
+    <div id="Page9" style="display: none;">
+        <div class="phrog">
+            <header>Clash Royale</header>
+        </div>
+        <header><a href="#" onclick="return show('Page1','Page9');">BACK</a></header>
+    </div> 
+    <div id="Page10" style="display: none;">
+        <div class="phrog">
+            <header>Games I've Made</header>
+        </div>
+        <header><a href="#" onclick="return show('Page1','Page10');">BACK</a></header>
+    </div>
+    <div id="Page11" style="display: none;">
+        <div class="phrog">
+            <header>All the other stuff about gaming</header>
+        </div>
+        <header><a href="#" onclick="return show('Page1','Page11');">BACK</a></header>
+    </div>
+</body>
+
+</html>
