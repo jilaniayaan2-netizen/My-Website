@@ -1,75 +1,99 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ayaan Does Things</title>
-        <style>
-             html, body{overflow:hidden;}
-        </style>
 
-        <body style="background-image:url(wooden-texture-background-real-old-wood-wall-weathered-wood_120872-10410.jpg);">
-            <img src ="Your_paragraph_text__1_-removebg-preview.png" style="transform: translate(-130px, -45px)">
-            <img src ="shelf-removebg-preview.png" style="transform: translate(50px, -200px)"> 
-            <img src ="Untitled_design__4_-removebg-preview.png" style="transform: translate(-400px, 250px)">
+<head>
+    <title>Ayaan Does Things</title>
+    <style>
+        html,body {
+            overflow-y: hidden;
+        }
 
-            <div class="image-container">
-                <a href="nature_things.html">
-                    <img src="insects__1_-removebg-preview.png" style="transform: translate(350px, -435px);">
-                </a>
-            </div> 
-            
-            <div class="image-container">
-                <a href="myWriting.html">
-                    <img src="typewriter-removebg-preview.png" style="transform: translate(625px, -375px);">
-                </a>
-            </div>
+        .imgtxt {
+            width: fit-content;
+            height: fit-content;
+            display: inline-block;
+            position: relative;
+        }
 
-            <div class="image-container">
-                <a href="nature_things.html">
-                    <img src="notebook__1_-removebg-preview.png" style="transform: translate(525px, -475px);">
-                </a>
-            </div>
+        .imgtxt span {
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+            font-size: 2.5rem;
+            color: #FFF;
+            filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(1px -1px 0 black) drop-shadow(-1px -1px 0 black);
+        }
 
-            <div class="image-container">
-                <a href="aliens.html">
-                    <img src="alien-removebg-preview.png" style="transform: translate(650px, -800px);">
-                </a>
-            </div>
+        .imgtxt:hover span,
+        .imgtxt:focus span {
+            opacity: 1;
+        }
 
-            <div class="image-container">
-                <a href="clay_monsters.html">
-                    <img src="ball_of_eyes-removebg-preview.png" style="transform: translate(750px, -850px);">
-                </a>
-            </div>
+        .imgtxt:hover img,
+        .imgtxt:focus img {
+            filter: grayscale();
+            rotate: 1deg;
+        }
+    </style>
 
-            <div class="image-container">
-                <a href="videoGames.html">
-                    <img src="games-removebg-preview.png" style="transform: translate(700px, -975px);">
-                </a>
-            </div>
+<body style="background-image:url(wooden-texture-background-real-old-wood-wall-weathered-wood_120872-10410.jpg);">
+    <img src="Your_paragraph_text__1_-removebg-preview.png" style="transform: translate(-130px, -45px)">
+    <img src="shelf-removebg-preview.png" style="transform: translate(50px, -200px)">
+    <img src="Untitled_design__4_-removebg-preview.png" style="transform: translate(-400px, 250px)">
 
-            <div class="image-container">
-                <a href="fandoms.html">
-                    <img src="godzilla-removebg-preview.png" style="transform: translate(800px, -1025px);">
-                </a>
-            </div>
+    <a href="nature_things.html" class="imgtxt">
+        <img src="insects__1_-removebg-preview.png" alt="" style="transform: translate(400px, -600px);">
+        <span style="transform: translate(350px, -650px);">Nature Things</span>
+    </a>
 
-            <div class="image-container">
-                <a href="books.html">
-                    <img src="books-removebg-preview.png" style="transform: translate(700px, -1135px);">
-                </a>
-            </div> 
+    <a href="myWriting.html" class="imgtxt">
+        <img src="typewriter-removebg-preview.png" alt="" style="transform: translate(400px, -375px);">
+        <span style="transform: translate(350px, -425px);">My Writing</span>
+    </a>
 
-            <div class="image-container">
-                <a href="nature_things.html">
-                    <img src="door__1_-removebg-preview.png" style="transform: translate(150px, -970px);">
-                </a>
-            </div> 
+    <a href="/.html" class="imgtxt" >
+        <img src="notebook__1_-removebg-preview.png" alt="" style="transform: translate(150px, -350px);">
+        <span style="transform: translate(100px, -400px);">Blog</span>
+    </a>
 
-            <div class="image-container">
-                <a href="nature_things.html">
-                    <img src="backdoor-removebg-preview.png" style="transform: translate(1000px, -1370px);">
-                </a>
-            </div> 
-        </body>
-    </head>
+    <a href="aliens.html" class="imgtxt">
+        <img src="alien-removebg-preview.png" alt="" style="transform: translate(150px, -650px);">
+        <span style="transform: translate(100px, -700px);">My Aliens</span>
+    </a>
+
+    <a href="clay_monsters.html" class="imgtxt">
+        <img src="ball_of_eyes-removebg-preview.png" alt="" style="transform: translate(200px, -650px);">
+        <span style="transform: translate(150px, -700px);">My Clay Monsters</span>
+    </a>
+
+    <a href="videoGames.html" class="imgtxt">
+        <img src="games-removebg-preview.png" alt="" style="transform: translate(100px, -700px);">
+        <span style="transform: translate(50px, -750px);">Video Games</span>
+    </a>
+
+    <a href="fandoms.html" class="imgtxt" style="transform: translate(50px, -750px);">
+        <img src="godzilla-removebg-preview.png" alt="">
+        <span style="transform: translate(-75px, -25px);">Fandoms</span>
+    </a>
+
+    <a href="books.html" class="imgtxt">
+        <img src="books-removebg-preview.png" alt="" style="transform: translate(100px, -755px);">
+        <span style="transform: translate(50px, -805px);">Books</span>
+    </a>
+
+    <a href="/.html" class="imgtxt">
+        <img src="door__1_-removebg-preview.png" alt="" style="transform: translate(-700px, -150px);">
+        <span style="transform: translate(-750px, -200px);">Go outside?</span>
+    </a>
+
+    <a href="/.html" class="imgtxt">
+        <img src="backdoor-removebg-preview.png" alt="" style="transform: translate(50px, -150px);">
+        <span style="transform: translate(25px, -150px);">Don't go there.</span>
+    </a>
+</body>
+</head>
+
 </html>
