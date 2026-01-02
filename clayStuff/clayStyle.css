@@ -31,6 +31,32 @@ article {
     color: aliceblue;
 }
 
+.inspoGrid {
+    display: flex;
+    justify-content: center; 
+    padding: 20px;
+}
+
+.inspirationPotraits {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    width: 100%;
+    max-width: 800px; 
+}
+
+.inspirationPotraits img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; 
+    transition: transform 0.2s;
+}
+
+.inspirationPotraits img:hover {
+    transform: scale(1.05);
+}
+
 @font-face {
     font-family: Kinda3D-Bgdl;
     src: url(Kinda3D-Bgdl.ttf)
