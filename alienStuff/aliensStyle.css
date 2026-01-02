@@ -1,0 +1,33 @@
+.broider {
+    border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACoElEQVR4AeycbW4bMQxEXd+lRwxyhqJHzGFaCDAEeYSAneVsFnVeAMGk+SHqSaHWf/Z+4y9KAKBRnLcbQAEaJhBOV57Q94+3P84I13d6Omdtw7cqqARaJcD+TACgzzzaGkDbCJ8TbEBHn1jHr5+/fzhjjR3y83TXa6OmdThrG75r7JB1RRtQdUD3CADU41V6A7RE5DkcAerN8M28ARrecIACNEwgnO4+nqXWoflX27/IVbzaz9a1Zp1P7ZVexfMvr4SaOkCbADUcoEqkqW9Ax+/VdWj+1TZk1649SuPPto+a16Hzr7Yhu/YNqCZA9wgA1ONVegO0ROQ5bEBP6mGzqtGX1jEND2G1Dfnx9fwY361jGh7Cahvy4+v5cfb6NqBzZoRDBAB6CNvnQQD9nM0hy330ma8ch6psBLlr06nceE6oEmzqAG0C1HCAKpGmbgOtnuOa9Vwerj3TLcgG6k7w3fwBGt5xgF4NtNtjjPovce3eEZzQ8LYBFKBhAuF09gnt9phw/fF03TvCBhpfwYslBGh4QwF6NdBujwnXH0/XvSM4oeEtAShAwwTC6ewT2u0x4fo1XVvv3hE20HbFL54AoOENBujVQLs9Jlx/PF33juCEhrcEoAANEwins09ot8eE64+n694RNtD4Cl4sIUDDGwrQrwZa9czKHq43nu794y36XipOaHiLAArQMIFwuu2Eak/U57JK1/hwve10Wl+1HrVrvBa0AVUHdI8AQD1epTdAS0SeA0A9XqU3QEtEngNAPV6lN0BLRJ4D72069o7pSVmfSzmhE01GAGiG48wC0IkiI2xA9berTtO1a8/R/Gfbu/VX8RtQXSC6RwCgHq/SG6AlIs9hA/q/97Cqx529vg2otx94KwGAKpGmDtAmQA3/CwAA//+1MQtpAAAABklEQVQDALtb3CbjeGxKAAAAAElFTkSuQmCC") 28 / 28px / 0 round;
+    border-width: 28px;
+    border-style: solid;
+    background-color: black
+}
+
+.imageBorder {
+    border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACJklEQVR4AezbQU7DQAyF4cBJuuipekBOxYKbwAYhzavip9cxdEh+pC6Mx07my8hqVfV1k7/r5fbZ+ZL2hw/vQA+/41/eIKDNwIB2g+q8fP94e+l8af//Hjt/TqgTCvOAhmBuOaBOKMxbUJ152t/ldX3nfH5GL7dfC6ogxLUAoLVPnAU0JqsLLKjOqevlNnzW13x9uW3TGbR67PajeQuqBcS1AKC1T5wFNCarCyyozjidmZqvL7dtWr9a7O7f5S2oa0B+FAB09JiOAJ0mHBtYUJ1xY/n9TNT82WILejaQ2f0COiso9YAKyGz4qjNS31fOxt/9f76nmr3h1es5oc1PCFBAmwWa29kT6mag5jVuvt/l21nQ5Xew2A0C2vxAAAW0WaC5HScU0GaB5nac0BOBNm/1b9pxQpudAQW0WaC5HScU0GaB5nacUECbBZrbcUIBbRZobscJBbRZoLnd0U5oM0/eDtDcrKwAtOTJk4DmZmUFoCVPngQ0NysrAC158iSguVlZAWjJkycBzc3KCkBLnjwJaG5WVgC6bSVQmgQ0FTPrATVAaRrQVMysB9QApWlAUzGzHlADlKYBTcXM+mnQ2d+CrlZvvGx6GtRe4WQLAG1+4IA+G1R/y3n0eMd799+c0F2axxKAPua2WwXoLs1jiTtQnYmrvU989v2oj7LfgeoC4kwA0MzLrgbUEmULLKjOjLPHjteCugbkRwFAR4/pCNBpwrHBFwAAAP//Bqm1dwAAAAZJREFUAwDJmXDlsLomnAAAAABJRU5ErkJggg==') 28 / 28px / 0 round;
+    border-width: 28px;
+    border-style: solid;
+}
+
+header {
+    padding: 15px;
+    text-align: center;
+    font-size: 40px;
+    font-family: alien;
+    color: rgb(156, 212, 71);
+}
+
+article {
+    padding: 20px;
+    text-align: left;
+    font-size: 20px;
+    font-family: alien;
+    color: rgb(156, 212, 71);
+}
+
+@font-face {
+    font-family: alien;
+    src: url(AlienCybernetics-vnj97.ttf)
+}
