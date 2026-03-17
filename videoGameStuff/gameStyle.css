@@ -1,11 +1,36 @@
 html,
 body {
-    overflow-x: hidden;
     background-image: url(gameBackground.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.pop-up-1 {
+    position: absolute;
+    left: 55%;
+}
+
+.pop-up-2 {
+    position: absolute;
+    left: 75%;
+}
+
+.pop-up-3 {
+    position: absolute;
+    left: 45%;
+}
+
+.pop-up-4 {
+    position: absolute;
+    left: 60%;
 }
 
 .phrog {
@@ -29,20 +54,11 @@ body {
     background-color: rgba(85, 107, 47, 0.808);
 }
 
-
-
-.appIcons {
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 10px;
-    align-items: start;
-    transform: translateY(-500px);
-}
-
 .appGrid {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 15px;
+    padding: 10px;
+    column-gap: 5px;
 }
 
 header {
@@ -68,8 +84,9 @@ article {
 }
 
 .gameContent {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    transform: translateX(100px);
 }
 
 .jwaDinos {
@@ -77,7 +94,6 @@ article {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     align-items: start;
-    transform: translateX(125px);
 }
 
 .jwaDinoGrid {
@@ -86,30 +102,53 @@ article {
     padding: 15px;
 }
 
-.rainWorld-grid {
+.rainworld {
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: row;
 }
 
-.rainWorld {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    align-items: start;
-}
-
-.ClashDecks-grid {
+.rainWorldImage {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+}
+
+.spacer {
+    height: 10vw;
+}
+
+.home-spacer {
+    height: 10vw;
 }
 
 .ClashDecks {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    align-items: start;
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1024px) {
+    .home-spacer {
+        height: 10vw;
+    }
+
+    .pop-up-1 {
+        position: absolute;
+        left: 65%;
+    }
+
+    .pop-up-2 {
+        position: absolute;
+        left: 85%;
+    }
+
+    .pop-up-3 {
+        position: absolute;
+        left: 45%;
+    }
+
+    .pop-up-4 {
+        position: absolute;
+        left: 70%;
+    }
 }

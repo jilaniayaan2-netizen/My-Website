@@ -5,489 +5,711 @@
     <title>Ayaan's books stuff</title>
     <link rel="stylesheet" href="booksSytle.css">
     <script src="../multiplePages.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
     <div id="main">
-        <div class="border" style="width: 800px; transform: translateX(250px);">
-            <div class="row-container">
-                <div>
+        <div class="alignment">
+            <div class="border">
+                <div class="row-container">
                     <header style="text-align: left; width: 400px; font-size: 60px;">The Book Nook</header>
-                </div>
-                <div>
                     <img src="bookSketch.png">
                 </div>
-            </div>
-            <div class="row-container">
-                <div>
-                    <article><a href="#" onclick="return show('childhood','main');">Childhood Books</a></article>
+                <div class="row-container">
+                    <div>
+                        <article><a href="#" onclick="return show('childhood','main');">Childhood Books</a></article>
+                    </div>
+                    <div>
+                        <article><a href="#" onclick="return show('read','main');">Books I've Read</a></article>
+                    </div>
+                    <div>
+                        <article><a href="#" onclick="return show('reading','main');">Currently Reading</a></article>
+                    </div>
                 </div>
-                <div>
-                    <article><a href="#" onclick="return show('read','main');">Books I've Read</a></article>
+                <div class="row-container">
+                    <div>
+                        <article><a href="#" onclick="return show('wishlist','main');">Wishlist</a></article>
+                    </div>
+                    <div>
+                        <article><a href="#" onclick="return show('Recommendations','main');">Recommendations</a>
+                        </article>
+                    </div>
                 </div>
-                <div>
-                    <article><a href="#" onclick="return show('reading','main');">Currently Reading</a></article>
-                </div>
-            </div>
-            <div class="row-container" style="transform: translateX(100px);">
-                <div>
-                    <article><a href="#" onclick="return show('wishlist','main');">Wishlist</a></article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('Recommendations','main');">Recommendations</a></article>
-                </div>
-            </div>
 
-            <header>Welcome to my Book Nook</header>
-            <article>
-                Before grade 5, I only read non-fiction(mainly books about dinosaurs and animals). In fact, I
-                didn't read any fiction books because I though they were boring and silly(since they were made up). This
-                all changed when a certain book caught my eye in the paper for the book fair: Percy Jackson. Ever since
-                then, I've been reading a lot, whether that be manga or novels. So, now I want to share some of my
-                favorite books here.
-            </article>
-            <img src="anotherBookSketch.png" style="transform: translateX(250px);">
+                <header>Welcome to my Book Nook</header>
+                <article>
+                    Before grade 5, I only read non-fiction(mainly books about dinosaurs and animals). In fact, I
+                    didn't read any fiction books because I though they were boring and silly(since they were made up).
+                    This
+                    all changed when a certain book caught my eye in the paper for the book fair: Percy Jackson. Ever
+                    since
+                    then, I've been reading a lot, whether that be manga or novels. So, now I want to share some of my
+                    favorite books here.
+                </article>
+                <img src="anotherBookSketch.png" style="transform: translateX(250px);">
+            </div>
         </div>
     </div>
 
     <div id="childhood" style="display: none;">
-        <div class="border" style="width: 800px; transform: translateX(250px);">
-            <div class="row-container">
-                <div>
-                    <header style="text-align: left; width: 400px;">The Book Nook</header>
-                </div>
-                <div>
+        <div class="alignment">
+            <div class="border">
+                <div class="row-container">
+                    <header style="text-align: left; width: 400px; font-size: 60px;">The Book Nook</header>
                     <img src="bookSketch.png">
                 </div>
-            </div>
-            <div class="row-container">
-                <div>
-                    <article><a href="#" onclick="return show('main','childhood');">main</a></article>
+                <div class="row-container">
+                    <div>
+                        <article><a href="#" onclick="return show('main','childhood');">main</a></article>
+                    </div>
+                    <div>
+                        <article><a href="#" onclick="return show('read','childhood');">Books I've Read</a></article>
+                    </div>
+                    <div>
+                        <article><a href="#" onclick="return show('reading','childhood');">Currently Reading</a>
+                        </article>
+                    </div>
                 </div>
-                <div>
-                    <article><a href="#" onclick="return show('read','childhood');">Books I've Read</a></article>
+                <div class="row-container">
+                    <div>
+                        <article><a href="#" onclick="return show('wishlist','childhood');">Wishlist</a></article>
+                    </div>
+                    <div>
+                        <article><a href="#" onclick="return show('Recommendations','childhood');">Recommendations</a>
+                        </article>
+                    </div>
                 </div>
-                <div>
-                    <article><a href="#" onclick="return show('reading','childhood');">Currently Reading</a></article>
-                </div>
-            </div>
-            <div class="row-container" style="transform: translateX(100px);">
-                <div>
-                    <article><a href="#" onclick="return show('wishlist','childhood');">Wishlist</a></article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('Recommendations','childhood');">Recommendations</a>
-                    </article>
-                </div>
-            </div>
 
-            <header>My Childhood Books</header>
-            <div class="bookGrid">
-                <div class="bookCovers">
-                    <a href="#" onclick="return show('percyJackson','childhood');"><img src="percyJackson.jpg">></a>
-                    <a href="#" onclick="return show('heroesOfOlympus','childhood');"><img
-                            src="heroesOfOlympus.jpg">></a>
-                    <a href="#" onclick="return show('kaneChronicles','childhood');"><img src="kaneChronicles.jpg">></a>
-                    <a href="#" onclick="return show('magnusChase','childhood');"><img src="magnusChase.jpg">></a>
-                    <a href="#" onclick="return show('overthrowTrilogy','childhood');"><img
-                            src="overthrowTrilogy.jpg">></a>
-                    <a href="#" onclick="return show('wingsOfFire','childhood');"><img src="wingsOfFire.jpg">></a>
-                    <a href="#" onclick="return show('keeperOfTheLostCities','childhood');"><img
-                            src="keeperOfTheLostCities.jpg">></a>
-                    <a href="#" onclick="return show('lastKidsOnEarth','childhood');"><img
-                            src="lastKidsOnEarth.jpg">></a>
-                    <a href="#" onclick="return show('httyd','childhood');"><img src="httyd.jpg">></a>
-                    <a href="#" onclick="return show('oragamiYoda','childhood');"><img src="oragamiYoda.jpg">></a>
-                    <a href="#" onclick="return show('dairyOfAWimpyKid','childhood');"><img
-                            src="dairyOfAWimpyKid.jpg">></a>
-                    <a href="#" onclick="return show('gooseBumps','childhood');"><img src="gooseBumps.jpg">></a>
-                    <a href="#" onclick="return show('unplugged','childhood');"><img src="unplugged.jpg">></a>
-                    <a href="#" onclick="return show('schooled','childhood');"><img src="schooled.jpg">></a>
+                <header>My Childhood Books</header>
+                <div class="bookGrid">
+                    <div class="bookCovers">
+                        <a href="#" onclick="return show('percyJackson','childhood');"><img src="percyJackson.jpg"></a>
+                        <a href="#" onclick="return show('heroesOfOlympus','childhood');"><img
+                                src="heroesOfOlympus.jpg"></a>
+                        <a href="#" onclick="return show('kaneChronicles','childhood');"><img
+                                src="kaneChronicles.jpg"></a>
+                        <a href="#" onclick="return show('magnusChase','childhood');"><img src="magnusChase.jpg"></a>
+                        <a href="#" onclick="return show('overthrowTrilogy','childhood');"><img
+                                src="overthrowTrilogy.jpg">></a>
+                        <a href="#" onclick="return show('wingsOfFire','childhood');"><img src="wingsOfFire.jpg"></a>
+                        <a href="#" onclick="return show('keeperOfTheLostCities','childhood');"><img
+                                src="keeperOfTheLostCities.jpg">></a>
+                        <a href="#" onclick="return show('lastKidsOnEarth','childhood');"><img
+                                src="lastKidsOnEarth.jpg"></a>
+                        <a href="#" onclick="return show('httyd','childhood');"><img src="httyd.jpg"></a>
+                        <a href="#" onclick="return show('oragamiYoda','childhood');"><img src="oragamiYoda.jpg"></a>
+                        <a href="#" onclick="return show('dairyOfAWimpyKid','childhood');"><img
+                                src="dairyOfAWimpyKid.jpg"></a>
+                        <a href="#" onclick="return show('gooseBumps','childhood');"><img src="gooseBumps.jpg"></a>
+                        <a href="#" onclick="return show('unplugged','childhood');"><img src="unplugged.jpg"></a>
+                        <a href="#" onclick="return show('schooled','childhood');"><img src="schooled.jpg"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div id="percyJackson" style="display: none;">
-        <div class="border">
-            <header>The Percy Jackson Series</header>
-            <article>
-                Percy Jackson was THE book series that got me into reading in the first place. I saw it in the
-                bookfair paper and after begging my mom to pay 30 bucks, I got all 5 books. I was hooked and
-                finished all 5 books within a month and I was then on the hunt for the next book to read. In
-                fact,
-                for a long time, I was only reading Rick Riodan because of how much I liked Percy Jackson. I
-                think
-                the main thing that really pulled me into Percy Jackson was the action, I was a pretty simple
-                minded
-                kid and imagining a kid running the ones with Aries is extremely captivating. Other than that,
-                Percy
-                is just a great main charecter.
-            </article>
-            <header><a href="#" onclick="return show('childhood','percyJackson');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>The Percy Jackson Series</header>
+                <article>
+                    Percy Jackson was THE book series that got me into reading in the first place. I saw it in the
+                    bookfair paper and after begging my mom to pay 30 bucks, I got all 5 books. I was hooked and
+                    finished all 5 books within a month and I was then on the hunt for the next book to read. In
+                    fact,
+                    for a long time, I was only reading Rick Riodan because of how much I liked Percy Jackson. I
+                    think
+                    the main thing that really pulled me into Percy Jackson was the action, I was a pretty simple
+                    minded
+                    kid and imagining a kid running the ones with Aries is extremely captivating. Other than that,
+                    Percy
+                    is just a great main charecter.
+                </article>
+                <header><a href="#" onclick="return show('childhood','percyJackson');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="heroesOfOlympus" style="display: none;">
-        <div class="border">
-            <header>The Heroes of Olympus Series</header>
-            <article>
-                This is a continuation of Percy Jackson as we see the goat once more but we also get to see some roman
-                gods, which are just ripoffs of the greek ones but I digress. This book series was also amazing because
-                we got to see more world building like with the introduction of the roman camp and it was also
-                interesting to see Percy lose his memory, leading to essentially a repeat of what happened in book one.
-                My favorite part of this book was probably seeing Percy and Annabeth going down to Tartarus,
-                surviving(like the goats they are)
-                and then bassically turning Percy into Achilles. The other charecters they introduced aren't the most
-                memorable(it might be because I last read these book years ago). Once I get around to rereading this
-                series(along with all the others in this section of my website) I will put a rating down.
-            </article>
-            <header><a href="#" onclick="return show('childhood','heroesOfOlympus');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>The Heroes of Olympus Series</header>
+                <article>
+                    This is a continuation of Percy Jackson as we see the goat once more but we also get to see some
+                    roman
+                    gods, which are just ripoffs of the greek ones but I digress. This book series was also amazing
+                    because
+                    we got to see more world building like with the introduction of the roman camp and it was also
+                    interesting to see Percy lose his memory, leading to essentially a repeat of what happened in book
+                    one.
+                    My favorite part of this book was probably seeing Percy and Annabeth going down to Tartarus,
+                    surviving(like the goats they are)
+                    and then bassically turning Percy into Achilles. The other charecters they introduced aren't the
+                    most
+                    memorable(it might be because I last read these book years ago). Once I get around to rereading this
+                    series(along with all the others in this section of my website) I will put a rating down.
+                </article>
+                <header><a href="#" onclick="return show('childhood','heroesOfOlympus');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="kaneChronicles" style="display: none;">
-        <div class="border">
-            <header>The Kane Chronicles Series</header>
-            <article>
-                Kane Chronicals was also very nice, I didn't really know it existed and only found it by my cousin
-                giving me all three books. I liked the way that the powers in this book worked, instead of demi-gods
-                that have innate powers, the charecters use magic. This led to some really cool scenes like when Carter
-                makes a huge magic avatar of Horus. Another thing I like, which I like about all Rick Riodan books, is
-                that we get to explore different mythologies and Egyptian mythology is just so cool. I also really
-                enjoyed the sentiant baboon, that was a ton of fun for little me.
-            </article>
-            <header><a href="#" onclick="return show('childhood','kaneChronicles');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>The Kane Chronicles Series</header>
+                <article>
+                    Kane Chronicals was also very nice, I didn't really know it existed and only found it by my cousin
+                    giving me all three books. I liked the way that the powers in this book worked, instead of demi-gods
+                    that have innate powers, the charecters use magic. This led to some really cool scenes like when
+                    Carter
+                    makes a huge magic avatar of Horus. Another thing I like, which I like about all Rick Riodan books,
+                    is
+                    that we get to explore different mythologies and Egyptian mythology is just so cool. I also really
+                    enjoyed the sentiant baboon, that was a ton of fun for little me.
+                </article>
+                <header><a href="#" onclick="return show('childhood','kaneChronicles');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="magnusChase" style="display: none;">
-        <div class="border">
-            <header>The Magnus Chase Series</header>
-            <article>
-                Magnus Chase is the norse mythology entry for Rick Riodan's catalogue and I enjoyed this series
-                throughly as well, which of course I did because it's by Rick Riodan. It introduced more world building
-                aspects and Magnus was a fun protaganist, he reminded me a good lot of Percy, who also shows up in this
-                book series.
-            </article>
-            <header><a href="#" onclick="return show('childhood','magnusChase');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>The Magnus Chase Series</header>
+                <article>
+                    Magnus Chase is the norse mythology entry for Rick Riodan's catalogue and I enjoyed this series
+                    throughly as well, which of course I did because it's by Rick Riodan. It introduced more world
+                    building
+                    aspects and Magnus was a fun protaganist, he reminded me a good lot of Percy, who also shows up in
+                    this
+                    book series.
+                </article>
+                <header><a href="#" onclick="return show('childhood','magnusChase');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="dairyOfAWimpyKid" style="display: none;">
-        <div class="border">
-            <header>The Diary of a Wimpy Kid Series</header>
-            <article>
-                If you haven't read Diary of a Wimpy Kid as a child, you're either a fetus or an ancient relic of a
-                human, me being gen z, I obviously read Diary of a Wimpy Kid when I was younger. The first few books
-                were incredibly relatable, with my favorite being rodrick rules(since I am the older brother). I also
-                remember that whenever I went to Costco and saw the new Diary of the Wimpy Kid book and getting my mom
-                to buy it, this continued into middle school and stopped by grade 8 since I: A. grew up and B. Costco
-                removed the book section. I do miss the old Diary of a Wimpy Kid books, as compared to a lot of the new
-                ones, they felt more like an actual middle schooler's journel, while the new ones just felt like the
-                author wrote about a bad, drug induced dream.
-            </article>
-            <header><a href="#" onclick="return show('childhood','dairyOfAWimpyKid');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>The Diary of a Wimpy Kid Series</header>
+                <article>
+                    If you haven't read Diary of a Wimpy Kid as a child, you're either a fetus or an ancient relic of a
+                    human, me being gen z, I obviously read Diary of a Wimpy Kid when I was younger. The first few books
+                    were incredibly relatable, with my favorite being rodrick rules(since I am the older brother). I
+                    also
+                    remember that whenever I went to Costco and saw the new Diary of the Wimpy Kid book and getting my
+                    mom
+                    to buy it, this continued into middle school and stopped by grade 8 since I: A. grew up and B.
+                    Costco
+                    removed the book section. I do miss the old Diary of a Wimpy Kid books, as compared to a lot of the
+                    new
+                    ones, they felt more like an actual middle schooler's journel, while the new ones just felt like the
+                    author wrote about a bad, drug induced dream.
+                </article>
+                <header><a href="#" onclick="return show('childhood','dairyOfAWimpyKid');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="overthrowTrilogy" style="display: none;">
-        <div class="border">
-            <header>The Overthrow Trilogy</header>
-            <article>
-                The overthrow trilogy(from what I remember) was about dangerous plants suddenly popping up across the
-                world, our 3 main charecter meet up and then they learn they each have an attribute of a different
-                animal, those being a kangaroo, lizard, and bird. In book two, giant bugs begin showing up and they also
-                get captured by the government where they meet others like them. Book 3 is the full scale alien
-                invasion, with the plants and bugs being used to terraform the earth. My quick overview does not do this
-                series justice because for a children's book, it doesn't beat around the bush at all when it comes to
-                what
-                one of the alien races is doing to the others(kinda reminds me of Wings of Fire in that aspect). I also
-                really love the idea of aliens terraforming a planet using mosterous plants and bugs. I'd say the main
-                draw though was the charecters, two of them had a dynamic of friends that are no longer friends(which 13
-                year old me could relate to) but slowly rekindle their friendship. I really need to reread this series
-                because I remember that this series was amazing and incredibly underrated.
-                <header><a href="#" onclick="return show('childhood','overthrowTrilogy');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>The Overthrow Trilogy</header>
+                <article>
+                    The overthrow trilogy(from what I remember) was about dangerous plants suddenly popping up across
+                    the
+                    world, our 3 main charecter meet up and then they learn they each have an attribute of a different
+                    animal, those being a kangaroo, lizard, and bird. In book two, giant bugs begin showing up and they
+                    also
+                    get captured by the government where they meet others like them. Book 3 is the full scale alien
+                    invasion, with the plants and bugs being used to terraform the earth. My quick overview does not do
+                    this
+                    series justice because for a children's book, it doesn't beat around the bush at all when it comes
+                    to
+                    what
+                    one of the alien races is doing to the others(kinda reminds me of Wings of Fire in that aspect). I
+                    also
+                    really love the idea of aliens terraforming a planet using mosterous plants and bugs. I'd say the
+                    main
+                    draw though was the charecters, two of them had a dynamic of friends that are no longer
+                    friends(which 13
+                    year old me could relate to) but slowly rekindle their friendship. I really need to reread this
+                    series
+                    because I remember that this series was amazing and incredibly underrated.
+                    <header><a href="#" onclick="return show('childhood','overthrowTrilogy');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="wingsOfFire" style="display: none;">
-        <div class="border">
-            <header>The Wings of Fire</header>
-            <article>
-                Wings of Fire is so, so good. It was one of those books series which doesn't beat around the
-                bush(something I loved as a kid) and it's not just a simple story about dragons destined to stop a war.
-                There's a ton of politics between the different dragons, esspecially the Nightwings using their
-                reputation to bassically CIA their way to getting out of their volcanoe home. I'd say my favorite
-                dragonette is Clay because he gives off this older brother and gentle giant vibe, something I personally
-                strive for. Another thing that this series did which was really unique was that each book is from a
-                different perspective, which made it a lot easier to like all of the charecters. I also really like how
-                they did humans in this series, at first my pea brain didn't figure out that Scavengers were acctually
-                humans. It's interesting seeing humans be so sidelined, it was very different from anything else I
-                read at the time.
-                <header><a href="#" onclick="return show('childhood','wingsOfFire');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>The Wings of Fire</header>
+                <article>
+                    Wings of Fire is so, so good. It was one of those books series which doesn't beat around the
+                    bush(something I loved as a kid) and it's not just a simple story about dragons destined to stop a
+                    war.
+                    There's a ton of politics between the different dragons, esspecially the Nightwings using their
+                    reputation to bassically CIA their way to getting out of their volcanoe home. I'd say my favorite
+                    dragonette is Clay because he gives off this older brother and gentle giant vibe, something I
+                    personally
+                    strive for. Another thing that this series did which was really unique was that each book is from a
+                    different perspective, which made it a lot easier to like all of the charecters. I also really like
+                    how
+                    they did humans in this series, at first my pea brain didn't figure out that Scavengers were
+                    acctually
+                    humans. It's interesting seeing humans be so sidelined, it was very different from anything else I
+                    read at the time.
+                    <header><a href="#" onclick="return show('childhood','wingsOfFire');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="keeperOfTheLostCities" style="display: none;">
-        <div class="border">
-            <header>Keeper of the Lost Cities</header>
-            <article>
-                Keeper of the Lost Cities was one of my childhood favorites because for a kid's series, it has pretty
-                complex worldbuilding. That and the villain group in this series feels like an actual threat. The reason
-                for them feeling like a threat is because Sophie and her sqaud don't beat them even once. That and what
-                they did to Kefee in book 8, which in the way it was written, sounded brutal. I also like how Sophie
-                wasn't
-                just some rule following protaganist and instead acctually rebelled against what the Black Swan told her
-                to,
-                like when she destroyed the Neverseen's storage house. Keeper of the Lost Cities reminded me of Percy
-                Jackson
-                quite a bit but I do personally perfer Percy Jackson.
-                <header><a href="#" onclick="return show('childhood','keeperOfTheLostCities');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>Keeper of the Lost Cities</header>
+                <article>
+                    Keeper of the Lost Cities was one of my childhood favorites because for a kid's series, it has
+                    pretty
+                    complex worldbuilding. That and the villain group in this series feels like an actual threat. The
+                    reason
+                    for them feeling like a threat is because Sophie and her sqaud don't beat them even once. That and
+                    what
+                    they did to Kefee in book 8, which in the way it was written, sounded brutal. I also like how Sophie
+                    wasn't
+                    just some rule following protaganist and instead acctually rebelled against what the Black Swan told
+                    her
+                    to,
+                    like when she destroyed the Neverseen's storage house. Keeper of the Lost Cities reminded me of
+                    Percy
+                    Jackson
+                    quite a bit but I do personally perfer Percy Jackson.
+                    <header><a href="#" onclick="return show('childhood','keeperOfTheLostCities');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="lastKidsOnEarth" style="display: none;">
-        <div class="border">
-            <header>The Last Kids on Earth</header>
-            <article>
-                The main draw to this series was its humor, the charecter interactions were the funniest out of the
-                books I read(yes, even more than Diary of a Wimpy kid). That and I liked the twist of the series, I went
-                in expecting it to just be a normal survival apocalypse story with a tinge of romance but it soon became
-                a bunch of kids having to fight interdimensional cultists who want to bring a planet destroyer to earth.
-                Did I also mention that there's magic? That while a surprsing turn of events, was a welcome one and made
-                the series memorable. Other than all that crazy shennagins, Jack is just a great protaganist, he's funny
-                and I can't help but root for him when he's talking to June. Other than that, the entire group just has
-                some of the best synergy that I've seen in a kids book.
-                <header><a href="#" onclick="return show('childhood','lastKidsOnEarth');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>The Last Kids on Earth</header>
+                <article>
+                    The main draw to this series was its humor, the charecter interactions were the funniest out of the
+                    books I read(yes, even more than Diary of a Wimpy kid). That and I liked the twist of the series, I
+                    went
+                    in expecting it to just be a normal survival apocalypse story with a tinge of romance but it soon
+                    became
+                    a bunch of kids having to fight interdimensional cultists who want to bring a planet destroyer to
+                    earth.
+                    Did I also mention that there's magic? That while a surprsing turn of events, was a welcome one and
+                    made
+                    the series memorable. Other than all that crazy shennagins, Jack is just a great protaganist, he's
+                    funny
+                    and I can't help but root for him when he's talking to June. Other than that, the entire group just
+                    has
+                    some of the best synergy that I've seen in a kids book.
+                    <header><a href="#" onclick="return show('childhood','lastKidsOnEarth');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="httyd" style="display: none;">
-        <div class="border">
-            <header>The How to Train your Dragon Series</header>
-            <article>
-                I was very surprised to find out that How to Train your Dragon was based off a book, so, when I saw the
-                book in my school's library, I immediately picked it up. The books are way different than the movies in
-                every single way possible but not in a bad way. Similar to the movies though, the books are a coming of
-                age story of Hiccup. The books also had a lot more death in them. Now, the most memorable thing was the
-                opening lines. "There were dragons when I was boy." This first line is from a now old hiccup and it is
-                an
-                absolute banger, it is melancholic and it immediately made me lock in because I wanted to know what
-                happened
-                to the dragons. I'd say the books are on par with the movies, they were amazing.
-                <header><a href="#" onclick="return show('childhood','httyd');">Back</a></header>
-        </div>
-    </div>
-    <div id="httyd" style="display: none;">
-        <div class="border">
-            <header>The How to Train your Dragon Series</header>
-            <article>
-                I was very surprised to find out that How to Train your Dragon was based off a book, so, when I saw the
-                book in my school's library, I immediately picked it up. The books are way different than the movies in
-                every single way possible but not in a bad way. Similar to the movies though, the books are a coming of
-                age story of Hiccup. The books also had a lot more death in them. Now, the most memorable thing was the
-                opening lines. "There were dragons when I was boy." This first line is from a now old hiccup and it is
-                an
-                absolute banger, it is melancholic and it immediately made me lock in because I wanted to know what
-                happened
-                to the dragons. I'd say the books are on par with the movies, they were amazing.
-                <header><a href="#" onclick="return show('childhood','httyd');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>The How to Train your Dragon Series</header>
+                <article>
+                    I was very surprised to find out that How to Train your Dragon was based off a book, so, when I saw
+                    the
+                    book in my school's library, I immediately picked it up. The books are way different than the movies
+                    in
+                    every single way possible but not in a bad way. Similar to the movies though, the books are a coming
+                    of
+                    age story of Hiccup. The books also had a lot more death in them. Now, the most memorable thing was
+                    the
+                    opening lines. "There were dragons when I was boy." This first line is from a now old hiccup and it
+                    is
+                    an
+                    absolute banger, it is melancholic and it immediately made me lock in because I wanted to know what
+                    happened
+                    to the dragons. I'd say the books are on par with the movies, they were amazing.
+                    <header><a href="#" onclick="return show('childhood','httyd');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="oragamiYoda" style="display: none;">
-        <div class="border">
-            <header>The How to Train your Dragon Series</header>
-            <article>
-                This is one of those books that you forget existed but when you do remember that it was a real book that
-                you read, you have nothing but fond memories. Oragami Yoda is one of those books and even though I
-                wasn't a Starwars fan(I knew very, very little about Starwars) I still throughly enjoyed the books. It
-                reminded me of OG Diary of a Wimpy kid but with the added inclusion of an oracle in the form of Oragami
-                Yoda. Another thing that I still remember about this game was this pencil and paper star wars game that
-                the charecters in the book played. I played the hell out of that game with my friends during sleepovers
-                and hangouts.
-                <header><a href="#" onclick="return show('childhood','oragamiYoda');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>Oragami Yoda</header>
+                <article>
+                    This is one of those books that you forget existed but when you do remember that it was a real book
+                    that
+                    you read, you have nothing but fond memories. Oragami Yoda is one of those books and even though I
+                    wasn't a Starwars fan(I knew very, very little about Starwars) I still throughly enjoyed the books.
+                    It
+                    reminded me of OG Diary of a Wimpy kid but with the added inclusion of an oracle in the form of
+                    Oragami
+                    Yoda. Another thing that I still remember about this game was this pencil and paper star wars game
+                    that
+                    the charecters in the book played. I played the hell out of that game with my friends during
+                    sleepovers
+                    and hangouts.
+                    <header><a href="#" onclick="return show('childhood','oragamiYoda');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="gooseBumps" style="display: none;">
-        <div class="border">
-            <header>Goosebumps</header>
-            <article>
-                I don't think Goosebumps needs an introduction because these books have become insanely famous among
-                children and I was one of those kids who just loved these books. I first discovered Goosebumps in my
-                school library and the book I had picked was "The Blob that Ate Everyone". It isn't my favorite
-                Goosebumps book but it was so different from everything else I was reading at the time that I got reeled
-                into all of R.L Stine's books. There was a time for about a year or so, where everytime I went to my
-                local library, I would solely pick up 2 or 3 Goosebumps books.
-                <header><a href="#" onclick="return show('childhood','gooseBumps');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>Goosebumps</header>
+                <article>
+                    I don't think Goosebumps needs an introduction because these books have become insanely famous among
+                    children and I was one of those kids who just loved these books. I first discovered Goosebumps in my
+                    school library and the book I had picked was "The Blob that Ate Everyone". It isn't my favorite
+                    Goosebumps book but it was so different from everything else I was reading at the time that I got
+                    reeled
+                    into all of R.L Stine's books. There was a time for about a year or so, where everytime I went to my
+                    local library, I would solely pick up 2 or 3 Goosebumps books.
+                    <header><a href="#" onclick="return show('childhood','gooseBumps');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="unplugged" style="display: none;">
-        <div class="border">
-            <header>Unplugged</header>
-            <article>
-                Unplugged was the first book I read from Gordan Korman and I think I had first picked it up because I
-                wanted to try something different and because there's a baby alligator on the cover. This was very
-                different from everything else I read but I really enjoyed it as a teenager. The charecters were
-                really well written which they had to be considering there wasn't much action. I also really liked
-                the baby alligator(Needles), he's so cute.
-                <header><a href="#" onclick="return show('childhood','unplugged');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>Unplugged</header>
+                <article>
+                    Unplugged was the first book I read from Gordan Korman and I think I had first picked it up because
+                    I
+                    wanted to try something different and because there's a baby alligator on the cover. This was very
+                    different from everything else I read but I really enjoyed it as a teenager. The charecters were
+                    really well written which they had to be considering there wasn't much action. I also really liked
+                    the baby alligator(Needles), he's so cute.
+                    <header><a href="#" onclick="return show('childhood','unplugged');">Back</a></header>
+            </div>
         </div>
     </div>
     <div id="schooled" style="display: none;">
-        <div class="border">
-            <header>Unplugged</header>
-            <article>
-                I picked this book up after reading <a href="#"
-                    onclick="return show('unplugged','schooled');">Unplugged</a> as I really enjoyed that book and
-                Schooled is by the same author. This one is deffinitly more memorable than Unplugged and I really loved
-                this book. The book's protaganist is a hippie which makes him so unique compared to anything else I
-                read. Another thing I really liked was that the book had a really feel good vibe and it was so much fun
-                watching him cimb through the ranks of the school and eventually become everyone's friend through his
-                kindness. The most memorable scene is deffinitly him memorizing and then reciting every students name IN
-                THE WHOLE SCHOOL. It was really memorable and I loved the charecters in this book.
-                <header><a href="#" onclick="return show('childhood','schooled');">Back</a></header>
+        <div class="alignment">
+            <div class="border">
+                <header>Schooled</header>
+                <article>
+                    I picked this book up after reading <a href="#"
+                        onclick="return show('unplugged','schooled');">Unplugged</a> as I really enjoyed that book and
+                    Schooled is by the same author. This one is deffinitly more memorable than Unplugged and I really
+                    loved
+                    this book. The book's protaganist is a hippie which makes him so unique compared to anything else I
+                    read. Another thing I really liked was that the book had a really feel good vibe and it was so much
+                    fun
+                    watching him cimb through the ranks of the school and eventually become everyone's friend through
+                    his
+                    kindness. The most memorable scene is deffinitly him memorizing and then reciting every students
+                    name IN
+                    THE WHOLE SCHOOL. It was really memorable and I loved the charecters in this book.
+                    <header><a href="#" onclick="return show('childhood','schooled');">Back</a></header>
+            </div>
         </div>
     </div>
 
     <div id="read" style="display: none;">
-        <div class="border" style="width: 800px; transform: translateX(250px);">
-            <div class="row-container">
-                <div>
-                    <header style="text-align: left; width: 400px;">The Book Nook</header>
-                </div>
-                <div>
+        <div class="alignment">
+            <div class="border">
+                <div class="row-container">
+                    <header style="text-align: left; width: 400px; font-size: 60px;">The Book Nook</header>
                     <img src="bookSketch.png">
                 </div>
-            </div>
-            <div class="row-container">
-                <div>
-                    <article><a href="#" onclick="return show('main','read');">main</a></article>
+                <div class="row-container">
+                    <div>
+                        <article><a href="#" onclick="return show('main','read');">main</a></article>
+                    </div>
+                    <div>
+                        <article><a href="#" onclick="return show('childhood','read');">Childhood Books</a></article>
+                    </div>
+                    <div>
+                        <article><a href="#" onclick="return show('reading','read');">Currently Reading</a></article>
+                    </div>
                 </div>
-                <div>
-                    <article><a href="#" onclick="return show('childhood','read');">Childhood Books</a></article>
+                <div class="row-container">
+                    <div>
+                        <article><a href="#" onclick="return show('wishlist','read');">Wishlist</a></article>
+                    </div>
+                    <div>
+                        <article><a href="#" onclick="return show('Recommendations','read');">Recommendations</a>
+                        </article>
+                    </div>
                 </div>
-                <div>
-                    <article><a href="#" onclick="return show('reading','read');">Currently Reading</a></article>
-                </div>
-            </div>
-            <div class="row-container" style="transform: translateX(100px);">
-                <div>
-                    <article><a href="#" onclick="return show('wishlist','read');">Wishlist</a></article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('Recommendations','read');">Recommendations</a></article>
+
+                <header>Books I've Read</header>
+                <div class="bookGrid">
+                    <div class="bookCovers">
+                        <a href="#" onclick="return show('mha','read');"><img src="mha.jpg"></a>
+                        <a href="#" onclick="return show('theRoad','read');"><img src="theRoad.jpg"></a>
+                        <a href="#" onclick="return show('1984','read');"><img src="1984.jpg"></a>
+                        <a href="#" onclick="return show('minorityReport','read');"><img src="minorityReport.jpg"></a>
+                        <a href="#" onclick="return show('theKiteRunner','read');"><img src="theKiteRunner.jpg"></a>
+                        <a href="#" onclick="return show('hamlet','read');"><img src="hamlet.jpg"></a>
+                        <a href="#" onclick="return show('animalFarm','read');"><img src="animalFarm.jpg"></a>
+                        <a href="#" onclick="return show('jjk','read');"><img src="jjk.jpg"></a>
+                        <a href="#" onclick="return show('braveNewWorld','read');"><img src="braveNewWorld.jpg"></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div id="reading" style="display: none;">
-        <div class="border" style="width: 800px; transform: translateX(250px);">
-            <div class="row-container">
-                <div>
-                    <header style="text-align: left; width: 400px;">The Book Nook</header>
-                </div>
-                <div>
-                    <img src="bookSketch.png">
-                </div>
-            </div>
-            <div class="row-container">
-                <div>
-                    <article><a href="#" onclick="return show('main','reading');">main</a></article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('childhood','reading');">Childhood Books</a></article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('read','reading');">Books I've Read</a></article>
-                </div>
-            </div>
-            <div class="row-container" style="transform: translateX(100px);">
-                <div>
-                    <article><a href="#" onclick="return show('wishlist','reading');">Wishlist</a></article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('Recommendations','reading');">Recommendations</a>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="wishlist" style="display: none;">
-        <div class="border" style="width: 800px; transform: translateX(250px);">
-            <div class="row-container">
-                <div>
-                    <header style="text-align: left; width: 400px;">The Book Nook</header>
-                </div>
-                <div>
-                    <img src="bookSketch.png">
-                </div>
-            </div>
-            <div class="row-container">
-                <div>
-                    <article><a href="#" onclick="return show('main','wishlist');">main</a></article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('childhood','wishlist');">Childhood Books</a></article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('read','wishlist');">Books I've Read</a></article>
-                </div>
-            </div>
-            <div class="row-container" style="transform: translateX(100px);">
-                <div>
-                    <article><a href="#" onclick="return show('reading','wishlist');">Currently Reading</a></article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('Recommendations','wishlist');">Recommendations</a>
-                    </article>
-                </div>
-            </div>
-            <div class="bookGrid">
-                <div class="bookCovers">
-                    <img src="20thCenturyBoys.jpg">
-                    <img src="bloodMerdian.jpg">
-                    <img src="Chainsawman.jpg">
-                    <img src="hyperion.jpg">
-                    <img src="punpun.jpg">
-                    <img src="feed.jpg">
-                    <img src="handmaidsTale.jpg">
-                    <img src="lordOfTheFlies.jpg">
-                    <img src="theHeartOfDarkness.jpg">
-                    <img src="theKingInYellow.jpg">
-                    <img src="dune.jpg">
-                    <img src="jurrasicPark.jpg">
-                </div>
+    <div id="mha" style="display: none;">
+        <div class="alignment">
+            <div class="border">
+                <header>
+                    My Hero Acadaimia
+                </header>
+                <article>
+                    I used to be a strong Mha hater, I was out there on the front lines making sure to slander Mha as
+                    much
+                    as humanly possible. I only started reading it because of All Might and I am glad I did. Mha is a a
+                    pretty simple story at heart, a boy without powers inherits power from his idol for showing bravery
+                    and
+                    then goes to a super hero school to hone his power and defeat the bad guy. While the simple story
+                    may be
+                    a turn off for some people, in my opnion, I think it benifits the story because it allows us to
+                    focus on
+                    the charecters more and in mha, the real stars of the show are the charecters themselves. Another
+                    strength of mha are the villians. In a lot of shounen stories I've read, really only the main
+                    villian is
+                    really interesting and compelling but in mha, I found all the villians to be very interesting and I
+                    think this is the case because each villian has a tie to the hero cast in some way or another. For
+                    example, Dabi is compelling because of his relationship with Shoto and we get a whole chapter in the
+                    final arc that focuses on Dabi which was one of the best emotional beats in the entire story. We
+                    also
+                    get a bunch of chapters focused around the Todoroki family which really helps build Dabi up as a
+                    villian
+                    despite not being the main villian. Now the main villian, Shigaraki. Shigaraki is by far the best
+                    villian and one of the best written charecters in the whole story. The reason he works so well as a
+                    villian, is because he mirrors Deku perfectly. Him and Deku both grow exponetially after they lose
+                    their mentor figures at their big fight(All Might loses his powers and AFO gets imprisoned). On top
+                    of that, their ideologies are complete opposite of one another. Shigaraki wants to destroy
+                    everything because he sees nothing of value in the world anymore, the heroes or villians, to him it
+                    doesn't matter. On the other hand, Deku wants to save everything, even during the final fight, he
+                    tried his best to reach through to Shigaraki and to save him too. Abosolute nihilism vs optimism.
+                    A lot of the side charecters in Mha are also amazing. All Might is a great example of this, he's one
+                    of
+                    my favorite charecters because he is one of the best embodiments of hope I've seen in manga and on
+                    top of that
+                    seeing him having to grapple with the fact that he's lost his powers and now has to learn how to
+                    teach was
+                    very well done and realistic. Another thing Horokoshi does well is making charecters change, he does
+                    it in such a
+                    realistic way. For example, with Bakugo, he doesn't just change overnight but he also doesn't
+                    stubbornly cling
+                    to his false ideals. He does his best to change and he sometimes makes mistakes and goes back to his
+                    old ways. Which
+                    I feel is very realistic to how people change in real life.
+                </article>
+                <article>
+                    Now as much as I do like mha, mainly for the charecters, there are some things I dislike. Firstly,
+                    the world building isn't great. America is introduced and so are other countries but we don't see
+                    enough of them for it to mean anything. Secondly, I wish we saw more of what the Hero's Association
+                    direct role was in a lot of sociatal problems as even in a super powered society, there shouldn't be
+                    a need for heroes as everybody has powers so there isn't inheritly a power imbalance. Third, I
+                    really wish we had gotten to see more of Stars and Stripes, she was such a cool charecter and I feel
+                    like she was used bassically as a plot device to weaken Shigaraki. Fourth, a longer Deku vigilante
+                    arc would've been amazing because I found the concept pretty interesting. Lastly, I wish that
+                    Horokoshi wouldn't be so scared to kill off developed charecters. In the PLF War arc, there wasn't
+                    as big of a stakes since we knew none of the main cast or side cast was going to die. The only
+                    person who died who was somewhat significant was midnight but I didn't really care for her so it
+                    wasn't that big of a deal. I think they should've deffinitly had grand torino die, no reason for the
+                    old man to survive getting donuted by Shigaraki.
+                </article>
+                <header><a href="#" onclick="return show('read','mha');">Back</a></header>
             </div>
         </div>
     </div>
 
-    <div id="Recommendations" style="display: none;">
-        <div class="border" style="width: 800px; transform: translateX(250px);">
-            <div class="row-container">
-                <div>
-                    <header style="text-align: left; width: 400px;">The Book Nook</header>
-                </div>
-                <div>
-                    <img src="bookSketch.png">
-                </div>
+    <div id="theRoad" style="display: none;">
+        <div class="alignment">
+            <div class="border">
+                <header>The Road</header>
+                <article>
+                    The Road is incredibly different from any other book that I have read. Not only is there not any
+                    punctuation other than periods, the writing style is very different from anything I've read. It is a
+                    very bleak story, it emphasizes the fact through its setting, which Mcarthy does a great job of
+                    visualizing, but through the charecters too. To me, The Road is all about the relationship and bond
+                    between a fathers and their children, and how fathers will be willing to give up every last thing
+                    even if it means their child has a even a slight chance at a better life. Throughout the story, it's
+                    hard to wonder why the father is trying so hard to get to the coast, what is the point in even doing
+                    so? The world is over and everyone is going to die, that and he's in terrible health and he's
+                    starving. So it could've been easy for him to just abandon his son because it's only an added burden
+                    to him. I think he does all this because he thinks that even if there's a sliver of a chance that
+                    his son makes it, then all his pain and suffering will be worth it. Another thing is how the boy and
+                    his father keep their morals, unlike a lot of the charecters we see(like one group who litterally
+                    cooked up a new born) the father and son continue to cling to their humanity even though it causes
+                    them more suffering in the short term. I think the reason for this is because the father doesn't
+                    want to curropt the innocence of his child. The Road was deffinitly a hard book to understand and I
+                    am probably going to watch a few video essays on it to get some more perspectives but for me the
+                    theme of the book is all about the lengths a father will go to protect their children, how they will
+                    sacrafice everything for them.
+                </article>
+                <header><a href="#" onclick="return show('read','theRoad');">Back</a></header>
             </div>
-            <div class="row-container">
-                <div>
-                    <article><a href="#" onclick="return show('main','Recommendations');">main</a></article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('childhood','Recommendations');">Childhood Books</a>
-                    </article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('read','Recommendations');">Books I've Read</a></article>
-                </div>
-            </div>
-            <div class="row-container" style="transform: translateX(100px);">
-                <div>
-                    <article><a href="#" onclick="return show('reading','Recommendations');">Currently Reading</a>
-                    </article>
-                </div>
-                <div>
-                    <article><a href="#" onclick="return show('wishlist','Recommendations');">Wishlist</a></article>
+        </div>
+
+        <div id="reading" style="display: none;">
+            <div class="alignment">
+                <div class="border">
+                    <div class="row-container">
+                        <header style="text-align: left; width: 400px; font-size: 60px;">The Book Nook</header>
+                        <img src="bookSketch.png">
+                    </div>
+                    <div class="row-container">
+                        <div>
+                            <article><a href="#" onclick="return show('main','reading');">main</a></article>
+                        </div>
+                        <div>
+                            <article><a href="#" onclick="return show('childhood','reading');">Childhood Books</a>
+                            </article>
+                        </div>
+                        <div>
+                            <article><a href="#" onclick="return show('read','reading');">Books I've Read</a></article>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div>
+                            <article><a href="#" onclick="return show('wishlist','reading');">Wishlist</a></article>
+                        </div>
+                        <div>
+                            <article><a href="#" onclick="return show('Recommendations','reading');">Recommendations</a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <header>Currently Reading</header>
+                    <div class="row-container">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <div id="wishlist" style="display: none;">
+            <div class="alignment">
+                <div class="border">
+                    <div class="row-container">
+                        <header style="text-align: left; width: 400px; font-size: 60px;">The Book Nook</header>
+                        <img src="bookSketch.png">
+                    </div>
+                    <div class="row-container">
+                        <div>
+                            <article><a href="#" onclick="return show('main','wishlist');">main</a></article>
+                        </div>
+                        <div>
+                            <article><a href="#" onclick="return show('childhood','wishlist');">Childhood Books</a>
+                            </article>
+                        </div>
+                        <div>
+                            <article><a href="#" onclick="return show('read','wishlist');">Books I've Read</a></article>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div>
+                            <article><a href="#" onclick="return show('reading','wishlist');">Currently Reading</a>
+                            </article>
+                        </div>
+                        <div>
+                            <article><a href="#"
+                                    onclick="return show('Recommendations','wishlist');">Recommendations</a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="bookGrid">
+                        <div class="bookCovers">
+                            <img src="20thCenturyBoys.jpg">
+                            <img src="bloodMerdian.jpg">
+                            <img src="Chainsawman.jpg">
+                            <img src="hyperion.jpg">
+                            <img src="punpun.jpg">
+                            <img src="feed.jpg">
+                            <img src="handmaidsTale.jpg">
+                            <img src="lordOfTheFlies.jpg">
+                            <img src="theHeartOfDarkness.jpg">
+                            <img src="theKingInYellow.jpg">
+                            <img src="dune.jpg">
+                            <img src="jurrasicPark.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Recommendations" style="display: none;">
+            <div class="alignment">
+                <div class="border">
+                    <div class="row-container">
+                        <header style="text-align: left; width: 400px; font-size: 60px;">The Book Nook</header>
+                        <img src="bookSketch.png">
+                    </div>
+                    <div class="row-container">
+                        <div>
+                            <article><a href="#" onclick="return show('main','Recommendations');">main</a></article>
+                        </div>
+                        <div>
+                            <article><a href="#" onclick="return show('childhood','Recommendations');">Childhood
+                                    Books</a>
+                            </article>
+                        </div>
+                        <div>
+                            <article><a href="#" onclick="return show('read','Recommendations');">Books I've Read</a>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row-container">
+                        <div>
+                            <article><a href="#" onclick="return show('reading','Recommendations');">Currently
+                                    Reading</a>
+                            </article>
+                        </div>
+                        <div>
+                            <article><a href="#" onclick="return show('wishlist','Recommendations');">Wishlist</a>
+                            </article>
+                        </div>
+                    </div>
+                    <header>My Recommendations</header>
+                    <div class="row-container">
+                        <img src="mha.jpg" style="width: 304.2px; height: 467.8; ">
+                        <article style="width: 450px;">
+                            I think MHA catches a lot of flack because of the fanbase but it is genuinely a really
+                            great and inspiring manga, esspecially seeing how Deku gets back up no matter what.
+                            Another thing is that Horokoshi has some of the BEST manga art I've seen, esspeically
+                            in the later chapters. So, I'd say to give it a shot before hating on it.
+                        </article>
+                    </div>
+                    <div class="row-container">
+                        <img src="theRoad.jpg" style="width: 304.2px; height: 467.8;">
+                        <article style="width: 450px;">
+                            The Road is very different than anything else I've read, not only does it not have any
+                            chapters
+                            or
+                            proper punctuation but it has some of the best descriptive language I've seen. I've been
+                            able to
+                            visualize things in The Road better than any other book. I think esspecially the
+                            environment,
+                            its
+                            described as so bleak and grey constantly, which really reinforces it. Another thing is that
+                            this
+                            book really forces you to chew on the content to figure it out, so if you like having to
+                            think
+                            and work through what you're reading, I'd throughly recommend The Road.
+                        </article>
+                    </div>
+                    <div class="row-container">
+                        <img src="1984.jpg" style="width: 304.2px; height: 467.8;">
+                        <article style="width: 450px;">
+                            1984 is one of those books that I think everyone should read, it is scarily accuarate for
+                            something
+                            written back in the '40s. Other than it's importance, 1984 is a meaty book, giving you a lot
+                            to
+                            analyze and think about once you've read it. The writing is also really nice, there's a ton
+                            of
+                            lines
+                            that are just bangers.
+                        </article>
+                    </div>
+                    <header style="transform: translateY(10px);">Give me Recommendations</header>
+                </div>
+            </div>
+        </div>
 </body>
 
 </html>

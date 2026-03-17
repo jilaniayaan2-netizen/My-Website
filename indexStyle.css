@@ -1,13 +1,9 @@
-html,
-body {
-    overflow-y: hidden;
-}
-
 .imgtxt {
     width: fit-content;
     height: fit-content;
     display: inline-block;
     position: relative;
+    z-index: 10;
 }
 
 .imgtxt span {
@@ -31,4 +27,104 @@ body {
 .imgtxt:focus img {
     filter: grayscale();
     rotate: 1deg;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.sub-container {
+    height: 20%;
+}
+
+.spacer {
+    height: 10vh;
+}
+
+.sub-container-2 {
+    height: 40%;
+}
+
+.shelf-wrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.table-wrapper {
+    position: relative;
+    display: inline-block;
+    vertical-align: bottom;
+    top: -100px;
+    left: 120px;
+}
+
+.shelf-img {
+    display: block;
+    width: 300px;
+    height: auto;
+}
+
+.table-img {
+    display: block;
+    width: 400px;
+    height: auto;
+}
+
+.alien-on-shelf {
+    position: absolute !important;
+    bottom: 15%;
+    left: 50%;
+    z-index: 20;
+}
+
+.clay-on-shelf {
+    position: absolute !important;
+    bottom: 15%;
+    left: 20%;
+    z-index: 20;
+}
+
+.game-on-shelf {
+    position: absolute !important;
+    bottom: 40%;
+    left: 50%;
+    z-index: 20;
+}
+
+.books-on-shelf {
+    position: absolute !important;
+    bottom: 60%;
+    left: 70%;
+    z-index: 20;
+}
+
+.godzilla-on-shelf {
+    position: absolute !important;
+    bottom: 60%;
+    left: 20%;
+    z-index: 20;
+}
+
+.disclaimer {
+    position: absolute !important;
+    bottom: 40%;
+    left: 20%;
+    z-index: 20;
+    
+}
+
+.notebook-on-table {
+    position: absolute !important;
+    bottom: 80%;
+    left: 20%;
+    z-index: 20;
+}
+
+.typewritter-on-table {
+    position: absolute !important;
+    bottom: 90%;
+    left: 50%;
+    z-index: 20;
 }

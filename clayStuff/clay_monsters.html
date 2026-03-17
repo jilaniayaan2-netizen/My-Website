@@ -5,382 +5,439 @@
     <title>Ayaan's clay stuff</title>
     <link rel="stylesheet" href="clayStyle.css">
     <script src="../multiplePages.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    <div id="main">
-        <a href="#" onclick="return show('creations','main');" class="imgtxt">
-            <img src="computer.jpg"
-                style="width: 182px; height: 213.666666667px; transform: translate(629px, 353.5px);">
-            <span style="transform: translate(579px, 303.5px)">Creations</span>
+    <div id="main" class="container">
+        <div class="top-spacer"></div>
+        <a href="#" onclick="return show('inspo','main');" class="imgtxt poster-postioner">
+            <img src="inspo.jpg" class="img-sizer" alt="Inspiration">
+            <span>Inspiration</span>
         </a>
-        <a href="#" onclick="return show('lore','main');" class="imgtxt">
-            <img src="loreBook.jpg"
-                style="width: 126.333333333px; height: 81.6666666667px; transform: translate(138px, 351.5px);">
-            <span style="transform: translate(88px, 301.5px)">Lore</span>
+        <div class="middle-spacer"></div>
+        <a href="#" onclick="return show('creations','main');" class="imgtxt computer-postioner">
+            <img src="computer.jpg" class="img-sizer" alt="Creations">
+            <span>Creations</span>
         </a>
-        <a href="#" onclick="return show('inspo','main');" class="imgtxt">
-            <img src="inspo.jpg" style="width: 201px; height:158.333333333px; transform: translate(315px, 90px);">
-            <span style="transform: translate(265px, 40px)">Inspiration</span>
+        <a href="#" onclick="return show('lore','main');" class="imgtxt lore-postioner">
+            <img src="loreBook.jpg" class="img-sizer" alt="Lore">
+            <span>Lore</span>
         </a>
     </div>
 
     <div id="creations" style="display: none;">
         <div id="creation1">
-            <img src="clayKyogre.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation2','creation1');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <div class="broider">
-                <header>Kyogre</header>
-                <article>This was the very first thing I made with clay and was made about a year ago now.</article>
+            <div class="creation-container">
+                <img src="clayKyogre.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation2','creation1');"><img src="rightArrow.png"
+                        style="width: 112px;"></a>
+                <div class="broider">
+                    <header>Kyogre</header>
+                    <article>This was the very first thing I made with clay and was made about a year ago now.</article>
+                </div>
             </div>
         </div>
         <div id="creation2" style="display: none;">
-            <img src="clayGroudon.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation3','creation2');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation1','creation2');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Groudon</header>
-                <article>This was the second thing I made, I mainly made it to make sure Kyogre wouldn't flood my desk.
-                </article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation1','creation2');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayGroudon.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation3','creation2');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Groudon</header>
+                    <article>This was the second thing I made, I mainly made it to make sure Kyogre wouldn't flood my
+                        desk.
+                    </article>
+                </div>
             </div>
         </div>
         <div id="creation3" style="display: none;">
-            <img src="clayLN2.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation4','creation3');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation2','creation3');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Little Nightmares 2 Magnet</header>
-                <article>I had a really big little nightmares phase but wasn't skilled enough to make a figure of the
-                    charecters, so I opted to make this simple little magnet instead.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation2','creation3');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayLN2.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation4','creation3');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Little Nightmares 2 Magnet</header>
+                    <article>I had a really big little nightmares phase but wasn't skilled enough to make a figure of
+                        the
+                        charecters, so I opted to make this simple little magnet instead.</article>
+                </div>
             </div>
         </div>
         <div id="creation4" style="display: none;">
-            <img src="clayGodzillaTheBlackMass.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation5','creation4');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation3','creation4');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Godzilla the Blackmass V1</header>
-                <article>During this time, I discovered some a webcomic called "Godzilla The Black Mass" by steelneck95.
-                    The art
-                    is absolutely amazing and I love the design of this Godzilla, so I attempted to make a figure of it.
-                    Now
-                    this was a long while ago so now that I have a better idea of what I'm doing, I'll deffinitly give
-                    it a
-                    second try.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation3','creation4');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayGodzillaTheBlackMass.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation5','creation4');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Godzilla the Blackmass V1</header>
+                    <article>During this time, I discovered some a webcomic called "Godzilla The Black Mass" by
+                        steelneck95.
+                        The art
+                        is absolutely amazing and I love the design of this Godzilla, so I attempted to make a figure of
+                        it.
+                        Now
+                        this was a long while ago so now that I have a better idea of what I'm doing, I'll deffinitly
+                        give
+                        it a
+                        second try.</article>
+                </div>
             </div>
         </div>
         <div id="creation5" style="display: none;">
-            <img src="clayAmogusAndRepo.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation6','creation5');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation4','creation5');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Among us and Repo</header>
-                <article>I was bored.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation4','creation5');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayAmogusAndRepo.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation6','creation5');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Among us and Repo</header>
+                    <article>I was bored.</article>
+                </div>
             </div>
         </div>
         <div id="creation6" style="display: none;">
-            <img src="clayPoissonSteve.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation7','creation6');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation5','creation6');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Poisson Steve</header>
-                <article>I wanted to make the funny fish.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation5','creation6');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayPoissonSteve.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation7','creation6');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Poisson Steve</header>
+                    <article>I wanted to make the funny fish.</article>
+                </div>
             </div>
         </div>
         <div id="creation7" style="display: none;">
-            <img src="clayInsects.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation8','creation7');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation6','creation7');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Miscelleneous Arthropods</header>
-                <article>I like insects and other arthropods quite a lot, so it only made sense to make some for my
-                    desk.
-                    Personally, my favorite is the centipede mainly because I think it's the most well made and partly
-                    because I like centipedes a lot, deffinitly an underrated animal.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation6','creation7');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayInsects.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation8','creation7');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Miscelleneous Arthropods</header>
+                    <article>I like insects and other arthropods quite a lot, so it only made sense to make some for my
+                        desk.
+                        Personally, my favorite is the centipede mainly because I think it's the most well made and
+                        partly
+                        because I like centipedes a lot, deffinitly an underrated animal.</article>
+                </div>
             </div>
         </div>
         <div id="creation8" style="display: none;">
-            <img src="clayGraboid.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation9','creation8');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation7','creation8');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Graboid</header>
-                <article>Graboids are these giant worm monsters from the 1990 film Tremors. I made this because Tremors
-                    holds a
-                    special place in my heart as Me, my dad, and my brothers did a marathon of movies 1-5 and it was a
-                    ton
-                    of fun.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation7','creation8');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayGraboid.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation9','creation8');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Graboid</header>
+                    <article>Graboids are these giant worm monsters from the 1990 film Tremors. I made this because
+                        Tremors
+                        holds a
+                        special place in my heart as Me, my dad, and my brothers did a marathon of movies 1-5 and it was
+                        a
+                        ton
+                        of fun.</article>
+                </div>
             </div>
         </div>
         <div id="creation9" style="display: none;">
-            <img src="clayShinGodzilla.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation10','creation9');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation8','creation9');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Shin Godzilla</header>
-                <article>This was the first sculpture I made after buying some wire. I was still freestyling for the
-                    most part but
-                    instead of using only clay, I used wire and tinfoil to build a skeleton and then I added the clay
-                    one
-                    afterwards. This is one of my favorite sculptures, mostly because I really like Shin Godzilla.
-                </article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation8','creation9');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayShinGodzilla.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation10','creation9');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Shin Godzilla</header>
+                    <article>This was the first sculpture I made after buying some wire. I was still freestyling for the
+                        most part but
+                        instead of using only clay, I used wire and tinfoil to build a skeleton and then I added the
+                        clay
+                        one
+                        afterwards. This is one of my favorite sculptures, mostly because I really like Shin Godzilla.
+                    </article>
+                </div>
             </div>
         </div>
         <div id="creation10" style="display: none;">
-            <img src="clayShinGodzilla.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation11','creation10');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation9','creation10');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Shin Godzilla</header>
-                <article>This was the first sculpture I made after buying some wire. I was still freestyling for the
-                    most part but
-                    instead of using only clay, I used wire and tinfoil to build a skeleton and then I added the clay
-                    one
-                    afterwards. This is one of my favorite sculptures, mostly because I really like Shin Godzilla.
-                </article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation9','creation10');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayBiolante.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation11','creation10');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Biolante</header>
+                    <article>I wanted to make another Godzilla kaiju and I was locked in intense debate, the three kaiju
+                        I
+                        was
+                        debating were: King Ghidorah, Destroyah, and Biolante. I eventually chose Biolante because it
+                        looked
+                        the
+                        least impossible to make. Don't get me wrong, I really like Biolante's design and it's very
+                        strange
+                        backstory, but it was up agaisnt the undisputed goats of Godzilla villians.</article>
+                </div>
             </div>
         </div>
         <div id="creation11" style="display: none;">
-            <img src="clayBiolante.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation12','creation11');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation10','creation11');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Biolante</header>
-                <article>I wanted to make another Godzilla kaiju and I was locked in intense debate, the three kaiju I
-                    was
-                    debating were: King Ghidorah, Destroyah, and Biolante. I eventually chose Biolante because it looked
-                    the
-                    least impossible to make. Don't get me wrong, I really like Biolante's design and it's very strange
-                    backstory, but it was up agaisnt the undisputed goats of Godzilla villians.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation10','creation11');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayStonecat.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation12','creation11');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Stonecat Trophy</header>
+                    <article>I made this recently to celebrate getting the number 1 rank for the number of Stonecat
+                        observations in
+                        the entire world on Inaturalist. Though, I gotta lock in after winter to gain that number 1 spot
+                        back.</article>
+                </div>
             </div>
         </div>
         <div id="creation12" style="display: none;">
-            <img src="clayStonecat.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation13','creation12');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation11','creation12');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Stonecat Trophy</header>
-                <article>I made this recently to celebrate getting the number 1 rank for the number of Stonecat
-                    observations in
-                    the entire world on Inaturalist. Though, I gotta lock in after winter to gain that number 1 spot
-                    back.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation11','creation12');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="BallOfEyesClayMonster.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation13','creation12');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Ball Of Eyes</header>
+                    <article>I made this because I wanted something to fidgit with, so what better than a textured ball
+                        of
+                        eyes.</article>
+                </div>
             </div>
         </div>
         <div id="creation13" style="display: none;">
-            <img src="BallOfEyesClayMonster.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation14','creation13');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation12','creation13');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Ball Of Eyes</header>
-                <article>I made this because I wanted something to fidgit with, so what better than a textured ball of
-                    eyes.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation12','creation13');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="Jared.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation14','creation13');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Jared</header>
+                    <article>The result of messing with clay late at night. I also gave him two right hands by accident.
+                    </article>
+                </div>
             </div>
         </div>
         <div id="creation14" style="display: none;">
-            <img src="Jared.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation15','creation14');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation13','creation14');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Jared</header>
-                <article>The result of messing with clay late at night. I also gave him two right hands by accident.
-                </article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation13','creation14');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="GleebusAndGumbo.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation15','creation14');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Gleebus and Gumbo</header>
+                    <article>Made in the same night as Jared. The one on the left is Gleebus and the one on the right is
+                        Gumbo.</article>
+                </div>
             </div>
         </div>
         <div id="creation15" style="display: none;">
-            <img src="GleebusAndGumbo.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation16','creation15');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation14','creation15');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Gleebus and Gumbo</header>
-                <article>Made in the same night as Jared. The one on the left is Gleebus and the one on the right is
-                    Gumbo.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation14','creation15');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="KrakenFish.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation16','creation15');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Kraken Fish</header>
+                    <article>I wanted to make something small and random so I just thought "Why not mish mash stuff
+                        together?" and I did just that.</article>
+                </div>
             </div>
         </div>
         <div id="creation16" style="display: none;">
-            <img src="KrakenFish.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation17','creation16');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation15','creation16');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Kraken Fish</header>
-                <article>I wanted to make something small and random so I just thought "Why not mish mash stuff
-                    together?" and I did just that.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation15','creation16');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="Joseph.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation17','creation16');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Joseph</header>
+                    <article>I like this fella a lot, he's funny looking.</article>
+                </div>
             </div>
         </div>
         <div id="creation17" style="display: none;">
-            <img src="Joseph.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation18','creation17');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation16','creation17');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Joseph</header>
-                <article>I like this fella a lot, he's funny looking.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation16','creation17');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="Bobier.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation18','creation17');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Bobier</header>
+                    <article>I had just watched a bunch of videos about doctor nowhere and I felt inspired.</article>
+                </div>
             </div>
         </div>
         <div id="creation18" style="display: none;">
-            <img src="Bobier.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation19','creation18');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation17','creation18');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Bobier</header>
-                <article>I had just watched a bunch of videos about doctor nowhere and I felt inspired.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation17','creation18');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="TheTrueNorthStar.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation19','creation18');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>The True North Star</header>
+                    <article>This is what having to go to data mangement class does to a man.</article>
+                </div>
             </div>
         </div>
         <div id="creation19" style="display: none;">
-            <img src="TheTrueNorthStar.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation20','creation19');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation18','creation19');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>The True North Star</header>
-                <article>This is what having to go to data mangement class does to a man.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation18','creation19');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="CagedEye.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation20','creation19');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Caged Eye</header>
+                    <article>Another thing that came from data mangement class.</article>
+                </div>
             </div>
         </div>
         <div id="creation20" style="display: none;">
-            <img src="CagedEye.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation21','creation20');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation19','creation20');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Caged Eye</header>
-                <article>Another thing that came from data mangement class.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation19','creation20');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="Bungus.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation21','creation20');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>The Bungus</header>
+                    <article>A group of Bunguses is called a Bungle.</article>
+                </div>
             </div>
         </div>
         <div id="creation21" style="display: none;">
-            <img src="Bungus.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation22','creation21');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation20','creation21');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>The Bungus</header>
-                <article>A group of Bunguses is called a Bungle.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation20','creation21');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="ArmatoRegeClay.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation22','creation21');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Armato Rege</header>
+                    <article>This is acctually an alien from my story
+                        "Expedition to C-100". For this reason, I'm not going to explain it's biology, behaivors,
+                        etc on
+                        this page. Instead, you can go to the <a href="../alienStuff/aliens.html">alien page</a> if
+                        you're
+                        interested. Also, this is the
+                        single biggest
+                        clay sculpture I have, its about the size of my hand and weighs as much as a baseball.</article>
+                </div>
             </div>
         </div>
         <div id="creation22" style="display: none;">
-            <img src="ArmatoRegeClay.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation23','creation22');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation21','creation22');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Armato Rege</header>
-                <article>This is acctually an alien from my story
-                    "Expedition to C-100". For this reason, I'm not going to explain it's biology, behaivors,
-                    etc on
-                    this page. Instead, you can go to the <a href="../alienStuff/aliens.html">alien page</a> if you're
-                    interested. Also, this is the
-                    single biggest
-                    clay sculpture I have, its about the size of my hand and weighs as much as a baseball.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation21','creation22');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayMahoraga.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation23','creation22');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Mahoraga</header>
+                    <article>I had wanted to make Mahoraga ever since I got into sculpting but what really inspired me
+                        was
+                        seeing my boy raga pull up in JJK Modulo. Big Raga has honestly never looked better than in that
+                        Modulo chapter, he looks so clean in the Modulo artstyle.</article>
+                </div>
             </div>
         </div>
         <div id="creation23" style="display: none;">
-            <img src="clayMahoraga.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation24','creation23');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation22','creation23');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Mahoraga</header>
-                <article>I had wanted to make Mahoraga ever since I got into sculpting but what really inspired me was
-                    seeing my boy raga pull up in JJK Modulo. Big Raga has honestly never looked better than in that
-                    Modulo chapter, he looks so clean in the Modulo artstyle.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation22','creation23');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayDemogorgan.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation24','creation23');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Demogrogan</header>
+                    <article>I have been a huge fan of Stranger Things for a while now(even if the later seasons aren't
+                        as
+                        great as season 1) but as season 5 came around the corner, I had to make the best Stranger
+                        Things
+                        monster.</article>
+                </div>
             </div>
         </div>
         <div id="creation24" style="display: none;">
-            <img src="clayDemogorgan.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation25','creation24');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation23','creation24');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Demogrogan</header>
-                <article>I have been a huge fan of Stranger Things for a while now(even if the later seasons aren't as
-                    great as season 1) but as season 5 came around the corner, I had to make my favorite monster from
-                    Stranger Things.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation23','creation24');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayParrotFish.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation25','creation24');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Parrot Fish</header>
+                    <article>I made these two Parrot Fish as game peices for my brother's board game design class and
+                        now
+                        they reside on my desk.</article>
+                </div>
             </div>
         </div>
         <div id="creation25" style="display: none;">
-            <img src="clayParrotFish.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation26','creation25');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation24','creation25');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Parrot Fish</header>
-                <article>I made these two Parrot Fish as game peices for my brother's board game design class and now
-                    they reside on my desk.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation24','creation25');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayGiantSquid.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation26','creation25');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Giant Squid</header>
+                    <article>This is another game piece I made for my brother's game design class, I'm really happy with
+                        how
+                        it turned out.</article>
+                </div>
             </div>
         </div>
         <div id="creation26" style="display: none;">
-            <img src="clayGiantSquid.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation27','creation26');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation25','creation26');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Giant Squid</header>
-                <article>This is another game piece I made for my brother's game design class, I'm really happy with how
-                    it turned out.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation25','creation26');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="claySwordFish.png" style="width: 400px; height: 400px;">
+                <a href="#" onclick="return show('creation27','creation26');"><img src="rightArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <div class="broider">
+                    <header>Sword Fish</header>
+                    <article>This is the third game piece I made for my brother, another one that I consider a banger.
+                    </article>
+                </div>
             </div>
         </div>
         <div id="creation27" style="display: none;">
-            <img src="claySwordFish.png" style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation28','creation27');"><img src="rightArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(500px, -200px);"></a>
-            <a href="#" onclick="return show('creation26','creation27');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Sword Fish</header>
-                <article>This is the third game piece I made for my brother, another one that I consider a banger.
-                </article>
-            </div>
-        </div>
-        <div id="creation28" style="display: none;">
-            <img src="clayGodzillaTheBlackMassV2.png"
-                style="width: 400px; height: 400px; transform: translateX(450px);">
-            <a href="#" onclick="return show('creation27','creation28');"><img src="leftArrow.png"
-                    style="width: 112px; height: 112px; transform: translate(-230px, -200px);"></a>
-            <div class="broider">
-                <header>Godzilla the Blackmass V2</header>
-                <article>I made this a year after making my first Godzilla the Black mass figure and I couldn't be
-                    happier with how it turned out. I think I improved on so many fronts, details, structure, and
-                    proportions. I might just make a blackpill edit of V1 and V2, that'd be fun.</article>
+            <div class="creation-container">
+                <a href="#" onclick="return show('creation26','creation27');"><img src="leftArrow.png"
+                        style="width: 112px; height: 112px;"></a>
+                <img src="clayGodzillaTheBlackMassV2.png" style="width: 400px; height: 400px;">
+                <div class="broider">
+                    <header>Godzilla the Blackmass V2</header>
+                    <article>I made this a year after making my first Godzilla the Black mass figure and I couldn't be
+                        happier with how it turned out. I think I improved on so many fronts, details, structure, and
+                        proportions. In other words, it completely mogs v1.</article>
+                </div>
             </div>
         </div>
         <header><a href="#" onclick="return show('main','creations');">Back to Main</a></header>

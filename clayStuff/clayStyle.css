@@ -31,25 +31,63 @@ article {
     color: aliceblue;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img-sizer {
+    width: 35%
+}
+
+.top-spacer {
+    height: 23vh;
+}
+
+.poster-postioner {
+    left: 46%;
+}
+
+.middle-spacer {
+    height: 5vh;
+}
+
+.computer-postioner {
+    left: 47%;
+}
+
+.lore-postioner {
+    left: -17%;
+}
+
+.creation-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
 .inspoGrid {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding: 20px;
 }
 
 .inspirationPotraits {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(4, 1fr);
     gap: 15px;
     width: 100%;
-    max-width: 800px; 
+    max-width: 800px;
 }
 
 .inspirationPotraits img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 8px; 
+    border-radius: 8px;
     transition: transform 0.2s;
 }
 
@@ -73,7 +111,7 @@ article {
     opacity: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 15%;
     transform: translate(-50%, -50%);
     z-index: 99;
     font-size: 2.5rem;
@@ -265,4 +303,68 @@ input {
 #checkbox-page6:checked~.book #page6 {
     transform: rotateY(-180deg);
     z-index: 7;
+}
+
+@media screen and (min-height: 800px) {
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-sizer {
+        width: 35%
+    }
+
+    .top-spacer {
+        height: 30vh;
+    }
+
+    .poster-postioner {
+        left: 46%;
+    }
+
+    .middle-spacer {
+        height: 1vh;
+    }
+
+    .computer-postioner {
+        left: 47%;
+    }
+
+    .lore-postioner {
+        left: -20%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .img-sizer {
+        width: 30%
+    }
+
+    .top-spacer {
+        height: 27vh;
+    }
+
+    .poster-postioner {
+        left: 48%;
+    }
+
+    .middle-spacer {
+        height: 4vh;
+    }
+
+    .computer-postioner {
+        left: 49%;
+    }
+
+    .lore-postioner {
+        left: -30%;
+    }
 }
