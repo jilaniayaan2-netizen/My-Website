@@ -107,14 +107,6 @@
     z-index: 20;
 }
 
-.disclaimer {
-    position: absolute !important;
-    bottom: 40%;
-    left: 20%;
-    z-index: 20;
-    
-}
-
 .notebook-on-table {
     position: absolute !important;
     bottom: 80%;

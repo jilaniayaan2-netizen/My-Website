@@ -261,6 +261,14 @@ input {
     z-index: 5;
 }
 
+#page7 {
+    z-index: 4;
+}
+
+#page8 {
+    z-index: 3;
+}
+
 #checkbox-cover:checked~.book {
     transform: translateX(500px);
 }
@@ -303,6 +311,16 @@ input {
 #checkbox-page6:checked~.book #page6 {
     transform: rotateY(-180deg);
     z-index: 7;
+}
+
+#checkbox-page7:checked~.book #page7 {
+    transform: rotateY(-180deg);
+    z-index: 8;
+}
+
+#checkbox-page8:checked~.book #page8 {
+    transform: rotateY(-180deg);
+    z-index: 9;
 }
 
 @media screen and (min-height: 800px) {
