@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dipnetting</title>
+    <link rel="stylesheet" href="dipnettingStyle.css">
+    <script src="../multiplePages.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="main">
+        <div class="azwo2" style="width: 30%;">
+            <header>DIPNETTING</header>
+            <article>Click on the magnifying glasses to scoop through an area, move any debris from your net to see what
+                you found!</article>
+        </div>
+        <div style="height: 15vh;"></div>
+        <a id="mag1" href="#" onclick="return show('river1','main');">
+            <img src="magnifyingGlassIcon.png" style="width: 4%; position: relative; left: 10%;">
+        </a>
+        <div style="height: 5vh;"></div>
+        <a id="mag2" href="#" onclick="return show('river2','main');">
+            <img src="magnifyingGlassIcon.png" style="width: 4%; position: relative; left: 50%;">
+        </a>
+        <div style="height: 15vh;"></div>
+        <a id="mag3" href="#" onclick="return show('river3','main');">
+            <img src="magnifyingGlassIcon.png" style="width: 4%; position: relative; left: 20%;">
+        </a>
+    </div>
+    <div id="river1" style="display: none;" class="riverBackgrounds" onclick="swingNet('river1', 'catch1')">
+        <div class="azwo2" style="width: 30%;">
+            <header>Click Anywhere to Scoop!</header>
+        </div>
+    </div>
+    <div id="river2" style="display: none;" class="riverBackgrounds" onclick="swingNet('river2', 'catch2')">
+        <div class="azwo2" style="width: 30%;">
+            <header>Click Anywhere to Scoop!</header>
+        </div>
+    </div>
+    <div id="river3" style="display: none;" class="riverBackgrounds" onclick="swingNet('river3', 'catch3')">
+        <div class="azwo2" style="width: 30%;">
+            <header>Click Anywhere to Scoop!</header>
+        </div>
+    </div>
+    <div id="dipnet"></div>
+    <div id="catch1" style="display: none;;">
+        <div style="display: flex; flex-direction: row;">
+            <div id="netCloseUp"></div>
+            <div class="azwo2" style="width: 30%; position: relative; left: -60%; height: 30%;">
+                <header>Move all the leaves to find what you caught!</header>
+            </div>
+        </div>
+    </div>
+    <div id="catch2" style="display: none;">
+        <div style="display: flex; flex-direction: row;">
+            <div id="netCloseUp"></div>
+            <div class="azwo2" style="width: 30%; position: relative; left: -60%; height: 30%;">
+                <header>Move all the leaves to find what you caught!</header>
+            </div>
+        </div>
+    </div>
+    <div id="catch3" style="display: none;">
+        <div style="display: flex; flex-direction: row;">
+            <div id="netCloseUp"></div>
+            <div class="azwo2" style="width: 30%; position: relative; left: -60%; height: 30%;">
+                <header>Move all the leaves to find what you caught!</header>
+            </div>
+        </div>
+    </div>
+    <script src="dipnettingScript.js" defer></script>
+</body>
+
+</html>
