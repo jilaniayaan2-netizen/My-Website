@@ -35,22 +35,36 @@ article {
     position: relative;
 }
 
-#dipnet{
+#dipnet1{
     width: 345px;
     height: 345px;
     background-image: url("dipnetting.png");
-    position: fixed;
-    pointer-events: none;
-    z-index: 999;
-    display: none;
+    position: relative;
+    opacity: 100%;
+} 
+
+#dipnet2{
+    width: 345px;
+    height: 345px;
+    background-image: url("dipnetting.png");
+    position: relative;
+    opacity: 100%;
+} 
+
+#dipnet3{
+    width: 345px;
+    height: 345px;
+    background-image: url("dipnetting.png");
+    position: relative;
+    opacity: 100%;
 } 
 
 .animate{
     animation: swing 1s linear;
 }
 
-@keyframes swing1{
-    0% {rotate: -10deg;}
+@keyframes swing{
+    0% {rotate: -10deg; opacity: 100%;}
     95% {rotate: 70deg;}
     100% {opacity: 0%;}
 }
@@ -63,4 +77,100 @@ article {
     background-size: cover; 
     background-repeat: no-repeat;
     left: 30%;
+}
+
+#river1Leaf1{
+    width: 550px;
+    height: 350px;
+    background-image: url("leaf1.png");
+    position: absolute !important;
+}
+#river1Leaf2{
+    width: 200px;
+    height: 300px;
+    background-image: url("leaf2.png");
+    position: absolute !important;
+}
+#river1Leaf3{
+    width: 300px;
+    height: 300px;
+    background-image: url("leaf3.png");
+    position: absolute !important;
+}
+#river1Leaf4{
+    width: 300px;
+    height: 300px;
+    background-image: url("leaf4.png");
+    position: absolute !important;
+}
+
+#river2Leaf1{
+    width: 550px;
+    height: 350px;
+    background-image: url("leaf1.png");
+    position: absolute !important;
+}
+#river2Leaf2{
+    width: 200px;
+    height: 300px;
+    background-image: url("leaf2.png");
+    position: absolute !important;
+}
+#river2Leaf3{
+    width: 300px;
+    height: 300px;
+    background-image: url("leaf3.png");
+    position: absolute !important;
+}
+#river2Leaf4{
+    width: 300px;
+    height: 300px;
+    background-image: url("leaf4.png");
+    position: absolute !important;
+}
+
+#river3Leaf1{
+    width: 550px;
+    height: 350px;
+    background-image: url("leaf1.png");
+    position: absolute !important;
+}
+#river3Leaf2{
+    width: 200px;
+    height: 300px;
+    background-image: url("leaf2.png");
+    position: absolute !important;
+}
+#river3Leaf3{
+    width: 300px;
+    height: 300px;
+    background-image: url("leaf3.png");
+    position: absolute !important;
+}
+#river3Leaf4{
+    width: 300px;
+    height: 300px;
+    background-image: url("leaf4.png");
+    position: absolute !important;
+}
+
+#river1Catch{
+    position: relative;
+    display: none;
+    left: 40%;
+    top: 30%;
+}
+
+#river2Catch{
+    position: relative;
+    display: none;
+    left: 40%;
+    top: 30%;
+}
+
+#river3Catch{
+    position: relative;
+    display: none;
+    left: 40%;
+    top: 30%;
 }

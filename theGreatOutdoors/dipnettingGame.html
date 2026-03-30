@@ -28,25 +28,33 @@
             <img src="magnifyingGlassIcon.png" style="width: 4%; position: relative; left: 20%;">
         </a>
     </div>
-    <div id="river1" style="display: none;" class="riverBackgrounds" onclick="swingNet('river1', 'catch1')">
+    <div id="river1" style="display: none;" class="riverBackgrounds" onclick="swingNet1('river1', 'catch1')">
         <div class="azwo2" style="width: 30%;">
             <header>Click Anywhere to Scoop!</header>
         </div>
+        <div id="dipnet1"></div>
     </div>
-    <div id="river2" style="display: none;" class="riverBackgrounds" onclick="swingNet('river2', 'catch2')">
+    <div id="river2" style="display: none;" class="riverBackgrounds" onclick="swingNet2('river2', 'catch2')">
         <div class="azwo2" style="width: 30%;">
             <header>Click Anywhere to Scoop!</header>
         </div>
+        <div id="dipnet2"></div>
     </div>
-    <div id="river3" style="display: none;" class="riverBackgrounds" onclick="swingNet('river3', 'catch3')">
+    <div id="river3" style="display: none;" class="riverBackgrounds" onclick="swingNet3('river3', 'catch3')">
         <div class="azwo2" style="width: 30%;">
             <header>Click Anywhere to Scoop!</header>
         </div>
+        <div id="dipnet3"></div>
     </div>
-    <div id="dipnet"></div>
     <div id="catch1" style="display: none;;">
         <div style="display: flex; flex-direction: row;">
-            <div id="netCloseUp"></div>
+            <div id="netCloseUp" style="position: relative;">
+                <div id="river1Leaf1" onclick="hideLeaf1()"></div>
+                <div id="river1Leaf2" onclick="hideLeaf2()"></div>
+                <div id="river1Leaf3" onclick="hideLeaf3()"></div>
+                <div id="river1Leaf4" onclick="hideLeaf4()"></div>
+                <div id="river1Catch"></div>
+            </div>
             <div class="azwo2" style="width: 30%; position: relative; left: -60%; height: 30%;">
                 <header>Move all the leaves to find what you caught!</header>
             </div>
@@ -54,7 +62,13 @@
     </div>
     <div id="catch2" style="display: none;">
         <div style="display: flex; flex-direction: row;">
-            <div id="netCloseUp"></div>
+            <div id="netCloseUp">
+                <div id="river2Leaf1" onclick="hideLeaf1()"></div>
+                <div id="river2Leaf2" onclick="hideLeaf2()"></div>
+                <div id="river2Leaf3" onclick="hideLeaf3()"></div>
+                <div id="river2Leaf4" onclick="hideLeaf4()"></div>
+                <div id="river2Catch"></div>
+            </div>
             <div class="azwo2" style="width: 30%; position: relative; left: -60%; height: 30%;">
                 <header>Move all the leaves to find what you caught!</header>
             </div>
@@ -62,7 +76,13 @@
     </div>
     <div id="catch3" style="display: none;">
         <div style="display: flex; flex-direction: row;">
-            <div id="netCloseUp"></div>
+            <div id="netCloseUp">
+                <div id="river3Leaf1" onclick="hideLeaf1()"></div>
+                <div id="river3Leaf2" onclick="hideLeaf2()"></div>
+                <div id="river3Leaf3" onclick="hideLeaf3()"></div>
+                <div id="river3Leaf4" onclick="hideLeaf4()"></div>
+                <div id="river3Catch"></div>
+            </div>
             <div class="azwo2" style="width: 30%; position: relative; left: -60%; height: 30%;">
                 <header>Move all the leaves to find what you caught!</header>
             </div>
