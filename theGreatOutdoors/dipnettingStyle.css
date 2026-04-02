@@ -80,9 +80,10 @@ article {
 }
 
 #river1Leaf1{
-    width: 550px;
-    height: 350px;
+    width: 275px;
+    height: 150px;
     background-image: url("leaf1.png");
+    background-size: contain;
     position: absolute !important;
 }
 #river1Leaf2{
@@ -105,9 +106,10 @@ article {
 }
 
 #river2Leaf1{
-    width: 550px;
-    height: 350px;
+    width: 275px;
+    height: 150px;
     background-image: url("leaf1.png");
+    background-size: contain;
     position: absolute !important;
 }
 #river2Leaf2{
@@ -130,9 +132,10 @@ article {
 }
 
 #river3Leaf1{
-    width: 550px;
-    height: 350px;
+    width: 275px;
+    height: 150px;
     background-image: url("leaf1.png");
+    background-size: contain;
     position: absolute !important;
 }
 #river3Leaf2{
@@ -155,22 +158,115 @@ article {
 }
 
 #river1Catch{
-    position: relative;
+    position: absolute !important;
     display: none;
-    left: 40%;
-    top: 30%;
+    background-size: contain;
+    left: 30%;
+    bottom: 20%;
 }
 
 #river2Catch{
-    position: relative;
+    position: absolute !important;
     display: none;
-    left: 40%;
-    top: 30%;
+    background-size: contain;
+    left: 30%;
+    bottom: 40%;
 }
 
 #river3Catch{
-    position: relative;
+    position: absolute !important;
     display: none;
-    left: 40%;
-    top: 30%;
+    background-size: contain;
+    left: 30%;
+    bottom: 40%;
+}
+
+#paintedhandMudbug{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#calicoCrayfish{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#bigWaterCrayfish{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#fatheadMinnow{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#centralStoneroller{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#virileCrayfish{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#riverChub{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#goldenShiner{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#northernClearwaterCrayfish{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+} 
+
+#commonShiner{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
 }
