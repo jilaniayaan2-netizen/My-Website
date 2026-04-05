@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dipnetting</title>
+    <link rel="stylesheet" href="dipnettingStyle.css">
+    <script src="../../multiplePages.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="main">
+        <div class="azwo2" style="width: 30%;">
+            <header>DIPNETTING</header>
+            <article>Click on the magnifying glasses to scoop through an area, move any debris from your net to see what
+                you found!</article>
+        </div>
+        <div style="height: 15vh;"></div>
+        <a id="mag1" href="#" onclick="return show('river1','main');">
+            <img src="magnifyingGlassIcon.png" style="width: 4%; position: relative; left: 10%;">
+        </a>
+        <div style="height: 5vh;"></div>
+        <a id="mag2" href="#" onclick="return show('river2','main');">
+            <img src="magnifyingGlassIcon.png" style="width: 4%; position: relative; left: 50%;">
+        </a>
+        <div style="height: 15vh;"></div>
+        <a id="mag3" href="#" onclick="return show('river3','main');">
+            <img src="magnifyingGlassIcon.png" style="width: 4%; position: relative; left: 20%;">
+        </a>
+    </div>
+    <div id="river1" style="display: none;" class="riverBackgrounds" onclick="swingNet1('river1', 'catch1')">
+        <div class="azwo2" style="width: 30%;">
+            <header>
+                Click Anywhere to Scoop!
+            </header>
+        </div>
+        <div id="dipnet1"></div>
+    </div>
+    <div id="river2" style="display: none;" class="riverBackgrounds" onclick="swingNet2('river2', 'catch2')">
+        <div class="azwo2" style="width: 30%;">
+            <header>Click Anywhere to Scoop!</header>
+        </div>
+        <div id="dipnet2"></div>
+    </div>
+    <div id="river3" style="display: none;" class="riverBackgrounds" onclick="swingNet3('river3', 'catch3')">
+        <div class="azwo2" style="width: 30%;">
+            <header>Click Anywhere to Scoop!</header>
+        </div>
+        <div id="dipnet3"></div>
+    </div>
+    <div id="catch1" style="display: none;;">
+        <div style="display: flex; flex-direction: row;">
+            <div id="netCloseUp" style="position: relative;">
+                <div id="river1Leaf1" onclick="hideLeaf1()"></div>
+                <div id="river1Leaf2" onclick="hideLeaf2()"></div>
+                <div id="river1Leaf3" onclick="hideLeaf3()"></div>
+                <div id="river1Leaf4" onclick="hideLeaf4()"></div>
+                <div id="river1Catch" onclick="infoAboutFish()"></div>
+            </div>
+            <div class="azwo2" style="width: 30%; position: relative; left: -60%; height: 30%;">
+                <header>Move all the leaves to find what you caught!</header>
+                <header>Click on your catch to learn about it!</header>
+                <article>
+                    Common Shiner - 30%
+                </article>
+                <article>
+                    Northern Clearwater Crayfish - 20%
+                </article>
+                <article>
+                    Golden Shiner - 10%
+                </article>
+                <article>
+                    River Chub - 10%
+                </article>
+                <article>
+                    Virile Crayfish - 10%
+                </article>
+                <article>
+                    Central Stoneroller - 5%
+                </article>
+                <article>
+                    Fathead Minnow - 5%
+                </article>
+                <article>
+                    Big Water Crayfish - 5%
+                </article>
+                <article>
+                    Calico Crayfish - 3%
+                </article>
+                <article>
+                    Paintedhand Mudbug - 2%
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="catch2" style="display: none;">
+        <div style="display: flex; flex-direction: row;">
+            <div id="netCloseUp">
+                <div id="river2Leaf1" onclick="hideLeaf1()"></div>
+                <div id="river2Leaf2" onclick="hideLeaf2()"></div>
+                <div id="river2Leaf3" onclick="hideLeaf3()"></div>
+                <div id="river2Leaf4" onclick="hideLeaf4()"></div>
+                <div id="river2Catch" onclick="infoAboutFish()"></div>
+            </div>
+            <div class="azwo2" style="width: 30%; position: relative; left: -60%; height: 30%;">
+                <header>Move all the leaves to find what you caught!</header>
+                <header>Click on your catch to learn about it!</header>
+                <article>
+                    Longnose Dace - 20%
+                </article>
+                <article>
+                    Western Blacknose Dace - 20%
+                </article>
+                <article>
+                    Fantail Darter - 20%
+                </article>
+                <article>
+                    Johnny Darter - 10%
+                </article>
+                <article>
+                    Rainbow Darter - 10%
+                </article>
+                <article>
+                    Iowa Darter - 5%
+                </article>
+                <article>
+                    Greenside Darter - 5%
+                </article>
+                <article>
+                    Common Logperch - 5%
+                </article>
+                <article>
+                    Northern Pearl Dace - 3%
+                </article>
+                <article>
+                    Redside Dace - 2%
+                </article>
+            </div>
+        </div>
+    </div>
+    <div id="catch3" style="display: none;">
+        <div style="display: flex; flex-direction: row;">
+            <div id="netCloseUp">
+                <div id="river3Leaf1" onclick="hideLeaf1()"></div>
+                <div id="river3Leaf2" onclick="hideLeaf2()"></div>
+                <div id="river3Leaf3" onclick="hideLeaf3()"></div>
+                <div id="river3Leaf4" onclick="hideLeaf4()"></div>
+                <div id="river3Catch" onclick="infoAboutFish()"></div>
+            </div>
+            <div class="azwo2" style="width: 30%; position: relative; left: -60%; height: 30%;">
+                <header>Move all the leaves to find what you caught!</header>
+                <header>Click on your catch to learn about it!</header>
+                <article>
+                    Stonecat - 21%
+                </article>
+                <article>
+                    Tadpole Madtom - 15%
+                </article>
+                <article>
+                    Blackstripe Topminnow - 15%
+                </article>
+                <article>
+                    Slimey Sculpin - 15%
+                </article>
+                <article>
+                    Central Mudminnow - 10%
+                </article>
+                <article>
+                    Banded Killifish - 7%
+                </article>
+                <article>
+                    Brook Stickleback - 7%
+                </article>
+                <article>
+                    Brook Silverside - 5%
+                </article>
+                <article>
+                    Mottled Sculpin - 3%
+                </article>
+                <article>
+                    Brindled Madtom - 2%
+                </article>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="paintedhandMudbug">
+        <header>Paintedhand Mudbug</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Lacunicambarus polychromatus
+                </article>
+                <article>
+                    Description: A large greenish-brown crayfish with red claws
+                </article>
+                <article>
+                    Range: southern ends of Michigan, Indiana, Ohio, Kentucky, Tennessee, Alabama, northern Florida,
+                    Illinois, and southern Ontario.
+                </article>
+                <article>
+                    Habitat: As a species of burrowing crayfish, they live in muddy lowlands, partially drained
+                    wetlands, and ditched streams
+                </article>
+                <article>
+                    Size: about 3¼-4 inches in length
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="mudbugInfoImage.png" style="width: 75%;">
+                <img src="mudbugBurrow.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('paintedhandMudbug', 'catch1')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch1', 'paintedhandMudbug')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="calicoCrayfish">
+        <header>Calico Crayfish</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Faxonius immunis
+                </article>
+                <article>
+                    Description: Resembles other Faxonius Crayfish, such as the Virile Crayfish, differentiated by a
+                    notch in the finger of it's claw
+                </article>
+                <article>
+                    Range: Most of Eastern North America(Southern Canada and Northern America) and parts of Europe as
+                    well(due to an indivual escaping the aquarium trade)
+                </article>
+                <article>
+                    Habitat: slow-flowing bodies of water, such as streams, ponds, marshes and roadside ditches
+                </article>
+                <article>
+                    Size: about 1.75 to 3.5 inches in length
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="calicoCrayfishImage.png" style="width: 75%;">
+                <img src="calicoCrayfishClaw.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('calicoCrayfish', 'catch1')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch1', 'calicoCrayfish')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="bigWaterCrayfish">
+        <header>Big Water Crayfish</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Cambarus robustus
+                </article>
+                <article>
+                    Description: A large and robust crayfish that is ussually a brown color and lacks the spots or
+                    colored claws that other crayfish(such as Virile and Calico Crayfish) have
+                </article>
+                <article>
+                    Range: Southern Ontario and most of the american north east(New York, Michigan, etc)
+                </article>
+                <article>
+                    Habitat: Fast moving rivers and lakes
+                </article>
+                <article>
+                    Size: about 5-8 inches (Based on personal experiance as I can't find a length on google where it
+                    only gives the carapace length which is 2 inches)
+                </article>
+                <article>
+                    Personal Note: One of my absolute favorite Crayfish to catch because they are the biggest crayfish
+                    in my area and look really cool, I even caught a pinkish colored one
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="pinkycray.png" style="width: 75%;">
+                <img src="bigWaterCrayfishInfo.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('bigWaterCrayfish', 'catch1')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch1', 'bigWaterCrayfish')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="fatheadMinnow">
+        <header>Fathead Minnow</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Pimephales promelas
+                </article>
+                <article>
+                    Description: dull olive-grey in appearance, with a dusky stripe extending along the back and side,
+                    and a lighter belly. There is a dusky blotch midway on the dorsal fin
+                </article>
+                <article>
+                    Range: across North America from Chihuahua, Mexico, north to the Maritime Provinces and Great Slave
+                    Lake drainage of Canada
+                </article>
+                <article>
+                    Habitat: In all sorts of freshwater habitats such as lakes, streams, and ponds. They have a
+                    surprising tolerance for low oxygen water, meaning they can handle lower oxygen habitats as well,
+                    such as wetlands
+                </article>
+                <article>
+                    Size: about 2-3 inches in length
+                </article>
+                <article>
+                    Fun Fact: The males during mating season grow fleshy stubs on their face called turbicles, which
+                    they use to fight off other males
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="fatheadMinnowInfo.png" style="width: 75%;">
+                <img src="fatheadMinnowMale.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('fatheadMinnow', 'catch1')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch1', 'fatheadMinnow')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="centralStoneroller">
+        <header>Central Stoneroller</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Campostoma anomalum
+                </article>
+                <article>
+                    Description: Rounded snout overhanging a crescent-shaped mouth, a hard ridge of cartilage on the
+                    lower lip, and irregular patches of dark colored scales on the sides of the body. Breeding males
+                    have orange fins and grow turbacles, similar to other minnows
+                </article>
+                <article>
+                    Range: A large portion of the eastern, central, and midwestern United States, along with some
+                    isolated populations in Canada and Mexico
+                </article>
+                <article>
+                    Habitat: Midwaters and bottoms of freshwater streams and rivers but it is a tolerant species which
+                    means it can be found in almost any stream
+                </article>
+                <article>
+                    Size: about 3-6.5 inches in length
+                </article>
+                <article>
+                    Fun Fact: Their names comes from the way they build their nests, during late winter, the males will
+                    begin using their noses to roll stones along the bottom of the river to build bowl-shaped nests in
+                    calmer waters
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="centralStonerollerSchool.png" style="width: 75%;">
+                <img src="stonerollerTurbicles.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('centralStoneroller', 'catch1')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch1', 'centralStoneroller')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="virileCrayfish">
+        <header>Virile Crayfish</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Faxonius virilis
+                </article>
+                <article>
+                    Description: As juviniles, they are mostly a brown color with spots on their carapace and spots that
+                    go down their tail. Once they get older, their carapce turns a rusty-red color and they get their
+                    distinctive blue claws
+                </article>
+                <article>
+                    Range: It's native to the southern ontario and much of the north-eastern USA but it's invasive to
+                    other parts of the USA and it's also invasive to Europe as well, where it is highly invasive
+                </article>
+                <article>
+                    Habitat: lakes, streams, and wetlands
+                </article>
+                <article>
+                    Size: about 3-6 inches in length(The biggest I've caught was about 6in but on average, the adults I
+                    catch are about 4in)
+                </article>
+                <article>
+                    Personal Note: Virile Crayfish are shockingly resiliant, as compared to the other native species in
+                    my area, I can practically find them anywhere. For example, I recently visited a local, very urban
+                    creek, and I thought that there's no way that any fish or aquatic life live there. I was proven
+                    wrong when I spotted 2 crayfish in there, both of them being Virile Crayfish
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="virileCrayfishInfo1.png" style="width: 75%;">
+                <img src="virileCrayfishInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('virileCrayfish', 'catch1')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch1', 'virileCrayfish')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="riverChub">
+        <header>River Chub</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Nocomis micropogon
+                </article>
+                <article>
+                    Description: A robust minnow, dark olivaceous above to dusky yellow below, with orange-red fins,
+                    large scales, a large slightly subterminal mouth, and a small barbel at the corners of it's jaws
+                </article>
+                <article>
+                    Range: Most of the Great Lakes and Appalachian regions
+                </article>
+                <article>
+                    Habitat: Clear, medium to large creeks and rivers with moderate to swift current
+                </article>
+                <article>
+                    Size: about 5-13 inches in length(I was very surprised when I went to google and learned they can
+                    get to 13 inches long as most of the ones I've caught are are 5-7 inches in length but that seems to
+                    be a rare occurance)
+                </article>
+                <article>
+                    Personal Note: River Chubs, just like other Minnows, the males go undergrow a transformation during
+                    the spring to get ready for breeding and just like the Stonerollers, these males build nests. They
+                    build these nests by litterally picking the stones up with their mouths, which I find very cool. I
+                    haven't caught any breeding males before but I really do hope I do soon. Unrelated, I did catch one
+                    with
+                    scoliosis
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="riverChubNestBuilding.png" style="width: 75%;">
+                <img src="boomarangFih.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('riverChub', 'catch1')">Go Back to River</button>
+                    <button type="button" onclick="return show('catch1', 'riverChub')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="goldenShiner">
+        <header>Golden Shiner</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Notemigonus crysoleucas
+                </article>
+                <article>
+                    Description: The back is dark green or olive, and the belly is a silvery or brassy white. The
+                    sides are silver in smaller individuals, and in clear or turbid water, but golden in larger
+                    ones living in stained water.
+                </article>
+                <article>
+                    Range: Throughout the eastern half of North America
+                </article>
+                <article>
+                    Habitat: They perfer quiet waters and are therefore found in lakes, ponds, sloughs, and ditches
+                </article>
+                <article>
+                    Size: about 2.8-14.4 inches in length(14.4in seems to be a very uncommon max but in the wild and on
+                    average, they seem to hit 2.8-7.9 inches)
+                </article>
+                <article>
+                    Fun Fact: It is the sole member of its genus
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="goldenShinerInfo1.png" style="width: 75%;">
+                <img src="goldenShinerInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('goldenShiner', 'catch1')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch1', 'goldenShiner')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="northernClearwaterCrayfish">
+        <header>Northern Clearwater Crayfish</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Faxonius propinquus
+                </article>
+                <article>
+                    Description: A small crayfish that is ussually a dark to light brown color, a noticable feature of
+                    it are it's orange tipped claws and a triangular stripe/marking that runs down the tail, which is
+                    unlike the Virile Crayfish which has spots instead(This is the usual but I have caught one that was
+                    a bluish-grey color)
+                </article>
+                <article>
+                    Range: Southern Ontario, Quebec(St.Lawerence area), and North-Eastern States such as New York and
+                    Ohio
+                </article>
+                <article>
+                    Habitat: Clear, rocky-bottomed streams, rivers, and lakes
+                </article>
+                <article>
+                    Size: about 2-4 inches in length(The ones I ussually catch seem to be around the 3 inch range,
+                    they're a lot smaller compared to Virile Crayfish and Big Water Crayfish)
+                </article>
+                <article>
+                    Personal Note: This was the very first species of crayfish that I caught and it really got me into
+                    dipnetting
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="ncwCrayfishInfo1.png" style="width: 75%;">
+                <img src="blueCrayfish.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('northernClearwaterCrayfish', 'catch1')">Go Back
+                        to
+                        River</button>
+                    <button type="button" onclick="return show('catch1', 'northernClearwaterCrayfish')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="commonShiner">
+        <header>Common Shiner</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Luxilus cornutus
+                </article>
+                <article>
+                    Description: Silvery colored (sometimes bronze) and has an olive back with a dark dorsal stripe
+                </article>
+                <article>
+                    Range: Found all across North America
+                </article>
+                <article>
+                    Habitat: Rocky pools in small to medium rivers
+                </article>
+                <article>
+                    Size: about 4-6 inches in length(The ones I catch tend to be smaller than that, being about 2-3
+                    inches)
+                </article>
+                <article>
+                    Personal Note: The ones I catch are ussually pretty small and they are a very boring looking fish,
+                    it is pretty much the default fish. One cool thing is the time I saw a ton of them school, it really
+                    is a sight to behold
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="commonShinerSchool.png" style="width: 75%;">
+                <img src="commonShinerInfo.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('commonShiner', 'catch1')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch1', 'commonShiner')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="redsideDace">
+        <header>Redside Dace</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Clinostomus elongatus
+                </article>
+                <article>
+                    Description: Brightly colored, with a wide red stripe extending from the head to the dorsal fin,
+                    running along the middle of the body.[4] A bright yellow stripe generally extends from the head to
+                    caudal fin above the red lateral stripe. The back of this fish is generally dark, ranging from green
+                    to dark blue
+                </article>
+                <article>
+                    Range: Most abundant in Pennsylvania, especially in the upper parts of the Susquehanna River
+                    drainage. Populations also exist in Southern Ontario
+                </article>
+                <article>
+                    Habitat: Slow-moving, cool, and clear headwaters of river systems
+                </article>
+                <article>
+                    Size: about 2.6-4.7 inches in length
+                </article>
+                <article>
+                    Fun Fact: This fish is also known as an indicator species, which means that the population of this
+                    species in a stream can be used to determine the water quality.
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="redsideDaceInfo.png" style="width: 75%;">
+                <img src="redsideDaceSchool.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('redsideDace', 'catch2')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch2', 'redsideDace')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="northernPearlDace">
+        <header>Northern Pearl Dace</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Margariscus nachtriebi
+                </article>
+                <article>
+                    Description: Body dark olive gray above, often with black herringbone lines, dark stripe along back;
+                    many small black and brown specks (absent in western populations) on silver side; white, yellow or
+                    red below; black stripe along side, black caudal spot on young; stripe vague on adult. Breeding male
+                    has bright orange-red lower side, pale yellow stripe along belly and many small tubercles on head
+                </article>
+                <article>
+                    Range: Atlantic, Hudson Bay, Great Lakes, and Mississippi River basins in south Canada and north USA
+                    from Atlantic Coast to south Northwest Territories, east British Columbia, and Montana; south to New
+                    York, Wisconsin and Iowa. Isolated population in upper Missouri River basin in South Dakota,
+                    Nebraska and Wyoming
+                </article>
+                <article>
+                    Habitat: Cool, clear headwater streams, bog drainage streams, ponds and small lakes, and in stained,
+                    peaty waters of beaver ponds
+                </article>
+                <article>
+                    Size: about 2.5-4.7 inches in length
+                </article>
+                <article>
+                    Fun Fact: In some B.C. lakes northern pearl dace are involved in a three-way hybrid swarm with
+                    finescale and
+                    northern redbelly dace. Given the propensity of hybrids between the latter two species to give rise
+                    to all female, diploid and triploid clones, the three-way cross might produce some interesting
+                    offspring
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="northernPearlDaceInfo.png" style="width: 75%;">
+                <img src="northernPearlDaceInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('northernPearlDace', 'catch2')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch2', 'northernPearlDace')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="commonLogperch">
+        <header>Common Logperch</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Percina caprodes
+                </article>
+                <article>
+                    Description: Pale yellow, olive, or greenish base with 15-20 narrow, dark vertical bars that run
+                    across it's body. Their bodies are long and slender with a distinctly pointed, conical snout
+                </article>
+                <article>
+                    Range: St. Lawrence River system in Quebec, and as far south as the Rio Grande system in southern
+                    Texas and northern Mexico. Westwards, logperch are most heavily distributed in the Mississippi River
+                    drainage system, and their range extends eastward in freshwater habitats all the way to the Atlantic
+                    Ocean
+                </article>
+                <article>
+                    Habitat: Clear, shallow to medium-depth waters, typically favoring rivers, streams, and lakes with
+                    sandy or gravelly bottoms
+                </article>
+                <article>
+                    Size: about 7-8 inches in length
+                </article>
+                <article>
+                    Fun Fact: Unlike most darters which are solitary, logperch can form schools consisting of over a
+                    hundred individuals in deep river pools
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="commonLogperchInfo.png" style="width: 75%;">
+                <img src="commonLogperchSchool.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('commonLogperch', 'catch2')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch2', 'commonLogperch')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="greensideDarter">
+        <header>Greenside Darter</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Etheostoma blennioides
+                </article>
+                <article>
+                    Description: Elongated body with a long and rounded snout. The dorsum is greenish-brown, with six
+                    or seven dark quadrate saddles and the sides with five to eight dark green, typically U- or W-shaped
+                    blotches. Breeding males have intensely bluish-green nasal and oral areas and sometimes black on the
+                    head
+                </article>
+                <article>
+                    Range: Ohio River Basin, Arkansas, Tennessee, Kentucky, Lake Erie, and Lake Ontario
+                </article>
+                <article>
+                    Habitat: Gravel riffles of large creeks to medium rivers and often are found in swift waters over
+                    large boulders and large rubble
+                </article>
+                <article>
+                    Size: about 2.5 and 4.5 inches in length
+                </article>
+                <article>
+                    Personal Note: I have only caught 1 of these from the time I visited Brantford, They look quite
+                    similar to Rainbow Darters when they're out of color
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="myGreensideDarter.png" style="width: 75%;">
+                <img src="greensideDaterInfo.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('greensideDarter', 'catch2')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch2', 'greensideDarter')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="iowaDarter">
+        <header>Iowa Darter</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Etheostoma exile
+                </article>
+                <article>
+                    Description: Has a small mouth and snout with scaled opercles and cheeks, two dorsal fins, one which
+                    is a spinous-rayed fin and another soft-rayed fin. Its caudal fin is squarish and the pectoral fins
+                    and pelvic fins are located close to each other behind the gills
+                </article>
+                <article>
+                    Range: North to central Canada, east to New York, and south to central Illinois
+                </article>
+                <article>
+                    Habitat: Cool, clear water over a sand or organic-matter substrate
+                </article>
+                <article>
+                    Size: about 1.4 to 2.5 inches in length
+                </article>
+                <article>
+                    Fun Fact: It lacks a swim bladder, causing it to sink and dart along the bottom
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="iowaDarterInfo.png" style="width: 75%;">
+                <img src="iowaDarterInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('iowaDarter', 'catch2')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch2', 'iowaDarter')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="rainbowDarter">
+        <header>Rainbow Darter</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Etheostoma caeruleum
+                </article>
+                <article>
+                    Description: Three dark spots on the back, and blue and orange in the dorsal and anal fins
+                </article>
+                <article>
+                    Range: Throughout the eastern United States, specifically throughout the Great Lakes and Ohio River
+                    Valley regions
+                </article>
+                <article>
+                    Habitat: Creeks and small to medium-sized rivers
+                </article>
+                <article>
+                    Size: About 2 to 3 inches in length(Matches what I've observed)
+                </article>
+                <article>
+                    Personal Note: I love catching these guys, they're really colorful and beautiful even out of season
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="rainbowDarterInfo.png" style="width: 75%;">
+                <img src="rainbowDarterInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('rainbowDarter', 'catch2')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch2', 'rainbowDarter')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="johnnyDarter">
+        <header>Johnny Darter</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Etheostoma nigrum
+                </article>
+                <article>
+                    Description: Small, slender fish with brown to yellow scales, paler sides, and whitish bellies.
+                    They have no bright colors and generally just have brown or black markings on a lighter tan
+                    background. These markings are usually a series of black "w" or "x" shapes along their sides running
+                    along their lateral lines.
+                </article>
+                <article>
+                    Range: Saskatchewan and Colorado to the Atlantic seaboard and from Hudson Bay south to the Gulf
+                    Coast drainage systems
+                </article>
+                <article>
+                    Habitat: Prefer clear water with sandy and gravelly bottoms. They like slow-moving water, but can be
+                    found in moderately cloudy, moving water, as well
+                </article>
+                <article>
+                    Size: About 2.8 to 3.9 inches in length(I ussually catch really small ones, like 1.5 - 2 inches)
+                </article>
+                <article>
+                    Personal Note: I first caught one of these in West Virginia and it's such a funny looking fish,
+                    esspecially it's face
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="johnnyDarterInfo.png" style="width: 75%;">
+                <img src="johnnyDarterInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('johnnyDarter', 'catch2')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch2', 'johnnyDarter')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="fantailDarter">
+        <header>Fantail Darter</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Etheostoma flabellare
+                </article>
+                <article>
+                    Description: Brown to olive coloration and dark spots that run latterally down their body. They have
+                    a spiny dorsal fin and a wide fanshaped tail
+                </article>
+                <article>
+                    Range: Eastern North America, from the Great Lakes and the Mississippi River basins to South
+                    Carolina and northern Alabama
+                </article>
+                <article>
+                    Habitat: Smaller streams that have cobbles and flat stones
+                </article>
+                <article>
+                    Size: About 1.5 to 3 inches in length(I ussually catch them at about 2 inches in length)
+                </article>
+                <article>
+                    Personal Note: This is the first species of darter I ever caught so it holds a special place in my
+                    heart
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="fantailDarterInfo.png" style="width: 75%;">
+                <img src="fantailDarterInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('fantailDarter', 'catch2')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch2', 'fantailDarter')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="westernBlacknoseDace">
+        <header>Western Blacknose Dace</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Rhinichthys obtusus
+                </article>
+                <article>
+                    Description: Tan to dark brown backs, lighter sides, and cream colored undersides. Dark blotches
+                    are sporadically scattered across the sides and back. A distinctive dark colored mid-lateral stripe
+                    from the tip of the snout to the caudal peduncle is present. They have a relatively long snout as
+                    well
+                </article>
+                <article>
+                    Range: Upper Mississippi, Ohio, and Great Lakes drainages, from as far north as south-central Canada
+                    to northern Alabama and Georgia and east to eastern Lake Erie
+                </article>
+                <article>
+                    Habitat: Young daces prefer to inhabit shallower, quiet pools with silty bottoms while more mature
+                    daces prefer streams with consistently high turbulence patterns and plenty of places to hide
+                </article>
+                <article>
+                    Size: About 2 to 4 inches in length(I've never caught one that was 4 inches, ussually they're
+                    about 2 or 3 inches)
+                </article>
+                <article>
+                    Personal Note: They look really similar to longnose daces and it's pretty difficult to distinguish
+                    between the two, esspecially when I've seen these two species school together sometimes
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="westernBlacknoseDaceInfo.png" style="width: 75%;">
+                <img src="westernBlacknoseDaceInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('westernBlacknoseDace', 'catch2')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch2', 'westernBlacknoseDace')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="longnoseDace">
+        <header>Longnose Dace</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Rhinichthys cataractae
+                </article>
+                <article>
+                    Description: Dorsal side is dark green to black, the lateral side is darkish to silvery with
+                    mottling often present, and the ventral side is pearly. Both adult males and females may have bright
+                    orange-reddish colouration at the base of pectoral, pelvic, and anal fins and on the upper lip
+                </article>
+                <article>
+                    Range: Rocky Mountains in Northern Mexico to the Mackenzie River near the Arctic Circle
+                </article>
+                <article>
+                    Habitat: Shallow, fast-flowing, rocky-bottomed streams and river riffles
+                </article>
+                <article>
+                    Size: About 2.4 to 3.9 inches in length(Ussually I catch ones that are about 2.5 inches)
+                </article>
+                <article>
+                    Personal Note: They are very common in the river in my city, I've caught like 10 in one swing
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="longnoseDaceInfo.png" style="width: 75%;">
+                <img src="longnoseDaceInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('longnoseDace', 'catch2')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch2', 'longnoseDace')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="brindledMadtom">
+        <header>Brindled Madtom</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Noturus miurus
+                </article>
+                <article>
+                    Description: Light brown, with dark dorsal splotches along the tip and two conspicuous saddle marks
+                    just behind the dorsal fin. The dorsal fin has a dark, spotted blotch on the tip and is located
+                    between the pectoral and pelvic fins
+                </article>
+                <article>
+                    Range: Across eastern North America, Southern Ontario to Lousiana
+                </article>
+                <article>
+                    Habitat: Slow-moving, warm water, and clear streams, rivers, and lakes
+                </article>
+                <article>
+                    Size: About 4 to 5 inches in length
+                </article>
+                <article>
+                    Fun Fact: In areas where habitats have been disturbed, they have been documented interbreeding with
+                    other madtom species, such as the Tadpole Madtom
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="brindledMadtomInfo.png" style="width: 75%;">
+                <img src="brindledMadtomInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('brindledMadtom', 'catch3')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch3', 'brindledMadtom')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="mottledSculpin">
+        <header>Mottled Sculpin</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Cottus bairdii
+                </article>
+                <article>
+                    Description: Flattned, wide body, with eyes on top, a large head, and large pectoral fins. Ussually
+                    a brownish or gray color with dark splotches
+                </article>
+                <article>
+                    Range: Northern Canada down to the Mobile and Tennessee River drainage systems. Also commonly found
+                    in streams in the Rocky Mountains along with many streams found throughout the Midwest United States
+                </article>
+                <article>
+                    Habitat: Fast riffle areas with clear substrates
+                </article>
+                <article>
+                    Size: About 3 to 6 inches in length(6 inches is the max but the average is 3-4 inches)
+                </article>
+                <article>
+                    Fun Fact: Females lay eggs on the ceiling of a nest (usually under a rock or log), and the male
+                    stays behind to fertilize and guard them
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="mottledSculpinInfo.png" style="width: 75%;">
+                <img src="mottledSculpinInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('mottledSculpin', 'catch3')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch3', 'mottledSculpin')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="brookSilverside">
+        <header>Brook Silverside</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Labidesthes sicculus
+                </article>
+                <article>
+                    Description: Translucent green or olive body with a distinct, bright silver stripe along the sides.
+                    Slender, Pencil-thin body with a flattened, beak-like snout containing tiny teeth
+                </article>
+                <article>
+                    Range: All across Canada and America
+                </article>
+                <article>
+                    Habitat: Clear, warm, slow-moving waters, including lakes, ponds, and large rivers
+                </article>
+                <article>
+                    Size: About 2.5 and 4 inches in length(5 inches is the max)
+                </article>
+                <article>
+                    Fun Fact: Brook silversides are well-known for jumping out of the water to catch insects
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="brookSilversideInfo.png" style="width: 75%;">
+                <img src="brookSilversideInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('brookSilverside', 'catch3')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch3', 'brookSilverside')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="brookStickleback">
+        <header>Brook Stickleback</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Culaea inconstans
+                </article>
+                <article>
+                    Description: Tapered body with a slim caudal peduncle and a fan-shaped tail, 5-6 dorsal spines,
+                    colouring is grayish or olive green with a varying amount of indistinct mottling
+                </article>
+                <article>
+                    Range: Southern half of Canada and the northern part of the eastern United States. Also has been
+                    introduced to Europe with a population in Finland
+                </article>
+                <article>
+                    Habitat: Shallow, cool, clear, and well-vegetated water bodies, including small streams, rivers,
+                    ponds, lakes, and spring-fed areas
+                </article>
+                <article>
+                    Size: About 2 inches in length(I don't think I've caught one smaller than this)
+                </article>
+                <article>
+                    Personal Note: They have a really unique shape, which makes them easy to ID. I learned that males
+                    turn completely black during mating season, so I now want to catch one during mating season. Another
+                    interesting behaivor is how the males use a glue-like substance from their kidney's to glue debris
+                    together to make nests, which is very unique for this unique looking fish. I also caught one via
+                    plastic
+                    bottle while at the beach.
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="brookSticklebackInBottle.png" style="width: 75%;">
+                <img src="brookSticklebackInfo.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('brookStickleback', 'catch3')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch3', 'brookStickleback')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="bandedKillifish">
+        <header>Banded Killifish</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Fundulus diaphanus
+                </article>
+                <article>
+                    Description: Narrow, elongated bluish-gray or olive-colored body with a darker dorsal surface and
+                    white or yellowish underparts extending to the anal fin
+                </article>
+                <article>
+                    Range: Widely distributed throughout eastern North America
+                </article>
+                <article>
+                    Habitat: Shallow and quiet areas of clear lakes, ponds, rivers, and estuaries with sandy gravel or
+                    muddy bottoms and with abundant aquatic vegetation
+                </article>
+                <article>
+                    Size: About 2 - 5 inches in length(5 inches is the max and the average is 2 - 4 inches in length)
+                </article>
+                <article>
+                    Fun Fact: The cousins of the Banded Killifish, the Mummichog, were the first fish sent to space in
+                    1973. Male Banded Killifish, get a blue patch near their anal fin
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="bandedKillifishInfo.png" style="width: 75%;">
+                <img src="bandedKillifishInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('bandedKillifish', 'catch3')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch3', 'bandedKillifish')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="centralMudminnow">
+        <header>Central Mudminnow</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Umbra limi
+                </article>
+                <article>
+                    Description: Robust body with a rounded tail fin and dark mottled coloring and a prominent, dark
+                    vertical bar is present at the base of the tail
+                </article>
+                <article>
+                    Range: Quebec to Manitoba in Canada and south to Tennessee and Arkansas in the US
+                </article>
+                <article>
+                    Habitat: Slow-moving water around ponds, lakes, and streams
+                </article>
+                <article>
+                    Size: About 2 - 4 inches in length
+                </article>
+                <article>
+                    Fun Fact: They can gulp air using a specialized gas bladder, similarly to how Gar do. They bury
+                    themselves tail-first in the mud during the winter to hibernate through the winter
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="centralMudminnowInfo.png" style="width: 75%;">
+                <img src="centralMudminnowInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('centralMudminnow', 'catch3')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch3', 'centralMudminnow')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="slimeySculpin">
+        <header>Slimy Sculpin</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Cottus cognatus
+                </article>
+                <article>
+                    Description: Wide, toad-like head with bulging eyes and a slender, tapering body. Breeding males
+                    turn dark gray to black and develop a distinctive orange edge on their first dorsal fin
+                </article>
+                <article>
+                    Range: Great Lakes, southeast Minnesota, northeast Iowa, southwest Wisconsin and northeast Canada.
+                    They've also been found in eastern siberia
+                </article>
+                <article>
+                    Habitat: Cold rocky streams or lakes
+                </article>
+                <article>
+                    Size: About 2.5 - 3.6 inches in length
+                </article>
+                <article>
+                    Fun Fact: They secrete a layer of mucus as a defense mechanism, hence why they're called Slimy
+                    Sculpins
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="slimySculpinInfo.png" style="width: 75%;">
+                <img src="slimeySculpinInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('slimeySculpin', 'catch3')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch3', 'slimeySculpin')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="blackstripeTopminnow">
+        <header>Blackstripe Topminnow</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Fundulus notatus
+                </article>
+                <article>
+                    Description: Horizontal black stripe that runs the length of its body along its sides. The fish has
+                    a small mouth that turns slightly upward, and has a flat-topped head with a multi-coloured spot on
+                    it
+                </article>
+                <article>
+                    Range: Southern drainage of lakes Erie and Michigan and also the Mississippi
+                    drainage basin between Illinois and the Gulf of Mexico.
+                </article>
+                <article>
+                    Habitat: Slow-moving or quiet, low-gradient streams, rivers, sloughs, and swamps in central North
+                    America
+                </article>
+                <article>
+                    Size: About 2 - 2.8 inches in length
+                </article>
+                <article>
+                    Fun Fact: In Canada, they are only found in a roughly 60
+                    kilometre stretch of the Sydenham River in southwestern Ontario, giving them one of the smallest
+                    ranges of any fish in Canada
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="blackstripeTopminnowInfo.png" style="width: 75%;">
+                <img src="blackstripeTopminnowInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('blackstripeTopminnow', 'catch3')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch3', 'blackstripeTopminnow')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="tadpoleMadtom">
+        <header>Tadpole Madtom</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Noturus gyrinus
+                </article>
+                <article>
+                    Description: Dark brown back with a lighter brown color on their sides and a yellow or white
+                    stomach. The pelvic and pectoral fins of adults are heavily covered in melanophores responsible for
+                    pigmentation, and the dorsal and anal fins contain fewer melanophores. There are also bands of
+                    melanophores on both the upper and lower jaws creating a dark horizontal streak along the side. Chin
+                    barbels vary from white to being lightly covered with melanophores. The tadpole madtom possess dark
+                    nasal and maxillary barbels and white mandibular barbels
+                </article>
+                <article>
+                    Range: Manitoba, Ontario, Quebec, and Saskatchewan, and can be found in the Assiniboine,
+                    Saskatchewan, Souris, Red, English, Winnipeg, and Nelson rivers. In the US, ranges from Texas to
+                    Florida and north along the Atlantic coast to New York
+                </article>
+                <article>
+                    Habitat: Areas with little to no current. They typically inhabit swamps and marshes, as well as
+                    lakes and slow moving streams and rivers 0.1-1.5 meters deep and 12-24 meters wide. They also prefer
+                    habitats with turbid water; a soft mud, sand or gravel bottom; and thick vegetation
+                </article>
+                <article>
+                    Size: About 2 - 3 inches in length(Can max out at 5 inches)
+                </article>
+                <article>
+                    Fun Fact: Tadpole Madtoms have two sharp spines near their chest fins. These spines can release a
+                    mild venom, which they use to deter predators
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="tadpoleMadtomInfo.png" style="width: 75%;">
+                <img src="tadpoleMadtomInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('tadpoleMadtom', 'catch3')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch3', 'tadpoleMadtom')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="azwo2" id="stonecat">
+        <header>Stonecat</header>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; width: 75%;">
+                <article>
+                    Scientific Name: Noturus gyrinus
+                </article>
+                <article>
+                    Description: Tan to grey-brown dorsally, white or pale yellow ventrally, with a straight-edged,
+                    non-forked tail
+                </article>
+                <article>
+                    Range: St. Lawrence-Great Lakes, Hudson Bay (Red River), and Mississippi River basins
+                </article>
+                <article>
+                    Habitat: moderate-to-fast-moving, shallow, rocky riffles in rivers and large creeks
+                </article>
+                <article>
+                    Size: About 4 - 8 inches in length(Can max out at 12 inches but the ones I catch are ussually 6
+                    inches with the biggest being 8 or 9 inches)
+                </article>
+                <article>
+                    Personal Note: The first Stonecat I caught was in Brantford and since then I've caught a ton in my
+                    local river. I mainly catch babies, which are nearly identical to tadpoles. Stonecats are also the
+                    largest species of madtoms, which is pretty cool
+                </article>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <img src="stonecatInfo.png" style="width: 75%;">
+                <img src="stonecatInfo2.png" style="width: 75%;">
+                <div style="display: flex; flex-direction: row;">
+                    <button type="button" onclick="return goBackToMain('stonecat', 'catch3')">Go Back to
+                        River</button>
+                    <button type="button" onclick="return show('catch3', 'stonecat')">Go Back to
+                        Catch</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="dipnettingScript.js" defer></script>
+</body>
+
+</html>

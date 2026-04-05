@@ -38,7 +38,7 @@ article {
 #dipnet1{
     width: 345px;
     height: 345px;
-    background-image: url("dipnetting.png");
+    background-image: url("/theGreatOutdoors/dipnetting.png");
     position: relative;
     opacity: 100%;
 } 
@@ -46,7 +46,7 @@ article {
 #dipnet2{
     width: 345px;
     height: 345px;
-    background-image: url("dipnetting.png");
+    background-image: url("/theGreatOutdoors/dipnetting.png");
     position: relative;
     opacity: 100%;
 } 
@@ -54,7 +54,7 @@ article {
 #dipnet3{
     width: 345px;
     height: 345px;
-    background-image: url("dipnetting.png");
+    background-image: url("/theGreatOutdoors/dipnetting.png");
     position: relative;
     opacity: 100%;
 } 
@@ -263,6 +263,185 @@ article {
 } 
 
 #commonShiner{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+#redsideDace{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#northernPearlDace{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: -5%;
+} 
+
+#commonLogperch{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#greensideDarter{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#iowaDarter{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#rainbowDarter{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#johnnyDarter{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#fantailDarter{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#westernBlacknoseDace{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#longnoseDace{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#brindledMadtom{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#mottledSculpin{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#brookSilverside{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#brookStickleback{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#bandedKillifish{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#centralMudminnow{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#slimeySculpin{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#blackstripeTopminnow{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#tadpoleMadtom{
+    display: none; 
+    width: 75%; 
+    position: absolute !important;
+    left: 15%; 
+    z-index: 5;
+    bottom: 5%;
+}
+
+#stonecat{
     display: none; 
     width: 75%; 
     position: absolute !important;
