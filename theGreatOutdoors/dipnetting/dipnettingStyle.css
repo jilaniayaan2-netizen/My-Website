@@ -2,7 +2,7 @@ body {
     background-image: url("dipnettingBackground.png");
     background-repeat: no-repeat;
     background-position: bottom;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: 100%;
 }
 
@@ -10,7 +10,7 @@ body {
     border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAABgUlEQVRYR9WZW5LCMAwENzfbo3E0bsZWQR61cg09khNj+CS20oxkjRKWH/dz+308l97ui7VlWx8Xb/uT8bybPgFnB43KkKKk5KZwMi4rmgy4K69SXgZVKXWVUTfevxc17cZf1y2y9txAw0GjAgrUOvIdi2JXWEMdin4dqBIjnvZsaci4a9uDJLSKTgtaPQy9+5r2JZRdM3n00Woqq/vKoMVGvN+vFxiMpXWmrBOdVQIISs5E3t7RMv9tBQ52pulAVcP/FGgoBXamaUHd8az6A+hMiJpnZ1LWORzUbS/VtkWNXUxLR39+zbO+M00DSspS7br91J1zQ2mxM7nT1HBQUrZ6iKhWYx8P6/VTaO+QQQon4/ugZylJyor7fBEoOYWrZDKVTWUMm56GgbrTE70sI2A3g93T0zSgyoGyFpp1IFjvT08fByUnosZ99XX7uf5qEIrfgLrKqr5Kp50cCaaz/PQ0DahS9ixAUvYyr8+m/HRQLPL3b99oe/Y6/ysiJ/yxoH99o4eoEpu7sgAAAABJRU5ErkJggg==') 14 / 14px / 0 round;
     border-width: 14px;
     border-style: solid;
-    background-color:rgba(62, 142, 35, 0.621);
+    background-color: rgba(62, 142, 35, 0.621);
 }
 
 header {
@@ -29,135 +29,153 @@ article {
     color: cornsilk;
 }
 
-.riverBackgrounds{
+.riverBackgrounds {
     width: 95vw;
     height: 95vh;
     position: relative;
 }
 
-#dipnet1{
+#dipnet1 {
     width: 345px;
     height: 345px;
     background-image: url("/theGreatOutdoors/dipnetting.png");
     position: relative;
     opacity: 100%;
-} 
+}
 
-#dipnet2{
+#dipnet2 {
     width: 345px;
     height: 345px;
     background-image: url("/theGreatOutdoors/dipnetting.png");
     position: relative;
     opacity: 100%;
-} 
+}
 
-#dipnet3{
+#dipnet3 {
     width: 345px;
     height: 345px;
     background-image: url("/theGreatOutdoors/dipnetting.png");
     position: relative;
     opacity: 100%;
-} 
+}
 
-.animate{
+.animate {
     animation: swing 1s linear;
 }
 
-@keyframes swing{
-    0% {rotate: -10deg; opacity: 100%;}
-    95% {rotate: 70deg;}
-    100% {opacity: 0%;}
+@keyframes swing {
+    0% {
+        rotate: -10deg;
+        opacity: 100%;
+    }
+
+    95% {
+        rotate: 70deg;
+    }
+
+    100% {
+        opacity: 0%;
+    }
 }
 
-#netCloseUp{
+#netCloseUp {
     width: 800px;
     height: 625px;
     position: relative;
     background-image: url("netCloseUp.png");
-    background-size: cover; 
+    background-size: cover;
     background-repeat: no-repeat;
     left: 30%;
 }
 
-#river1Leaf1{
+#river1Leaf1 {
     width: 275px;
     height: 150px;
     background-image: url("leaf1.png");
     background-size: contain;
     position: absolute !important;
 }
-#river1Leaf2{
+
+#river1Leaf2 {
     width: 200px;
     height: 300px;
     background-image: url("leaf2.png");
     position: absolute !important;
 }
-#river1Leaf3{
+
+#river1Leaf3 {
     width: 300px;
     height: 300px;
     background-image: url("leaf3.png");
     position: absolute !important;
 }
-#river1Leaf4{
+
+#river1Leaf4 {
     width: 300px;
     height: 300px;
     background-image: url("leaf4.png");
     position: absolute !important;
 }
 
-#river2Leaf1{
+#river2Leaf1 {
     width: 275px;
     height: 150px;
     background-image: url("leaf1.png");
     background-size: contain;
     position: absolute !important;
 }
-#river2Leaf2{
+
+#river2Leaf2 {
     width: 200px;
     height: 300px;
     background-image: url("leaf2.png");
     position: absolute !important;
 }
-#river2Leaf3{
+
+#river2Leaf3 {
     width: 300px;
     height: 300px;
     background-image: url("leaf3.png");
     position: absolute !important;
 }
-#river2Leaf4{
+
+#river2Leaf4 {
     width: 300px;
     height: 300px;
     background-image: url("leaf4.png");
     position: absolute !important;
 }
 
-#river3Leaf1{
+#river3Leaf1 {
     width: 275px;
     height: 150px;
     background-image: url("leaf1.png");
     background-size: contain;
     position: absolute !important;
 }
-#river3Leaf2{
+
+#river3Leaf2 {
     width: 200px;
     height: 300px;
     background-image: url("leaf2.png");
     position: absolute !important;
 }
-#river3Leaf3{
+
+#river3Leaf3 {
     width: 300px;
     height: 300px;
     background-image: url("leaf3.png");
     position: absolute !important;
 }
-#river3Leaf4{
+
+#river3Leaf4 {
     width: 300px;
     height: 300px;
     background-image: url("leaf4.png");
     position: absolute !important;
 }
 
-#river1Catch{
+#river1Catch {
     position: absolute !important;
     display: none;
     background-size: contain;
@@ -165,7 +183,7 @@ article {
     bottom: 20%;
 }
 
-#river2Catch{
+#river2Catch {
     position: absolute !important;
     display: none;
     background-size: contain;
@@ -173,7 +191,7 @@ article {
     bottom: 40%;
 }
 
-#river3Catch{
+#river3Catch {
     position: absolute !important;
     display: none;
     background-size: contain;
@@ -181,271 +199,858 @@ article {
     bottom: 40%;
 }
 
-#paintedhandMudbug{
-    display: none; 
-    width: 75%; 
+#paintedhandMudbug {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#calicoCrayfish{
-    display: none; 
-    width: 75%; 
+#calicoCrayfish {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#bigWaterCrayfish{
-    display: none; 
-    width: 75%; 
+#bigWaterCrayfish {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#fatheadMinnow{
-    display: none; 
-    width: 75%; 
+#fatheadMinnow {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#centralStoneroller{
-    display: none; 
-    width: 75%; 
+#centralStoneroller {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#virileCrayfish{
-    display: none; 
-    width: 75%; 
+#virileCrayfish {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#riverChub{
-    display: none; 
-    width: 75%; 
+#riverChub {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#goldenShiner{
-    display: none; 
-    width: 75%; 
+#goldenShiner {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#northernClearwaterCrayfish{
-    display: none; 
-    width: 75%; 
+#northernClearwaterCrayfish {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
-    z-index: 5;
-    bottom: 5%;
-} 
-
-#commonShiner{
-    display: none; 
-    width: 75%; 
-    position: absolute !important;
-    left: 15%; 
-    z-index: 5;
-    bottom: 5%;
-}
-#redsideDace{
-    display: none; 
-    width: 75%; 
-    position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#northernPearlDace{
-    display: none; 
-    width: 75%; 
+#commonShiner {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
+    z-index: 5;
+    bottom: 5%;
+}
+
+#redsideDace {
+    display: none;
+    width: 75%;
+    position: absolute !important;
+    left: 15%;
+    z-index: 5;
+    bottom: 5%;
+}
+
+#northernPearlDace {
+    display: none;
+    width: 75%;
+    position: absolute !important;
+    left: 15%;
     z-index: 5;
     bottom: -5%;
-} 
+}
 
-#commonLogperch{
-    display: none; 
-    width: 75%; 
+#commonLogperch {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#greensideDarter{
-    display: none; 
-    width: 75%; 
+#greensideDarter {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#iowaDarter{
-    display: none; 
-    width: 75%; 
+#iowaDarter {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#rainbowDarter{
-    display: none; 
-    width: 75%; 
+#rainbowDarter {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#johnnyDarter{
-    display: none; 
-    width: 75%; 
+#johnnyDarter {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#fantailDarter{
-    display: none; 
-    width: 75%; 
+#fantailDarter {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#westernBlacknoseDace{
-    display: none; 
-    width: 75%; 
+#westernBlacknoseDace {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#longnoseDace{
-    display: none; 
-    width: 75%; 
+#longnoseDace {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#brindledMadtom{
-    display: none; 
-    width: 75%; 
+#brindledMadtom {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#mottledSculpin{
-    display: none; 
-    width: 75%; 
+#mottledSculpin {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#brookSilverside{
-    display: none; 
-    width: 75%; 
+#brookSilverside {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#brookStickleback{
-    display: none; 
-    width: 75%; 
+#brookStickleback {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#bandedKillifish{
-    display: none; 
-    width: 75%; 
+#bandedKillifish {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#centralMudminnow{
-    display: none; 
-    width: 75%; 
+#centralMudminnow {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#slimeySculpin{
-    display: none; 
-    width: 75%; 
+#slimeySculpin {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#blackstripeTopminnow{
-    display: none; 
-    width: 75%; 
+#blackstripeTopminnow {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#tadpoleMadtom{
-    display: none; 
-    width: 75%; 
+#tadpoleMadtom {
+    display: none;
+    width: 75%;
     position: absolute !important;
-    left: 15%; 
+    left: 15%;
+    z-index: 5;
+    bottom: -15%;
+}
+
+#stonecat {
+    display: none;
+    width: 75%;
+    position: absolute !important;
+    left: 15%;
     z-index: 5;
     bottom: 5%;
 }
 
-#stonecat{
-    display: none; 
-    width: 75%; 
-    position: absolute !important;
-    left: 15%; 
-    z-index: 5;
-    bottom: 5%;
+#percentages1 {
+    width: 30%;
+    position: relative;
+    left: -60%;
+    height: 30%;
+}
+
+#percentages2 {
+    width: 30%;
+    position: relative;
+    left: -60%;
+    height: 30%;
+}
+
+#percentages3 {
+    width: 30%;
+    position: relative;
+    left: -60%;
+    height: 30%;
+}
+
+@media screen and (max-width:1024px) {
+    #paintedhandMudbug {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #calicoCrayfish {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #bigWaterCrayfish {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #fatheadMinnow {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #centralStoneroller {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #virileCrayfish {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #riverChub {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #goldenShiner {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: -15%;
+    }
+
+    #northernClearwaterCrayfish {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: -30%;
+    }
+
+    #commonShiner {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #redsideDace {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #northernPearlDace {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: -10%;
+    }
+
+    #commonLogperch {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #greensideDarter {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #iowaDarter {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #rainbowDarter {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #johnnyDarter {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #fantailDarter {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #westernBlacknoseDace {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: -30%;
+    }
+
+    #longnoseDace {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #brindledMadtom {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #mottledSculpin {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #brookSilverside {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #brookStickleback {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #bandedKillifish {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #centralMudminnow {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #slimeySculpin {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #blackstripeTopminnow {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+
+    #tadpoleMadtom {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: -30%;
+    }
+
+    #stonecat {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 10%;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    #percentages1 {
+        width: 30%;
+        position: relative;
+        left: -40%;
+        height: 30%;
+    }
+
+    #percentages2 {
+        width: 30%;
+        position: relative;
+        left: -40%;
+        height: 30%;
+    }
+
+    #percentages3 {
+        width: 30%;
+        position: relative;
+        left: -40%;
+        height: 30%;
+    }
+
+    #paintedhandMudbug {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #calicoCrayfish {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #bigWaterCrayfish {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #fatheadMinnow {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #centralStoneroller {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #virileCrayfish {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #riverChub {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #goldenShiner {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: -45%;
+    }
+
+    #northernClearwaterCrayfish {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #commonShiner {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #redsideDace {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #northernPearlDace {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: -15%;
+    }
+
+    #commonLogperch {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #greensideDarter {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #iowaDarter {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #rainbowDarter {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #johnnyDarter {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #fantailDarter {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #westernBlacknoseDace {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #longnoseDace {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #brindledMadtom {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #mottledSculpin {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #brookSilverside {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #brookStickleback {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #bandedKillifish {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #centralMudminnow {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #slimeySculpin {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #blackstripeTopminnow {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
+
+    #tadpoleMadtom {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: -45%;
+    }
+
+    #stonecat {
+        display: none;
+        width: 75%;
+        position: absolute !important;
+        left: 15%;
+        z-index: 5;
+        bottom: 15%;
+    }
 }
