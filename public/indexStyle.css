@@ -121,47 +121,59 @@
     z-index: 20;
 }
 
-@media screen and (min-width:1920px) {
+@media screen and (min-width: 1980px) {
     .sub-container {
-        height: 60%;
+        height: 50%;
     }
 
     .spacer {
-        height: 20vh;
+        height: 30vh;
     }
 
     .sub-container-2 {
-        height: 80%;
+        height: 60%;
+    }
+
+    #infoBoard {
+        width: 25%;
+    }
+
+    #natureLink{
+        width: 25%;
+    }
+
+    #natureLinkImg{
+        width: 75%;
     }
 
     .shelf-wrapper {
         position: relative;
         display: inline-block;
         vertical-align: bottom;
-        size: 120%;
+        width: 15%;
     }
 
     .table-wrapper {
         position: relative;
         display: inline-block;
         vertical-align: bottom;
-        top: -100px;
+        top: -20px;
         left: 120px;
-        size: 120%;
+        width: 25%;
     }
 
     .shelf-img {
         display: block;
         width: 300px;
         height: auto;
-        size: 120%;
+        width: 125%;
     }
 
     .table-img {
         display: block;
         width: 400px;
         height: auto;
-        size: 120%;
+        width: 150%;
     }
 
     .alien-on-shelf {
@@ -169,7 +181,6 @@
         bottom: 15%;
         left: 50%;
         z-index: 20;
-        size: 120%;
     }
 
     .clay-on-shelf {
@@ -177,7 +188,6 @@
         bottom: 15%;
         left: 20%;
         z-index: 20;
-        size: 120%;
     }
 
     .game-on-shelf {
@@ -185,7 +195,6 @@
         bottom: 40%;
         left: 50%;
         z-index: 20;
-        size: 120%;
     }
 
     .books-on-shelf {
@@ -193,7 +202,6 @@
         bottom: 60%;
         left: 70%;
         z-index: 20;
-        size: 120%;
     }
 
     .godzilla-on-shelf {
@@ -201,22 +209,19 @@
         bottom: 60%;
         left: 20%;
         z-index: 20;
-        size: 120%;
     }
 
     .notebook-on-table {
         position: absolute !important;
-        bottom: 80%;
-        left: 20%;
+        bottom: 85%;
+        left: 30%;
         z-index: 20;
-        size: 120%;
     }
 
     .typewritter-on-table {
         position: absolute !important;
         bottom: 90%;
-        left: 50%;
+        left: 70%;
         z-index: 20;
-        size: 120%;
     }
 }
