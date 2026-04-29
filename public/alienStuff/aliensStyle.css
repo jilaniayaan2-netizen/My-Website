@@ -31,3 +31,29 @@ article {
     font-family: alien;
     src: url(AlienCybernetics-vnj97.ttf)
 }
+
+.specEvoGrid {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.specEvoThumbnails {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.specEvoThumbnails img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.specEvoThumbnails img:hover {
+    transform: scale(1.05);
+}
