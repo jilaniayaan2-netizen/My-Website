@@ -38,7 +38,7 @@ article {
 #dipnet1 {
     width: 345px;
     height: 345px;
-    background-image: url("/theGreatOutdoors/dipnetting.png");
+    background-image: url("/public/theGreatOutdoors/dipnetting.png");
     position: relative;
     opacity: 100%;
 }
@@ -46,7 +46,7 @@ article {
 #dipnet2 {
     width: 345px;
     height: 345px;
-    background-image: url("/theGreatOutdoors/dipnetting.png");
+    background-image: url("/public/theGreatOutdoors/dipnetting.png");
     position: relative;
     opacity: 100%;
 }
@@ -54,7 +54,7 @@ article {
 #dipnet3 {
     width: 345px;
     height: 345px;
-    background-image: url("/theGreatOutdoors/dipnetting.png");
+    background-image: url("/public/theGreatOutdoors/dipnetting.png");
     position: relative;
     opacity: 100%;
 }
