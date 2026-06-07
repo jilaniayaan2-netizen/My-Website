@@ -297,20 +297,36 @@ input {
 }
 
 .gemsImages {
-    position: relative;
-    width: 75%;
-    left: 10%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 #gemsContainer {
     width: 90%;
+    margin: 0 auto;
 }
 
 .gemGrid {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    gap: 15px;
     padding: 10px;
-    column-gap: 5px;
+}
+
+.gemCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.gemText{
+    font-family: inherit; 
+    font-size: 0.8rem;  
+    margin-top: 5px;
+    color: #fff;        
 }
 
 @media screen and (max-width: 1024px) {
