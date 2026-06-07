@@ -1,8 +1,8 @@
 body {
-    background-image: url("dipnettingBackground.png");
+    background-image: url("mapBackground.png");
     background-repeat: no-repeat;
     background-position: bottom;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-size: 100%;
 }
 
@@ -10,7 +10,7 @@ body {
     border-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAABgUlEQVRYR9WZW5LCMAwENzfbo3E0bsZWQR61cg09khNj+CS20oxkjRKWH/dz+308l97ui7VlWx8Xb/uT8bybPgFnB43KkKKk5KZwMi4rmgy4K69SXgZVKXWVUTfevxc17cZf1y2y9txAw0GjAgrUOvIdi2JXWEMdin4dqBIjnvZsaci4a9uDJLSKTgtaPQy9+5r2JZRdM3n00Woqq/vKoMVGvN+vFxiMpXWmrBOdVQIISs5E3t7RMv9tBQ52pulAVcP/FGgoBXamaUHd8az6A+hMiJpnZ1LWORzUbS/VtkWNXUxLR39+zbO+M00DSspS7br91J1zQ2mxM7nT1HBQUrZ6iKhWYx8P6/VTaO+QQQon4/ugZylJyor7fBEoOYWrZDKVTWUMm56GgbrTE70sI2A3g93T0zSgyoGyFpp1IFjvT08fByUnosZ99XX7uf5qEIrfgLrKqr5Kp50cCaaz/PQ0DahS9ixAUvYyr8+m/HRQLPL3b99oe/Y6/ysiJ/yxoH99o4eoEpu7sgAAAABJRU5ErkJggg==') 14 / 14px / 0 round;
     border-width: 14px;
     border-style: solid;
-    background-color:rgba(62, 142, 35, 0.621);
+    background-color: rgba(62, 142, 35, 0.621);
 }
 
 header {
@@ -27,4 +27,28 @@ article {
     font-size: 20px;
     font-family: nature;
     color: cornsilk;
+}
+
+#map {
+    width: 75%;
+    position: absolute;
+    left: 10%;
+}
+
+@media screen and (min-width: 1920px) {
+    #map {
+        width: 75%;
+        position: absolute;
+        left: 10%;
+        top: 6%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    #map {
+        width: 75%;
+        position: absolute;
+        left: 10%;
+        top: 11%;
+    }
 }

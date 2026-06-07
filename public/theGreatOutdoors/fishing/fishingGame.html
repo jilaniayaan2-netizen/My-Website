@@ -3,11 +3,34 @@
 
 <head>
     <title>The Great Outdoors</title>
-    <link rel="stylesheet" href="outsideStyle.css">
+    <link rel="stylesheet" href="fishingStyle.css">
+    <script src="../../multiplePages.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-    
+    <div id="main">
+        <img src="Bowfin Park.png" id="map">
+        <a href="River Fishing" onclick="return show('river','main');" id="place1">
+            <img src="pointer.png" style="width: 4%; position: absolute; left: 20%; top: 50%;">
+        </a>
+        <a href="Mountain Fishing" onclick="return show('mountainStream','main');" id="place2">
+            <img src="pointer.png" style="width: 4%; position: absolute; left: 50%; top: 25%;">
+        </a>
+        <a href="Creek Fishing" onclick="return show('creek','main');" id="place3">
+            <img src="pointer.png" style="width: 4%; position: absolute; left: 30%; top: 45%;">
+        </a>
+        <a href="Lake Fishing" onclick="return show('lake','main');" id="place4">
+            <img src="pointer.png" style="width: 4%; position: absolute; left: 25%; top: 30%;">
+        </a>
+        <a href="Pond Fishing" onclick="return show('pond','main');" id="place5">
+            <img src="pointer.png" style="width: 4%; position: absolute; left: 40%; top: 55%;">
+        </a>
+        <a href="Swamp Fishing" onclick="return show('swamp','main');" id="place5">
+            <img src="pointer.png" style="width: 4%; position: absolute; left: 60%; top: 65%;">
+        </a>
+    </div>
+    <script src="fishingScript.js" defer></script>
 </body>
+
 </html>
