@@ -1,9 +1,122 @@
+html,
+body {
+    background-image: url("homepage/wooden-texture-background-real-old-wood-wall-weathered-wood_120872-10410.jpg");
+    background-size: cover; 
+    background-attachment: fixed;
+}
+
+.room-container {
+    width: 100%;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+}
+
+.imgtxt img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.shelf-wrapper {
+    background-image: url("homepage/shelf-removebg-preview.png");
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    width: 18%;
+    aspect-ratio: 1 / 1;
+}
+
+.table-wrapper{
+    background-image: url("homepage/Untitled_design__4_-removebg-preview.png");
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    top: 65%;
+    left: 25%;
+}
+
+.typewritter{
+    position: absolute;
+    width: 25%;
+    top: -60%;
+    left: 20%;
+}
+
+.notebook{
+    position: absolute;
+    width: 25%;
+    top: -30%;
+    left: 50%;
+}
+
+.board {
+    position: absolute;
+    top: 0%;
+    width: 25%;
+    height: auto;
+    display: block;
+}
+
+.room-item {
+    position: absolute;
+}
+
+.insects {
+    width: 20%;
+    top: 0%;
+    left: 25%;
+}
+
+.backdoor {
+    position: absolute;
+    width: 15%;
+    top: 40%;
+    left: 75%;
+}
+
+.outside-door {
+    position: absolute;
+    width: 15%;
+    top: 40%;
+    left: 0%;
+}
+
+.bookslink {
+    width: 12%;
+    top: 20%;
+    left: 15%;
+}
+
+.claylink {
+    width: 12%;
+    top: 20%;
+    left: 70%;
+}
+
+.fandomlink {
+    width: 12%;
+    top: 40%;
+    left: 30%;
+}
+
+.gamelink {
+    width: 12%;
+    top: 40%;
+    left: 60%;
+}
+
+.alienlink {
+    width: 12%;
+    top: 70%;
+    left: 50%;
+}
+
 .imgtxt {
     width: fit-content;
     height: fit-content;
     display: inline-block;
-    position: relative;
-    z-index: 10;
 }
 
 .imgtxt span {
@@ -12,7 +125,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 99;
+    z-index: 2;
     font-size: 2.5rem;
     color: #FFF;
     filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px 1px 0 black) drop-shadow(1px -1px 0 black) drop-shadow(-1px -1px 0 black);
@@ -25,326 +138,6 @@
 
 .imgtxt:hover img,
 .imgtxt:focus img {
-    filter: grayscale();
-    rotate: 1deg;
-}
-
-.introductionBoard {
-    width: 25%;
-}
-
-.shelf {
-    width: 20%;
-    transform: translateX(35px);
-}
-
-.natureLink {
-    width: 20%;
-    transform: translateX(15px);
-}
-
-.alienLink {
-    position: absolute;
-    transform: translate(-190px, 175px);
-}
-
-.clayLink {
-    position: absolute;
-    transform: translate(-50px, 175px);
-}
-
-.bookLink {
-    position: absolute;
-    transform: translate(-150px, 110px);
-}
-
-.gameLink {
-    position: absolute;
-    transform: translate(-75px, 110px);
-}
-
-.fandomLink {
-    position: absolute;
-    transform: translate(-95px, 50px);
-}
-
-.theOutdoors {
-    position: absolute;
-    transform: translate(-850px, 275px);
-}
-
-.desk {
-    position: absolute;
-    transform: translate(-500px, 425px);
-}
-
-.writing {
-    position: absolute;
-    transform: translate(-250px, 300px);
-}
-
-.blog {
-    position: absolute;
-    transform: translate(-400px, 375px);
-}
-
-.theBackdoor {
-    position: absolute;
-    transform: translate(0px, 275px);
-}
-
-@media screen and (min-width: 1024px) {
-    .introductionBoard {
-        width: 30%;
-    }
-
-    #natureSizer {
-        width: 110%;
-    }
-
-    .shelf {
-        width: 25%;
-        transform: translateX(35px);
-    }
-
-    #shelfItemSizers {
-        width: 110%;
-    }
-
-    .alienLink {
-        position: absolute;
-        transform: translate(-150px, 165px);
-    }
-
-    .clayLink {
-        position: absolute;
-        transform: translate(-50px, 165px);
-    }
-
-    .bookLink {
-        position: absolute;
-        transform: translate(-125px, 100px);
-    }
-
-    .gameLink {
-        position: absolute;
-        transform: translate(-50px, 100px);
-    }
-
-    .fandomLink {
-        position: absolute;
-        transform: translate(-175px, 55px);
-    }
-
-    #FurnitureResizer {
-        width: 95%;
-    }
-
-    #deskResizer {
-        width: 40%;
-    }
-
-    .theOutdoors {
-        position: absolute;
-        transform: translate(-750px, 270px);
-    }
-
-    .desk {
-        position: absolute;
-        transform: translate(-500px, 450px);
-    }
-
-    #blogResizer {
-        width: 85%;
-    }
-
-    #writingResizer {
-        width: 90%;
-    }
-
-    .writing {
-        position: absolute;
-        transform: translate(-275px, 325px);
-    }
-
-    .blog {
-        position: absolute;
-        transform: translate(-400px, 400px);
-    }
-
-    .theBackdoor {
-        position: absolute;
-        transform: translate(0px, 270px);
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .introductionBoard {
-        width: 25%;
-    }
-
-    #natureSizer {
-        width: 100%;
-    }
-
-    .shelf {
-        width: 20%;
-        transform: translateX(35px);
-    }
-
-    #shelfItemSizers {
-        width: 115%;
-    }
-
-    .alienLink {
-        position: absolute;
-        transform: translate(-180px, 180px);
-    }
-
-    .clayLink {
-        position: absolute;
-        transform: translate(-90px, 180px);
-    }
-
-    .bookLink {
-        position: absolute;
-        transform: translate(-135px, 100px);
-    }
-
-    .gameLink {
-        position: absolute;
-        transform: translate(-65px, 100px);
-    }
-
-    .fandomLink {
-        position: absolute;
-        transform: translate(-155px, 40px);
-    }
-
-    #FurnitureResizer {
-        width: 100%;
-    }
-
-    #deskResizer {
-        width: 40%;
-    }
-
-    .theOutdoors {
-        position: absolute;
-        transform: translate(-850px, 275px);
-    }
-
-    .desk {
-        position: absolute;
-        transform: translate(-630px, 425px);
-    }
-
-    #blogResizer {
-        width: 105%;
-    }
-
-    #writingResizer {
-        width: 100%;
-    }
-
-    .writing {
-        position: absolute;
-        transform: translate(-400px, 300px);
-    }
-
-    .blog {
-        position: absolute;
-        transform: translate(-540px, 360px);
-    }
-
-    .theBackdoor {
-        position: absolute;
-        transform: translate(0px, 275px);
-    }
-}
-
-@media screen and (min-width: 1920px) {
-
-    .introductionBoard {
-        width: 30%;
-    }
-
-    #natureSizer {
-        width: 110%;
-    }
-
-    .shelf {
-        width: 25%;
-        transform: translateX(35px);
-    }
-
-    #shelfItemSizers {
-        width: 200%;
-    }
-
-    .alienLink {
-        position: absolute;
-        transform: translate(-375px, 325px);
-    }
-
-    .clayLink {
-        position: absolute;
-        transform: translate(-100px, 325px);
-    }
-
-    .bookLink {
-        position: absolute;
-        transform: translate(-300px, 200px);
-    }
-
-    .gameLink {
-        position: absolute;
-        transform: translate(-150px, 200px);
-    }
-
-    .fandomLink {
-        position: absolute;
-        transform: translate(-175px, 100px);
-    }
-
-    #FurnitureResizer {
-        width: 130%;
-    }
-
-    #deskResizer {
-        width: 40%;
-    }
-
-    .theOutdoors {
-        position: absolute;
-        transform: translate(-1450px, 550px);
-    }
-
-    .desk {
-        position: absolute;
-        transform: translate(-1000px, 700px);
-    }
-
-    #blogResizer {
-        width: 175%;
-    }
-
-    #writingResizer {
-        width: 150%;
-    }
-
-    .writing {
-        position: absolute;
-        transform: translate(-550px, 525px);
-    }
-
-    .blog {
-        position: absolute;
-        transform: translate(-800px, 600px);
-    }
-
-    .theBackdoor {
-        position: absolute;
-        transform: translate(0px, 550px);
-    }
+    filter: grayscale(1);
+    transform: rotate(5deg);
 }
