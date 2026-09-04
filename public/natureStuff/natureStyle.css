@@ -4,6 +4,7 @@
     border-style: solid;
     background-color: rgba(10, 58, 10, 0.91);
     padding: 18px 36px;
+    width: 90%;
 }
 
 .header-broider {
@@ -18,7 +19,7 @@
 header {
     padding: 15px;
     text-align: center;
-    font-size: 35px;
+    font-size: clamp(25px, 5vw, 35px);
     font-family: natureFont;
     color: aliceblue;
 }
@@ -26,9 +27,14 @@ header {
 article {
     padding: 10px;
     text-align: center;
-    font-size: 25px;
+    font-size: clamp(20px, 5vw, 35px);
     font-family: natureFont;
     color: floralwhite;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -62,7 +68,7 @@ article {
 
 .observationGrid {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));;
     padding: 10px;
     column-gap: 5px;
 }
@@ -74,11 +80,9 @@ article {
 
 .holdingGrid {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    padding: 20px;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));;
     column-gap: 10px;
+    row-gap: 10px;
 }
 
 @font-face {
@@ -87,8 +91,9 @@ article {
 }
 
 .book {
-    width: 400px;
-    height: 585px;
+    width: clamp(240px, 90vw, 400px);
+    height: clamp(350px, 131vw, 585px);
+    max-width: 100%;
     position: relative;
     transform-style: preserve-3d;
 }
@@ -116,8 +121,8 @@ article {
 
 .page label {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 87.5%;
+    height: 95%;
     top: 0;
     left: 0;
     cursor: pointer;
@@ -143,13 +148,12 @@ input {
 .page {
     position: absolute;
     background-color: white;
-    width: 350px;
-    height: 555px;
+    width: 87.5%;   /* was 350px */
+    height: 95%;    /* was 555px */
     border-radius: 0 15px 15px 0;
     margin-top: 10px;
     transform-origin: left;
     transform-style: preserve-3d;
-    transform: rotateY(0deg);
     transform: translateX(30px);
 }
 
@@ -310,7 +314,7 @@ input {
 
 .gemGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 15px;
     padding: 10px;
 }
@@ -322,151 +326,55 @@ input {
     text-align: center;
 }
 
-.gemText{
-    font-family: inherit; 
-    font-size: 0.8rem;  
+.gemText {
+    font-family: inherit;
+    font-size: 0.8rem;
     margin-top: 5px;
-    color: #fff;        
+    color: #fff;
 }
 
-@media screen and (max-width: 1024px) {
-    .header-broider {
-        border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAACRElEQVR4AdTXUYobQQxF0clsLovKdxaV1U36dHSNqabBMP5IBS5SvaeqloQDyefH3Z/fP78+cOenq0HnNfLwql6dO5jzfaNT8L+Ez3NrT50/zr/+/PgAD3cdq4EaVCcHD+lFGtQgXQ4eRt9oo7qGKSDHTHJu1ZmH9CINapAuBw/pRRrUIF0OHkbfaKPT8WNznddoSpjyGRrW+s48PN+R01DdGnlQe7DhRo+uz7/x62Sd8035THp1a8x/viNPX+s756s92GijS+fnVmk3kyU/4jHt+ft2Bxly5KcX09UgXY780Tfa6NL5uR2aqSDHTHYb1MAdyHF7YQw1cAdyjF3YaKO1/K5oG3jXe/PORhv1u8B0/vhbbyvgIf/d0dvwLcjRd+QHG23UFDi6PrcpRxPJkZ/+3dh73kbvybH4G210naTzGk2JJl39V8/d9xbu7vEw/oYbbdKZ4BLyTYlLwYuCu+i9u2uLv9FG69yU6Nyk/85fj38DpH83+hZ6v/c68zDnjTaqazSRHDPJ2zfZd4q+hbvv8Q422miTvSu2mXe9N+9svNE2cvwuzt9n55nsNlT37nvz7oYbnc7PLdpKq5MjP72YrgbpcuSnF9PVIF2Oxd9oo0vnDXaJpkT1RRouF0bgofoiDVN2CTyMsdFGdY0mnQkuIV/tM+mXCyPkP9+Rp0/ZJSz+RhttFFNimeT8fxSNh+qLNKhBuhw8pBdpUIN0OXiQH2y40aPrc3umQBPKkZ9eTFeDdDny09eoBtXJUZ38YJuN/gUAAP//RQfo9wAAAAZJREFUAwBP3Uxhlj3UoQAAAABJRU5ErkJggg==") 14 / 14px / 0 round;
-        border-width: 10px;
-        border-style: solid;
-        background-color: rgba(10, 58, 10, 0.91);
-        padding: 18px 36px;
-        width: 120%;
-    }
-
-    .storiesContainer {
-        display: flex;
-        flex-direction: row;
-        height: 120%;
-        width: 120%;
-    }
-
-    .storyImagesContainer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .spacer {
-        height: 10vw;
-    }
-
-    .inatContainer {
-        display: flex;
-        flex-direction: row;
-        height: 75%;
-        width: 120%;
-    }
-
-    .observationGrid {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-        column-gap: 5px;
-    }
-
-    .holdingGrid {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        padding-top: 10px;
-        padding-bottom: 20px;
-        padding: 20px;
-        column-gap: 10px;
-    }
-
-    .costaRica {
-        width: 120%;
-    }
-
-    .holding {
-        width: 120%;
-    }
-
-    .natureJournal {
-        height: 80%;
-        width: 120%;
-    }
-
-    #gemsContainer {
-        width: 110%;
-    }
+.backyardAnimals {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 40%;
+    margin: 0 auto;
 }
 
-@media screen and (max-width: 853px) {
-    .header-broider {
-        border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAACRElEQVR4AdTXUYobQQxF0clsLovKdxaV1U36dHSNqabBMP5IBS5SvaeqloQDyefH3Z/fP78+cOenq0HnNfLwql6dO5jzfaNT8L+Ez3NrT50/zr/+/PgAD3cdq4EaVCcHD+lFGtQgXQ4eRt9oo7qGKSDHTHJu1ZmH9CINapAuBw/pRRrUIF0OHkbfaKPT8WNznddoSpjyGRrW+s48PN+R01DdGnlQe7DhRo+uz7/x62Sd8035THp1a8x/viNPX+s756s92GijS+fnVmk3kyU/4jHt+ft2Bxly5KcX09UgXY780Tfa6NL5uR2aqSDHTHYb1MAdyHF7YQw1cAdyjF3YaKO1/K5oG3jXe/PORhv1u8B0/vhbbyvgIf/d0dvwLcjRd+QHG23UFDi6PrcpRxPJkZ/+3dh73kbvybH4G210naTzGk2JJl39V8/d9xbu7vEw/oYbbdKZ4BLyTYlLwYuCu+i9u2uLv9FG69yU6Nyk/85fj38DpH83+hZ6v/c68zDnjTaqazSRHDPJ2zfZd4q+hbvv8Q422miTvSu2mXe9N+9svNE2cvwuzt9n55nsNlT37nvz7oYbnc7PLdpKq5MjP72YrgbpcuSnF9PVIF2Oxd9oo0vnDXaJpkT1RRouF0bgofoiDVN2CTyMsdFGdY0mnQkuIV/tM+mXCyPkP9+Rp0/ZJSz+RhttFFNimeT8fxSNh+qLNKhBuhw8pBdpUIN0OXiQH2y40aPrc3umQBPKkZ9eTFeDdDny09eoBtXJUZ38YJuN/gUAAP//RQfo9wAAAAZJREFUAwBP3Uxhlj3UoQAAAABJRU5ErkJggg==") 14 / 14px / 0 round;
-        border-width: 10px;
-        border-style: solid;
-        background-color: rgba(10, 58, 10, 0.91);
-        padding: 18px 36px;
-        width: 90%;
-    }
+.backyardAnimals img {
+    width: 100px;
+    flex: 1 1 100px;
+}
 
-    .storiesContainer {
-        display: flex;
-        flex-direction: row;
-        height: 90%;
-        width: 90%;
-    }
-
-    .storyImagesContainer {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .spacer {
-        height: 10vw;
-    }
-
-    .inatContainer {
-        display: flex;
-        flex-direction: row;
-        height: 75%;
-        width: 90%;
-    }
-
-    .observationGrid {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 10px;
-        column-gap: 5px;
+@media (max-width: 768px) {
+    .backyardAnimals {
         width: 80%;
     }
+}
 
-    .holdingGrid {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        padding-top: 10px;
-        padding-bottom: 20px;
-        padding: 20px;
-        column-gap: 10px;
+@media (max-width: 768px) {
+    .storiesContainer,
+    .inatContainer {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
     }
 
-    .costaRica {
-        width: 90%;
+    .backyardAnimals {
+        width: 80%;
     }
+}
 
-    .holding {
-        width: 90%;
+@media (max-width: 600px) {
+    body {
+        background-attachment: scroll;
     }
+}
 
-    .natureJournal {
-        height: 80%;
-        width: 90%;
-    }
-
-    #gemsContainer {
-        width: 85%;
-    }
-
-    .gemGrid {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        padding: 10px;
-        column-gap: 5px;
+@media (max-width: 500px) {
+    .broider,
+    .header-broider {
+        padding: 12px 16px;
+        width: 95%;
     }
 }
