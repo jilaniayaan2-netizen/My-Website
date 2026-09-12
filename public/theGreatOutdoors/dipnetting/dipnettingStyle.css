@@ -38,7 +38,7 @@ article {
 #dipnet1 {
     width: 345px;
     height: 345px;
-    background-image: url("/public/theGreatOutdoors/dipnetting.png");
+    background-image: url("/theGreatOutdoors/dipnetting.png");
     position: relative;
     opacity: 100%;
 }
