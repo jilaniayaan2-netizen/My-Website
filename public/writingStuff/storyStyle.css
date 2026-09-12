@@ -6,17 +6,18 @@ body {
 header {
     padding: 15px;
     text-align: center;
-    font-size: 40px;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
     color: white;
 }
 
 article {
     padding: 10px;
     text-align: left;
-    font-size: 20px;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
     color: white;
-    white-space: pre;
+    white-space: pre-line;
     word-break: break-word;
+    line-height: 1.6;
 }
 
 .broider {
@@ -24,6 +25,9 @@ article {
     border-width: 28px;
     border-style: solid;
     background-color: rgba(0, 0, 0, 0.811);
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .chapter-content {
@@ -32,4 +36,10 @@ article {
 
 .chapter-content.active {
     display: block;
+}
+
+@media (max-width: 480px) {
+    .broider {
+        border-width: 14px;
+    }
 }

@@ -39,7 +39,8 @@ article {
 }
 
 .img-sizer {
-    width: 35%
+    width: 100%;
+    height: auto;
 }
 
 .top-spacer {
@@ -50,20 +51,21 @@ article {
     position: absolute;
     left: 45%;
     top: 18%;
-    width: 45%;
+    width: 20%;
 }
 
 .computer-postioner {
     position: absolute;
-    top: 54%;
-    width: 40%;
+    top: 53%;
+    left: 25%;
+    width: 15%;
 }
 
 .lore-postioner {
     position: absolute;
-    top: 42%;
-    left: 24%;
-    width: 28%;
+    top: 51%;
+    right: 12%;
+    width: 10%;
 }
 
 .creation-container {
@@ -72,6 +74,15 @@ article {
     justify-content: center;
     align-items: center;
     flex-direction: row;
+}
+
+.creation-img {
+    width: min(400px, 40vw);
+    height: auto;
+}
+.creation-arrow {
+    width: min(112px, 12vw);
+    height: auto;
 }
 
 .inspoGrid {
@@ -115,7 +126,7 @@ article {
     opacity: 0;
     position: absolute;
     top: 50%;
-    left: 15%;
+    left: 25%;
     transform: translate(-50%, -50%);
     z-index: 99;
     font-size: 2.5rem;
@@ -135,10 +146,10 @@ article {
 }
 
 .book {
-    width: 400px;
-    height: 585px;
+    width: min(400px, 70vw);
+    height: min(585px, calc(70vw * 585 / 400));
+    transform: translateX(min(600px, 60vw));
     position: relative;
-    transform: translateX(600px);
     transform-style: preserve-3d;
 }
 

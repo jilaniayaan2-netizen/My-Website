@@ -2,7 +2,8 @@
     border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABUCAYAAAAcaxDBAAACoElEQVR4AeycbW4bMQxEXd+lRwxyhqJHzGFaCDAEeYSAneVsFnVeAMGk+SHqSaHWf/Z+4y9KAKBRnLcbQAEaJhBOV57Q94+3P84I13d6Omdtw7cqqARaJcD+TACgzzzaGkDbCJ8TbEBHn1jHr5+/fzhjjR3y83TXa6OmdThrG75r7JB1RRtQdUD3CADU41V6A7RE5DkcAerN8M28ARrecIACNEwgnO4+nqXWoflX27/IVbzaz9a1Zp1P7ZVexfMvr4SaOkCbADUcoEqkqW9Ax+/VdWj+1TZk1649SuPPto+a16Hzr7Yhu/YNqCZA9wgA1ONVegO0ROQ5bEBP6mGzqtGX1jEND2G1Dfnx9fwY361jGh7Cahvy4+v5cfb6NqBzZoRDBAB6CNvnQQD9nM0hy330ma8ch6psBLlr06nceE6oEmzqAG0C1HCAKpGmbgOtnuOa9Vwerj3TLcgG6k7w3fwBGt5xgF4NtNtjjPovce3eEZzQ8LYBFKBhAuF09gnt9phw/fF03TvCBhpfwYslBGh4QwF6NdBujwnXH0/XvSM4oeEtAShAwwTC6ewT2u0x4fo1XVvv3hE20HbFL54AoOENBujVQLs9Jlx/PF33juCEhrcEoAANEwins09ot8eE64+n694RNtD4Cl4sIUDDGwrQrwZa9czKHq43nu794y36XipOaHiLAArQMIFwuu2Eak/U57JK1/hwve10Wl+1HrVrvBa0AVUHdI8AQD1epTdAS0SeA0A9XqU3QEtEngNAPV6lN0BLRJ4D72069o7pSVmfSzmhE01GAGiG48wC0IkiI2xA9berTtO1a8/R/Gfbu/VX8RtQXSC6RwCgHq/SG6AlIs9hA/q/97Cqx529vg2otx94KwGAKpGmDtAmQA3/CwAA//+1MQtpAAAABklEQVQDALtb3CbjeGxKAAAAAElFTkSuQmCC") 28 / 28px / 0 round;
     border-width: 28px;
     border-style: solid;
-    background-color: black
+    background-color: black;
+    margin-bottom: 20px;
 }
 
 .imageBorder {
@@ -14,7 +15,7 @@
 header {
     padding: 15px;
     text-align: center;
-    font-size: 40px;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
     font-family: alien;
     color: rgb(156, 212, 71);
 }
@@ -22,7 +23,7 @@ header {
 article {
     padding: 20px;
     text-align: left;
-    font-size: 20px;
+   font-size: clamp(1rem, 2.5vw, 1.25rem);
     font-family: alien;
     color: rgb(156, 212, 71);
 }
@@ -30,6 +31,18 @@ article {
 @font-face {
     font-family: alien;
     src: url(AlienCybernetics-vnj97.ttf)
+}
+
+#Fauna .broider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+#Fauna .broider img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .specEvoGrid {
@@ -40,7 +53,7 @@ article {
 
 .specEvoThumbnails {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 15px;
     width: 100%;
     max-width: 800px;
@@ -56,4 +69,11 @@ article {
 
 .specEvoThumbnails img:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .broider,
+    .imageBorder {
+        border-width: 14px;
+    }
 }
