@@ -53,6 +53,7 @@ img {
 .storyImagesContainer {
     display: flex;
     flex-direction: column;
+    gap: 50px;
 }
 
 .spacer {
@@ -68,7 +69,8 @@ img {
 
 .observationGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    ;
     padding: 10px;
     column-gap: 5px;
 }
@@ -80,7 +82,8 @@ img {
 
 .holdingGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    ;
     column-gap: 10px;
     row-gap: 10px;
 }
@@ -148,8 +151,10 @@ input {
 .page {
     position: absolute;
     background-color: white;
-    width: 87.5%;   /* was 350px */
-    height: 95%;    /* was 555px */
+    width: 87.5%;
+    /* was 350px */
+    height: 95%;
+    /* was 555px */
     border-radius: 0 15px 15px 0;
     margin-top: 10px;
     transform-origin: left;
@@ -337,13 +342,24 @@ input {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
 }
 
 .backyardAnimals img {
     width: 100px;
     flex: 1 1 100px;
+}
+
+.stamps {
+    flex: 1;
+    height: 250px;
+}
+
+.tanzaniaAnimals {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
 }
 
 @media (max-width: 768px) {
@@ -353,6 +369,7 @@ input {
 }
 
 @media (max-width: 768px) {
+
     .storiesContainer,
     .inatContainer {
         flex-direction: column;
@@ -372,6 +389,7 @@ input {
 }
 
 @media (max-width: 500px) {
+
     .broider,
     .header-broider {
         padding: 12px 16px;
