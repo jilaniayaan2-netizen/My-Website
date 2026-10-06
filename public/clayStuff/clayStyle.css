@@ -163,7 +163,7 @@ article {
     align-items: center;
     justify-content: center;
     position: absolute;
-    z-index: 11;
+    z-index: 20;
     transform-origin: center left;
     transition: transform 1s;
 }
@@ -253,35 +253,43 @@ input {
 }
 
 #page1 {
-    z-index: 10;
+    z-index: 11;
 }
 
 #page2 {
-    z-index: 9;
+    z-index: 10;
 }
 
 #page3 {
-    z-index: 8;
+    z-index: 9;
 }
 
 #page4 {
-    z-index: 7;
+    z-index: 8;
 }
 
 #page5 {
-    z-index: 6;
+    z-index: 7;
 }
 
 #page6 {
-    z-index: 5;
+    z-index: 6;
 }
 
 #page7 {
-    z-index: 4;
+    z-index: 5;
 }
 
 #page8 {
+    z-index: 4;
+}
+
+#page9 {
     z-index: 3;
+}
+
+#page10 {
+    z-index: 2;
 }
 
 #checkbox-cover:checked~.book {
@@ -334,6 +342,16 @@ input {
 }
 
 #checkbox-page8:checked~.book #page8 {
+    transform: rotateY(-180deg);
+    z-index: 9;
+}
+
+#checkbox-page9:checked~.book #page9 {
+    transform: rotateY(-180deg);
+    z-index: 9;
+}
+
+#checkbox-page10:checked~.book #page10 {
     transform: rotateY(-180deg);
     z-index: 9;
 }
